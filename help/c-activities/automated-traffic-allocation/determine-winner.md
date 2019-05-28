@@ -37,7 +37,7 @@ We do not use p-value based confidence for Auto-Allocate.
 
 The Confidence column in an Auto-Allocate activity (illustrated below) displays the probability of an experience being the winner within 1% margin of error (i.e. the algorithm uses a minimum detectable effect of 1% between the best and the second-best conversion rate). Note that the algorithm uses [Bernstein Inequality](https://en.wikipedia.org/wiki/Bernstein_inequalities_(probability_theory)) to compute this probability.
 
-Normal A/B tests compute confidence based on p-values. Auto-Allocate does not use p-values. P-values "loosely" compute the probability that a given experience is different from the control. These p-values can be used only to determine whether an experience is different from the control. These values cannot be used to determine if an experience is different from another experience (not control).
+Normal A/B tests compute confidence based on p-values. Auto-Allocate does not use p-values. P-values "loosely" compute the probability that a given experience is different from the control. These p-values can be used only to determine whether an experience might be different from the control. These values cannot be used to determine if an experience is different from another experience (not control).
 
 The following illustration shows an activity that doesn't yet have a winner:
 
@@ -55,7 +55,7 @@ Any of the following reasons describe why 0% displays in the report's [!UICONTRO
 
 * Manual A/B tests and Auto-Allocate use different statistics to display Confidence values.
 
-  Manual A/B tests use p-values based on [Student's t-test](https://en.wikipedia.org/wiki/Student%27s_t-test). P-values compute the probability that a given experience is different from the control. These p-values can be used only to determine whether an experience is different from the control. These values cannot be used to determine if an experience is different from another experience (not control).
+  Manual A/B tests use p-values based on [Student's t-test](https://en.wikipedia.org/wiki/Student%27s_t-test). A P-value is the probability of finding the observed (or a more extreme) difference between an experience and the control, given that in reality there is no such difference. These P-values can be used only to determine whether observed data is consistent with a given experience and the control being the same. These values cannot be used to determine if an experience is different from another experience (not control).
 
   Auto-allocate shows the probability of a given experience being a true winner across all experiences in the activity. This means only a winning experience (which is most likely to be the winner), will have a non-zero confidence value. All others are most likely to be losers and will display 0%. 
 
