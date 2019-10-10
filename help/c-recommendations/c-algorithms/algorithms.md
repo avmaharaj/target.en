@@ -1,7 +1,7 @@
 ---
 description: Criteria are rules that determine which products to recommend based on a predetermined set of visitor behaviors.
-keywords: recommendations;recommendations activity;criteria
-seo-description: Criteria are rules that determine which products to recommend based on a predetermined set of visitor behaviors.
+keywords: recommendations;recommendations activity;criteria;algorithm
+seo-description: Criteria in Adobe Target are rules that determine which products to recommend based on a predetermined set of visitor behaviors.
 seo-title: Criteria
 solution: Target
 title: Criteria
@@ -14,10 +14,6 @@ badge: premium
 # ![PREMIUM](/help/assets/premium.png) Criteria{#criteria}
 
 Criteria are rules that determine which products to recommend based on a predetermined set of visitor behaviors.
-
-## Criteria {#concept_4BD01DC437F543C0A13621C93A302750}
-
-Criteria are rules that determine which products to recommend based on a predetermined set of visitor behaviors. 
 
 Criteria determine which action will result in which recommendation. You can test multiple recommendation types against each other by adding multiple criteria.
 
@@ -71,15 +67,15 @@ All one-day criteria run twice daily. All one-week and longer criteria run once 
 
 You can view criteria details on a pop-up card by hovering over a card and by clicking the Information icon on a criteria card without opening the criteria.
 
-![](assets/criteria_hover.png)
+![Criteria Card hover](/help/c-recommendations/c-algorithms/assets/criteria_hover.png)
 
 Click the **[!UICONTROL Algorithm Info]** tab to view general information about the selected criteria, including its Name, Descriptions, Industry Vertical, Page Type(s), Recommendation Key, Recommendation Logic, and Algorithm ID.
 
-![](assets/criteria_info.png)
+![Algorithm Info tab](/help/c-recommendations/c-algorithms/assets/criteria_info.png)
 
 Click the **[!UICONTROL Algorithm Usage]** tab to view a list of activities that reference the selected criteria. The card lists active and inactive activities. Click the Live Activities or Inactivities drop-down lists to view the entire list of activities that reference that criteria. You can click the activity link to open the activity for editing.
 
-![](assets/criteria_usage.png)
+![Criteria Usage tab](/help/c-recommendations/c-algorithms/assets/criteria_usage.png)
 
 ## Determining When Criteria Results are Ready to Display {#section_03F328C07F234692B6D996DF745584B3}
 
@@ -91,7 +87,7 @@ From the activity diagram, Criteria cards now indicate when results are ready to
 
 The following illustration shows the activity diagram on a Recommendations activity's Overview page. You can also see the activity diagram with criteria status results from step 2 during the activity-creation workflow.
 
-![](assets/criteria_status.png)
+![Criteria Status on Overview page](/help/c-recommendations/c-algorithms/assets/criteria_status.png)
 
 Status results include the following: Results Ready, Results Not Ready, and Feed Failure, as illustrated in the following diagram:
 

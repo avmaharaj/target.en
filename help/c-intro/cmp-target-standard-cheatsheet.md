@@ -37,7 +37,7 @@ Please read our [Supported Browsers](../c-implementing-target/c-considerations-b
 
 **Which implementation JavaScript file should I use, at.js or mbox.js?**
 
-at.js is our latest and greatest JavaScript library. mbox.js is our older version. See [Understanding the Target JavaScript Libraries](../c-implementing-target/c-considerations-before-you-implement-target/target-implement.md#concept_60B748DE4293488F917E8F1FA4C7E9EB) to understand the differences between the two libraries. All new customers should use at.js.
+at.js is our latest and greatest JavaScript library. mbox.js is our older version. See [Benefits of at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-target-atjs-implementation/target-atjs-implementation.md#benefits) to understand the differences between the two libraries. All new customers should use at.js.
 
 All existing mbox.js customers should migrate to at.js. Learn more about the steps involved in [migrating from mbox.js to at.js](../c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-target-atjs-implementation/target-migrate-atjs.md#task_DE55DCE9AC2F49728395665DE1B1E6EA) before making the transition.
 
@@ -77,7 +77,7 @@ Note that the traffic requirement increases with MVT activities.
 
 **Can I apply offers at different locations (for example, the checkout funnel)?**
 
-Try out the [Multipage Activity feature](../c-experiences/c-visual-experience-composer/multipage-activity.md#concept_277E096063E14813AC5D8EDFA1D2ED48) that lets you create multiple pages within experiences.
+Try out the [Multipage Activity feature](../c-experiences/c-visual-experience-composer/multipage-activity.md#concept_277E096063E14813AC5D8EDFA1D2ED48) that lets you use multiple pages within experiences.
 
 **How can I ensure that once a goal (Primary or Secondary) has been reached, a user never enters the activity again and instead sees a different activity going forward?**
 
@@ -85,9 +85,9 @@ This is easy to achieve by using the [Advanced Settings](../c-activities/t-test-
 
 So, in this case, you might choose "Increment Count, Release User & Bar from Reentry" along with "Default/Other Activity Content" to achieve the objective. Check out other options as well.
 
-**I have created multiple goals in my activity. Can I create a chain of goals as a funnel for reporting and analysis purposes?
+**I have created multiple goals in my activity. Can I create a chain of goals as a funnel for reporting and analysis purposes?**
 
-For example, I want to consider Goal B when the user has achieved Goal A so that I can track numbers for a particular funnel.**
+**For example, I want to consider Goal B when the user has achieved Goal A so that I can track numbers for a particular funnel.**
 
 Target has a robust way to achieve this with our Metrics Dependency feature. Simply [add dependencies on other success metrics](../c-activities/r-success-metrics/success-metrics.md#section_7CE95A2FA8F5438E936C365A6D43BC5B). You have options like "Reached" and "Not Reached," along with ability to combine metrics in multiple ways to create any combination you want.
 
@@ -103,7 +103,7 @@ This is made possible by the Primary Goal setting in Step 3 of the three-part gu
 
 Use the [Scheduling feature in the Goals and Settings](../c-activities/t-test-ab/t-test-create-ab/ab-goals-and-settings.md#section_DCBDC354261F420EBD4B43EA34947BAC) step of the three-part activity workflow by specifying the start and end dates.
 
-Remember to activate the campaign. Only live campaigns adhere to the specified schedule. After the end date is reached, the activity goes into the Ended state.
+Remember to activate the activity. Only live activities adhere to the specified schedule. After the end date is reached, the activity goes into the Ended state.
 
 **Can I make a change to just the Targeting step and not go through the entire three-step guided workflow for editing?**
 
@@ -127,24 +127,12 @@ Use the power of [form-based activities](../c-experiences/form-experience-compos
 
 Use the Priority setting available on Step 3 of the Target three-part guided workflow (Goals and Settings Page) to [define the priority of the activities](../c-activities/t-test-ab/t-test-create-ab/ab-goals-and-settings.md#section_DCBDC354261F420EBD4B43EA34947BAC).
 
-There are a few options:
-
-* [Target JavaScript Libraries (at.js and mbox.js)](../c-intro/cmp-target-standard-cheatsheet.md#section_C2AC78DFDAD84981A8C84DF20893E340)
-* Default, with three levels (Low / Medium / High)
-* Custom, with a range from 0 to 999. For Custom, enable the Fine-Grained Priorities feature ( Setup > Preferences).
-
-## Audiences {#section_FA6314777ABC46D8B198D6F388051460}
-
-**I have set up two activities. Which one a visitor will end up seeing?**
-
-**Can I set the priority order of a few activities?**
-
-Use the Priority setting available on Step 3 of the Target three-part guided workflow (Goals and Settings Page) to [define the priority of the activities](../c-activities/t-test-ab/t-test-create-ab/ab-goals-and-settings.md#section_DCBDC354261F420EBD4B43EA34947BAC).
-
 There are two options:
 
 * Default, with three levels (Low / Medium / High)
 * Custom, with a range from 0 to 999. For Custom, enable the Fine-Grained Priorities feature ( Setup > Preferences).
+
+## Audiences {#section_FA6314777ABC46D8B198D6F388051460}
 
 **Can I create an audience segment in an activity that is specific to the activity? I do not feel that such an audience should be created in the Audience Library because there is no re-use factor.**
 
@@ -242,24 +230,9 @@ Click the thumbnail in front of the experience name on Step 2 and you will land 
 
 Use [form-based approach](../c-experiences/form-experience-composer.md#task_FAC842A6535045B68B4C1AD3E657E56E) to create activities.
 
-**Can I start an activity with a fewer number of visitors.**
-
-Use the percentage allocation controls available from [Step 2 of the Target three-part guided workflow (Targeting page)](../c-activities/t-test-ab/t-test-create-ab/ab-audience.md#concept_A268236C1224451DB7844BF67F41A087) to decide how you want to go about setting up the activity.
-
-**I have set up two activities. Which one a visitor will end up seeing?**
-
-**Can I set the priority order of a few activities?**
-
-Use the Priority setting available on Step 3 of the Target three-part guided workflow (Goals and Settings Page) to [define the priority of the activities](../c-activities/t-test-ab/t-test-create-ab/ab-goals-and-settings.md#section_DCBDC354261F420EBD4B43EA34947BAC).
-
-There are two options:
-
-* Default, with three levels (Low / Medium / High)
-* Custom, with a range from 0 to 999. For Custom, enable the Fine-Grained Priorities feature ( Setup > Preferences).
-
 **Can I ensure that same experience is delivered consistently across all devices a user might have?**
 
-Check out our [Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/index.html) that allows you to deterministically and probabilistically link multiple devices of a user through the power of a Co-op .
+Check out our [Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/home.html) that allows you to deterministically and probabilistically link multiple devices of a user through the power of a Co-op .
 
 If you are in the Co-op, a simple flag on the Goals and Settings page enables the feature. Reporting also changes to now reflect People instead of Visitors. Talk to your Adobe contact for more on this feature as this is not available in all regions.
 
@@ -279,7 +252,7 @@ We have [Redirect URL feature](../c-experiences/c-manage-content/offer-redirect.
 
 **Why is content delivery not happening in my QA process?**
 
-It's possible that your site might have dynamic IDs, duplicate IDs, or dynamic classes on elements. You might have to evaluate the site preference options at the account level (or at activity level if the issue is specific to a domain or a page). See "CSS Selectors" in [CSS Selectors](../administrating-target/r-target-account-preferences/target-account-preferences.md#section_8155EDBF449E4198863235F94D1EA872).
+It's possible that your site might have dynamic IDs, duplicate IDs, or dynamic classes on elements. You might have to evaluate the site preference options at the account level (or at activity level if the issue is specific to a domain or a page). See [CSS Selectors](../administrating-target/r-target-account-preferences/target-account-preferences.md#section_8155EDBF449E4198863235F94D1EA872).
 
 **Why am I not seeing the desired offer/experience and am instead seeing some other activity?**
 
@@ -291,7 +264,7 @@ Use the power of [form-based activities](../c-experiences/form-experience-compos
 
 ## Reports (Including Analytics for Target—A4T) {#section_8AECC69BEEB7422E894E7EC44A50BA0A}
 
-I also have Adobe Analytics and want to leverage it with Target. What key capabilities do I get by integrating the two solutions?
+**I also have Adobe Analytics and want to leverage it with Target. What key capabilities do I get by integrating the two solutions?**
 
 Check out following aspects of the product:
 
@@ -302,33 +275,29 @@ Check out following aspects of the product:
 *   [Audiences](../c-integrating-target-with-mac/mmp.md#concept_F4863DE4C92D4805AB690B4B3D487969)
     
 
-Can I slice and dice the reporting on multiple user segments?
+**Can I slice and dice the reporting on multiple user segments?**
 
 This is where the [Audiences for Reporting feature](../c-activities/t-test-ab/t-test-create-ab/ab-goals-and-settings.md#section_13119392051044FBA6387D9B3B1C43CF) available on the Goals and Settings page in Step 3 of the three-part guided activity workflow comes in.
 
-You have option to add 50 such segments and also the application point (Campaign Entry or a specific metric) to have a powerful way to slice and dice.
+You have the option to add 50 such segments and also the application point (Activity Entry or a specific metric) to have a powerful way to slice and dice.
 
 Note that Target collects the data in this regard from the time you add these audiences, so if you miss adding segments before running the test, you are out of luck.
 
-I cannot define audiences prior to running the activity. I find this aspect of reporting audiences in Target activities restrictive.
+**I cannot define audiences prior to running the activity. I find this aspect of reporting audiences in Target activities restrictive.**
 
-What can I do to make this process easier?
+**What can I do to make this process easier?**
 
 This is where [Analytics for Target (A4T)](../c-integrating-target-with-mac/a4t/a4t.md#concept_7540C8C04259434AB6EE33B09F47A1DE) is handy. If you have Adobe Analytics, simply choose the source as Analytics, which eliminates this restriction. Now you can perform analysis on any audience at any point and you don't need to define the reporting audiences up front.
 
-Can I clean up reports and start recording data going forward? For example, initial hits recorded were due to my own test hits on the activity.
-
-Use the [Reset Report Data](../c-reports/c-report-settings/report-settings.md#concept_4BB6A7FDAB6F4806A632F9CD989B8BFA) feature.
-
-Can I perform offline reporting calculations?
+**Can I perform offline reporting calculations?**
 
 Use the [Export Reports to CSV and Download Order Details to CSV options](../c-reports/downloading-data-in-csv-file.md#concept_3F276FF2BBB2499388F97451D6DE2E75) on the Reports page to download the desired reporting data.
 
-Can I change the control experience for evaluating reports or change the counting methodology from Visitors to Visits?
+**Can I change the control experience for evaluating reports or change the counting methodology from Visitors to Visits?**
 
 Make these changes using the [Settings gear on the reports page](../c-reports/c-report-settings/report-settings.md#concept_4BB6A7FDAB6F4806A632F9CD989B8BFA). Read more about these settings to understand how the calculations vary.
 
-How should I interpret reports?
+**How should I interpret reports?**
 
 We have tried to make reports as intuitive as possible with features like [confidence Interval bars, lift bounds, significance/confidence and multiple metric selections, table and graph views, running averages, and more](../c-reports/c-report-settings/report-settings.md#concept_4BB6A7FDAB6F4806A632F9CD989B8BFA) to allow for powerful, yet easy, report analysis. Obviously, you can look into Analytics if you are using [Analytics for Target (A4T)](../c-integrating-target-with-mac/a4t/a4t.md#concept_7540C8C04259434AB6EE33B09F47A1DE) activities for further analysis on audiences.
 

@@ -21,7 +21,7 @@ Target visitors who are on a specific page or have a specific mbox parameter.
 1. Name the audience. 
 1. Click **[!UICONTROL Add Rule]** > **[!UICONTROL Site Pages]**.
 
-   ![](assets/target_site_pages.png)
+   ![Site Pages audience](assets/target_site_pages.png)
 
 1. Click **[!UICONTROL Select]**, then select one of the following options:
 
@@ -35,7 +35,7 @@ Target visitors who are on a specific page or have a specific mbox parameter.
 
     * **Mbox:** The mbox you are targeting on. For example, if you want to count orders with an order total of $100 or more, you would pass `orderTotal` as an mbox parameter with that targeting specified here. 
     * **Domain:** The full domain of the page. When specifying a domain, best practice is to use "contains." For example, "Domain equals facebook.com" will not accept `m.facebook.com` or `www.facebook.com`. "Domain contains facebook.com" will accept any variant of facebook.com. 
-    * **Query:** The content of the URL after the first question mark (?). For example, the query is shown in bold in the following sample URL:
+    * **Query:** The content of the URL after the first question mark (?).
 
       `foo.html?e0a72cb2a2c7`
 

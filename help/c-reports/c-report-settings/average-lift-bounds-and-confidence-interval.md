@@ -34,7 +34,7 @@ The lift information in the Target reporting UI includes:
 
 The following illustration shows Lift Bounds and Confidence Level information:
 
-![](assets/lift-screenshot.png)
+![Average Lift and Confidence Level report](/help/c-reports/c-report-settings/assets/lift-screenshot-new.png)
 
 ## How are Lift Bounds Calculated? {#section_1D360781D972483693680BE0F07AEAD1}
 

@@ -1,6 +1,6 @@
 ---
 description: Information about how the Target at.js JavaScript library prevents flicker during page or app load.
-keywords: flicker;Target Standard;at.js;implementation
+keywords: flicker;at.js;implementation
 seo-description: Information about how the Adobe Target at.js JavaScript library prevents flicker during page or app load.
 seo-title: How Adobe Target at.js manages flicker
 solution: Target
@@ -15,7 +15,7 @@ Information about how the Target at.js JavaScript library prevents flicker durin
 
 Flicker happens when default content momentarily displays to visitors before it is replaced by the activity content. Flicker is undesirable because it can be confusing to visitors.
 
-## Using an Auto Created Global mbox {#section_C502170D551C4F52AAFD8E82C41BB63A}
+## Using an auto-created global mbox {#section_C502170D551C4F52AAFD8E82C41BB63A}
 
 If you enable the [Auto Create Global Mbox](../../../c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-understanding-global-mbox/understanding-global-mbox.md#concept_76AC0EC995A048238F3220F53773DB13) setting when configuring at.js, at.js manages flicker by changing the opacity setting as the page loads. When at.js loads, it will change the opacity setting of the <body> element to "0", making the page initially invisible to visitors. After a response from Target is received—or if an error with the Target request is detected—at.js resets opacity to "1". This ensures that the visitor only sees the page after your activities' content has been applied.
 
@@ -99,11 +99,11 @@ Instead of the default:
 body {opacity: 0 !important}
 ```
 
-## Managing Flicker in at.js 2.x for triggerView()
+## Manage flicker in at.js 2.x for triggerView()
 
 When using `triggerView()` to show targeted content in your SPA, flicker management is provided out of the box. This means that pre-hiding logic does not need to be added manually. Instead, at.js 2.x pre-hides the location where your view needs to be shown before applying the targeted content.
 
-## Managing Flicker with getOffer() and applyOffer()
+## Manage flicker with getOffer() and applyOffer()
 
 Because both `getOffer()` and `applyOffer()` are low-level APIs, there is no built-in flicker control. You can pass a selector or HTML element as an option to `applyOffer()`, in this case `applyOffer()` adds the activity content to this particular element; however, you must make sure the element is properly pre-hidden before invoking `getOffer()` and `applyOffer()`.
 
@@ -126,7 +126,7 @@ adobe.target.getOffer({
 });
 ```
 
-## Using a regional mbox with mboxCreate() in At.js 1.x (not supported in at.js 2.x)
+## Using a regional mbox with mboxCreate() in at.js 1.x (not supported in at.js 2.x)
 
 If you use a regional mbox implementation, you can use `mboxCreate()` with your page provisioned similar to the following sample code:
 

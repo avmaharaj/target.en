@@ -46,3 +46,7 @@ There are several things to consider when selecting elements:
 * In the Mobile App VEC, only those elements that have a click handler attached are allowed to be selected. 
 * You can browse to any section of the app, but make sure that [views](/help/c-target-mobile-app/c-mobile-visual-experience-composer/mobile-visual-experience-composer.md#target-views) are defined for the section where you are selecting elements for click tracking. 
 * While editing an activity, if the device is already selected in Step 1, you don't need to select the device again. However, if you land directly on the click-track page, you will be shown the device selection screen to select an authorized device.
+* A Modifications panel displays in the Mobile App VEC that displays the elements you have set up for click-tracking.
+
+  ![Modifications panel showing click-tracking
+](/help/c-target-mobile-app/c-mobile-visual-experience-composer/assets/click-track-modifications-panel.png)

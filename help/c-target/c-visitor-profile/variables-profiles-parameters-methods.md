@@ -89,4 +89,4 @@ This page lists profiles, variables, and parameters that are useful in profile s
 
 Customer attributes can be referenced in profile scripts, formatted as `crs.get('<Datasource Name>.<Attribute name>')`.
 
-These attributes are also available as tokens in profile scripts and directly in offers without first requiring a profile script. The token should be in the form: `$crs.datasourceName.attributeName`.
+These attributes are also available as tokens in profile scripts and directly in offers without first requiring a profile script. The token should be in the form: `${crs.datasourceName.attributeName}`. Note that spaces in the `datasourceName` should be stripped from any API call.

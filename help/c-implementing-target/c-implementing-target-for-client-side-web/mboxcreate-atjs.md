@@ -1,6 +1,6 @@
 ---
 description: Information about the mboxCreate(mbox,params) function for at.js. 
-keywords: adobe.target.notification;element;selector;notification;extension
+keywords: mboxCreate;mboxcreate;mbox create;at.js;functions;function
 seo-description: Information about the mboxCreate(mbox,params) function for the Adobe Target at.js JavaScript library.
 seo-title: Information about the mboxCreate(mbox,params) function for the Adobe Target at.js JavaScript library.
 solution: Target

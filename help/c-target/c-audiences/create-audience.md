@@ -23,13 +23,13 @@ When you combine rules or parameters with OR, any potential audience member need
 
 You can mix both boolean operators to create complex rules; however, operators at the same rule level must match. The user interface automatically applies the correct operator.
 
-For example, the following rule targets visitors who use either Chrome or Firefox on a Windows computer:
+For example, the following rule targets visitors who use either Chrome *or* Firefox on a Windows computer:
 
-![](assets/audience_create.png)
+![Create audience](assets/audience_create.png)
 
 >[!NOTE]
 >
->Be careful to avoid creating rules that exclude all potential audience members. For example, it is not possible for someone to visit a page using browser x AND browser y simultaneously.
+>Be careful to avoid creating rules that exclude all potential audience members. For example, it is not possible for someone to visit a page using Chrome *and* Firefox simultaneously.
 
 ## Create a new audience
 

@@ -1,7 +1,7 @@
 ---
 description: The Redirect Offer causes a browser to redirect to a new page.
 keywords: redirect offer;create redirect offer;add html offer;Pass all URL parameters in redirect;Pass mboxSessionId in redirect (only needed when the redirect is going to a different domain)
-seo-description: The Redirect Offer causes a browser to redirect to a new page.
+seo-description: Information about redirect offers in Adobe Target that cause a browser to redirect to a new page.
 seo-title: Create redirect offers
 solution: Target
 title: Create redirect offers
@@ -18,8 +18,6 @@ You might have two completely different pages to test instead of just changing p
 >[!NOTE] {class="- topic/note "}
 >
 >You cannot use redirect offers in ajax mboxes ( `mboxUpdate`).
-
->[!NOTE]
 >
 >For redirect offers in activities using A4T, your implementation must meet certain minimum requirements. In addition, there is important information that you need to know. For more information, see [Redirect Offers - A4T FAQ](../../c-integrating-target-with-mac/a4t/r-a4t-faq/a4t-faq-redirect-offers.md#concept_21BF213F10E1414A9DCD4A98AF207905).
 
@@ -60,7 +58,7 @@ The redirect offer executes JavaScript code to redirect the browser. It uses the
 
 This video includes information about managing content.
 
-* Connection between the [Experience Cloud Asset Library](https://marketing.adobe.com/resources/help/en_US/mcloud/creative_cloud.html) and the Target Content Library 
+* Connection between the [Experience Cloud Asset Library](https://docs.adobe.com/content/help/en/core-services/interface/assets/creative-cloud.html) and the Target Content Library 
 * Custom HTML Offers 
 * Custom HTML Offer in the Visual Experience Composer
 

@@ -25,6 +25,44 @@ The following diagram illustrates page-load performance using mbox.js versus at.
 
 As illustrated above, using mbox.js, page content does not begin to load until after the [!DNL Target] call is complete. Using at.js, page content begins loading when the [!DNL Target] call is initiated and does not wait until the call is complete.
 
+## What is the impact of at.js and mbox.js on page-load time? {#page-load}
+
+Many customers and consultants want to know the impact of [!DNL at.js] and [!DNL mbox.js] on page-load time, especially in the context of new vs returning users. Unfortunately, it's hard to measure and give concrete numbers regarding how [!DNL at.js] or [!DNL mbox.js] influence page-load time due to each customer's implementation.
+
+However, if the Visitor API is present on the page, we can better understand how [!DNL at.js] and [!DNL mbox.js] influence page-load time.
+
+>[!NOTE]
+>
+>The Visitor API and [!DNL at.js] or [!DNL mbox.js] have an impact on page-load time only when you are using the global mbox (because of the body-hiding technique). Regional mboxes are not impacted by Visitor API integration.
+
+The following sections describe the sequence of actions for new and returning visitors:
+
+### New visitors
+
+1. The Visitor API is loaded, parsed, and executed.
+1. at.js / mbox.js is loaded, parsed, and executed.
+1. If global mbox auto-create is enabled, the Target JavaScript library:
+
+   * Instantiates the Visitor object.
+   * The Target library tries to retrieve Experience Cloud Visitor ID data.
+   * Because this is a new visitor, the Visitor API fires a cross-domain request to demdex.net.
+   * After Experience Cloud Visitor ID data is retrieved, a request to Target is fired.
+
+### Returning Visitors
+
+1. The Visitor API is loaded, parsed, and executed.
+1. at.js / mbox.js is loaded, parsed, and executed.
+1. If global mbox auto-create is enabled, the Target JavaScript library:
+
+   * Instantiates the Visitor object.
+   * The Target library tries to retrieve Experience Cloud Visitor ID data.
+   * The Visitor API retrieves data from cookies.
+   * After Experience Cloud Visitor ID data is retrieved, a request to Target is fired.
+
+>[!NOTE]
+>
+>For new visitors, when the Visitor API is present, Target has to go over the wire multiple times to make sure that Target requests contain Experience Cloud Visitor ID data. For returning visitors, Target goes over the wire only to Target to retrieve the personalized content. 
+
 ## Why does it seem like I see slower response times after upgrading from a previous version of at.js to version 1.0.0? {#section_DFBA5854FFD142B49AD87BFAA09896B0}
 
 [!DNL at.js] version 1.0.0 and later fires all the requests in parallel. Previous versions execute the requests sequentially, meaning the requests are put in a queue and Target waits for first request to complete before moving on to the next request.
@@ -41,10 +79,6 @@ From a response-time perspective, mathematically, this can be summed like this
 </ul>
 
 As you can see, [!DNL at.js] 1.0.0 will complete the requests faster. In addition, [!DNL at.js] requests are asynchronous, so Target doesn't block page rendering. Even if requests take seconds to complete, you will still see the rendered page, only some portions of the page will be blanked out until Target gets a response from the Target edge.
-
-## What is the impact of at.js on page-load times? {#section_90B3B94FE0BF4B369577FCB97B67F089}
-
-For more information, see [Understanding the Target JavaScript Libraries](../../../c-implementing-target/c-considerations-before-you-implement-target/target-implement.md#concept_60B748DE4293488F917E8F1FA4C7E9EB).
 
 ## Can I load the Target library asynchronously? {#section_AB9A0CA30C5440C693413F1455841470}
 

@@ -18,11 +18,11 @@ After you have created a rule, click **[!UICONTROL Save]**. A summary of the rul
 
 You can further refine a rule by adding more conditions or by creating additional rules in other categories. For example, to target only Firefox users from San Francisco who accessed your site from Google, set the [!UICONTROL Geo] category to target users from San Francisco, the [!UICONTROL Visitor Behavior] category to Firefox, and the [!UICONTROL Traffic Sources] category to Google. All of the rules created across categories are combined with "AND." To create complex targeting rules that include "OR" operations across categories, create an expression target.
 
-You can also target custom profile parameters and `user.` parameters. When adding an audience, click **[!UICONTROL Visitor Profile]**, then under [!UICONTROL Custom User Parameters] or [!UICONTROL Custom Profile Parameters] in the [!UICONTROL Visitor Profile] drop-down list, choose the parameter you use want to use to target your activity. If the desired parameter does not appear, the parameter has not been fired by an mbox. Other custom mbox parameters are available in the [!UICONTROL Custom Parameters] drop-down list.
+You can also target custom profile parameters and `user.` parameters. When adding an audience, click **[!UICONTROL Visitor Profile]**, then choose the parameter you use want to use to target your activity. If the desired parameter does not appear, the parameter has not been fired by an mbox. Other custom mbox parameters are available in the [!UICONTROL Custom Parameters] drop-down list.
 
 Use the search box to search your [!UICONTROL Audiences] list. You can search for any part of an audience name, or you can enclose a specific string in quotes.
 
-You can sort the Audience list by audience name or by the date when it was last modified.
+You can sort the Audience list by audience name or by the date when it was last modified. To sort by name or date, click the column header, then select to display audiences in ascending or descending order.
 
 ## Training video: Creating Audiences
 
@@ -32,4 +32,3 @@ This video includes information about using audience categories.
 * Define audience categories
 
 >[!VIDEO](https://video.tv.adobe.com/v/17392)
-

@@ -27,7 +27,7 @@ The way Target responds to calls from your page depends on the version of the Ta
 
 **Target Release:** 17.7.1
 
-[!DNL mbox.js] version 63 is now available. For more information, see [Download mbox.js](https://marketing.adobe.com/resources/help/en_US/target/ov/t_target-download-config-mbox.html).
+[!DNL mbox.js] version 63 is now available. For more information, see [Download mbox.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/target-download-config-mbox.md).
 
 The following enhancements and fixes are included in [!DNL mbox.js] version 63:
 
@@ -243,7 +243,7 @@ mboxParameter function now works in Target Standard and Premium.
 
 Fixed an issue that kept Analytics tracking from working in IE 9 & 11. This change only affects users of Analytics.
 
-Now you can [pass in parameters](https://marketing.adobe.com/resources/help/en_US/target/ov/c_pass_parameters_to_global_mbox.html) as an array, as a JSON object, or as a comma-delimited list (previously supported) to target-global-mbox using the targetPageParams() function.
+Now you can [pass in parameters](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-understanding-global-mbox/pass-parameters-to-global-mbox.md) as an array, as a JSON object, or as a comma-delimited list (previously supported) to target-global-mbox using the targetPageParams() function.
 
 Renamed M2PcId and everything related to VisitorId.
 

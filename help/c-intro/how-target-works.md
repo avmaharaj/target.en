@@ -16,7 +16,7 @@ Information about how Adobe Target works, including information about the Target
 
 ## Target JavaScript libraries {#libraries}
 
-Adobe Target integrates with websites by means of one of two JavaScript libraries. at.js or mbox.js
+Adobe Target integrates with websites by means of one of two JavaScript libraries: at.js or mbox.js
 
 * **at.js:** The [at.js library](../c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-target-atjs-implementation/target-atjs-implementation.md#concept_8AC8D169E02944B1A547A0CAD97EAC17) is the new implementation library for Target. The at.js library improves page-load times for web implementations and provides better implementation options for single-page applications. at.js is the recommended implementation library and is updated frequently with new capabilities. We recommend that all customers implement or migrate to the [latest version of at.js](../c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md#reference_DBB5EDB79EC44E558F9E08D4774A0F7A). 
 * **mbox.js:** The mbox.js library is the legacy implementation library for Target. The mbox.js library is still supported, but there will be no feature updates.
@@ -25,13 +25,13 @@ Adobe Target integrates with websites by means of one of two JavaScript librarie
 >
 >All customers should migrate to at.js. For more information, see [Migrate to at.js from mbox.js](../c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-target-atjs-implementation/target-migrate-atjs.md#task_DE55DCE9AC2F49728395665DE1B1E6EA)
 
-You must reference one of the Target JavaScript files on every page on your site. For example, you might add it to your global header.
+You must reference the Target JavaScript library file on every page on your site. For example, you might add it to your global header. Alternatively, consider using [Adobe Launch tag manager](/help/c-implementing-target/c-implementing-target-for-client-side-web/how-to-deployatjs/cmp-implementing-target-using-adobe-launch.md) 
 
-Each time a visitor requests a page that has been optimized for Target, a request is sent to the targeting system to determine what content to serve to a visitor. This process occurs in real-time—every time a page is loaded, a request for the content is made and fulfilled by the system. The content is governed by the rules of marketer-controlled activities and experiences and is targeted to the individual site visitor. Content is served that each site visitor is most likely to respond to, interact with, and ultimately purchase, to maximize response rates, acquisition rates, and revenue.
+Each time a visitor requests a page that has been optimized for Target, a request is sent to the targeting system to determine what content to serve to a visitor. This process occurs in real-time — every time a page is loaded, a request for the content is made and fulfilled by the system. The content is governed by the rules of marketer-controlled activities and experiences and is targeted to the individual site visitor. Content is served that each site visitor is most likely to respond to, interact with, and ultimately purchase, to maximize response rates, acquisition rates, and revenue.
 
-In Target, each element on the page is part of a single experience for the entire page. Each experience includes multiple elements on the page. A page is optimized with a single line of code in the `<head>` of each page you want to track.
+In Target, each element on the page is part of a single experience for the entire page. Each experience may include multiple elements on the page.
 
-The content that displays to visitors depends on the type of activity you create:
+The content that is displayed to visitors depends on the type of activity you create:
 
 ### A/B Test
 
@@ -44,7 +44,7 @@ You can specify percentage targets for each experience. In this case, a random n
 1. A customer requests a page from your server and it displays in the browser.
 2. A first party cookie is set in the customer's browser to store customer behavior.
 3. The page calls the targeting system.
-4. Content displays based on the rules of your campaign.
+4. Content displays based on the rules of your activity.
 
 ### Auto-Allocate
 
@@ -56,7 +56,7 @@ Auto Allocate identifies a winner among two or more experiences and automaticall
 
 See [Auto-Target](../c-activities/auto-target-to-optimize.md#concept_67779E5B7F67427A97D7EA2A6FB919B3) for more information.
 
-Auto-Target uses advanced machine learning to select from multiple high-performing marketer-defined experiences, and serves the most tailored experience to each visitor based on his or her individual customer profile and the behavior of previous visitors with similar profiles, in order to personalize content and drive conversions.
+Auto-Target uses advanced machine learning to select from multiple high-performing marketer-defined experiences, and serves the most tailored experience to each visitor based on their individual customer profile and the behavior of previous visitors with similar profiles, in order to personalize content and drive conversions.
 
 ### Automated Personalization (AP)
 
@@ -88,27 +88,31 @@ Recommendations activities automatically display products or content that might 
 
 “Edge” is a geographically distributed serving architecture that ensures optimum response times for end-users requesting content, regardless of where they are located around the globe.
 
-To improve response times, Edge environments house only activity logic and cached profile and offer information. Activity and content databases, [!DNL Analytics] data, APIs, and marketer user interfaces are housed in Adobe’s central data environments. Updates are then sent to the Edge nodes. The central environments and Edge nodes are automatically synched to continually update cached activity data. 1:1 modeling is also stored at each edge, so those more complex requests can also stay on the Edge.
+To improve response times, Edge environments host only activity logic and cached profile and offer information. Activity and content databases, [!DNL Analytics] data, APIs, and marketer user interfaces are housed in Adobe’s central data environments. Updates are then sent to the Edge nodes. The central environments and Edge nodes are automatically synced to continually update cached activity data. 1:1 modeling is also stored on each edge, so those more complex requests can also be processed on the Edge.
 
 Each Edge node has all the information required to respond to the user's content request, and track analytics data on that request. User requests are routed to the nearest Edge node.
 
-![](assets/edge_network.png)
+![Map with core edge sites and edge sites](assets/edge_network.png)
 
-Core Edge site locations contain both a data collection center and a data processing center. Edge site locations contain only a data collection center. Each report suite is assigned to a specific data processing center.
+The source for this mage is the [Adobe Target Security Overview](https://www.adobe.com/content/dam/acom/en/security/pdfs/AdobeTargetSecurityOverview.pdf) white paper.
 
-Adobe currently has data centers on several continents, including multiple regional locations across North America, Europe, and Asia.
+The Adobe Target solution is hosted on Adobe-owned and Adobe-leased data centers around the globe. Admin Servers are hosted entirely within Adobe-owned data centers in London, Singapore, and multiple locations throughout the U.S, including Oregon and Virginia. Edge Servers are hosted both on Adobe-owned and Adobe-leased servers in Amazon AWS data centers in London, Hong Kong, Singapore, Tokyo, and Sydney.
 
-Rather than respond to all targeting requests from a single location, requests from the Edge environment closest to the point of request mitigate the impact of network/Internet travel time.
+Admin Server locations contain both a data collection center and a data processing center. Edge site locations contain only a data collection center. Each report suite is assigned to a specific data processing center.
 
-The network also serves as a fail-over mechanism. If one edge node is not functioning, the request is redirected to the next nearest node, to ensure that the user is not served default content (a typical backup response when a request cannot be completed). 
+Rather than respond to all targeting requests from a single location, requests are processed by the Edge environment closest to the visitor, thus mitigating the impact of network/Internet travel time.
+
+>[!IMPORTANT]
+>
+>[!DNL Adobe Target] currently doesn’t have an Edge network in China and the end-user performance will continue to be limited for [!DNL Target] customers in China. Because of the Great Firewall and the lack of Edge nodes within the country, the experiences of sites with [!DNL Target] deployed will be slow to render and page loads will be affected. Also, marketers may experience latency when using the [!DNL Target] Authoring UI.
 
 ## Protected User Experience {#concept_40A5E781D90A41E4955F80EA9E5F8F96}
 
 Adobe ensures that the availability and performance of the targeting infrastructure is as reliable as possible. However, a communication breakdown between an end-user’s browser and Adobe’s servers can cause an interruption in content delivery.
 
-To safeguard against service interruptions and connectivity issues, all locations are set up to include default content (defined by the client), which is surfaced if the user’s browser cannot connect to [!DNL Target].
+To safeguard against service interruptions and connectivity issues, all locations are set up to include default content (defined by the client), which is displayed if the user’s browser cannot connect to [!DNL Target].
 
-No changes are made to the page if the user’s browser cannot connect within a defined timeout period (by default,15 seconds). If this timeout threshold is reached, a setting is changed in the cookie so the user sees default content for all other locations immediately. This state lasts for a half hour, after which the user’s browser again attempts to contact Adobe’s servers for content requests.
+No changes are made to the page if the user’s browser cannot connect within a defined timeout period (by default: 15 seconds). If this timeout threshold is reached, default location content is displayed.
 
 Adobe protects the user experience by optimizing and safeguarding performance.
 
@@ -152,7 +156,7 @@ Guidelines were presented in a [Google Webmaster Central Blog](https://webmaster
 
   It's also important to consider the accessibility of the page you're testing. If the page is not accessible to the search engines and was never designed to rank in organic search in the first place, such as a dedicated landing page for an email campaign, then none of the considerations above apply.
 
-Googles states that following these guidelines "should result in your tests having little or no impact on your site in search results."
+Google states that following these guidelines "should result in your tests having little or no impact on your site in search results."
 
 In addition to these guidelines, Google also provides one more guideline in the documentation to their Content Experiments tool:
 
@@ -160,4 +164,17 @@ In addition to these guidelines, Google also provides one more guideline in the 
 
 Google states as an example that "if a site's original page is loaded with keywords that don't relate to the combinations being shown to users, we may remove that site from our index."
 
-We feel that it would be difficult to unintentionally change the meaning of the original content within test variations, but we do recommend being aware of the keyword themes on a page and maintaining those themes. Changes to page content, especially adding or deleting relevant keywords, can result in ranking changes for the URL in organic search. We recommend that you engage with your SEO partner as part of your testing protocol. 
+We feel that it would be difficult to unintentionally change the meaning of the original content within test variations, but we do recommend being aware of the keyword themes on a page and maintaining those themes. Changes to page content, especially adding or deleting relevant keywords, can result in ranking changes for the URL in organic search. We recommend that you engage with your SEO partner as part of your testing protocol.
+
+## Bots {#bots}
+
+Adobe Target uses [DeviceAtlas](https://deviceatlas.com/) to detect known bots. Traffic that is identified as being generated by a bot is still served content, like a regular user, to ensure it is in line with SEO guidelines. Using bot traffic can skew A/B tests or personalization algorithms if they are treated like normal users. Therefore, if a known bot is detected in your Target activity, the traffic is treated slightly differently. Removing bot traffic provide a more accurate measurement of user activity.
+
+Specifically, for known bot traffic Target does not:
+
+* Create or retrieve a visitor profile
+* Log any profile attributes or execute profile scripts
+* Look up Adobe Audience Manager (AAM) segments (if applicable)
+* Use bot traffic in modeling and serving personalized content for Recommendations, Auto Target, Automated Personalization, or Auto Allocate activities
+* Log an activity visit for reporting
+* Log data to be sent to the Adobe Experience Cloud platform

@@ -1,8 +1,8 @@
 ---
-description: Profile attributes are parameters that are specific to the visitor. These attributes are stored in the visitor's profile to provide information about the visitor that can be used in your campaigns.
-keywords: Profile script;profile script attributes;profile script best practices;debug;debugging
-seo-description: Profile attributes are parameters that are specific to the visitor. These attributes are stored in the visitor's profile to provide information about the visitor that can be used in your campaigns.
-seo-title: Profile attributes
+description: Profile attributes are parameters that are specific to the visitor. These attributes are stored in the visitor's profile to provide information about the visitor that can be used in your Adobe Target activities.
+keywords: Profile script;profile script attributes;profile script best practices;debug;debugging;scripts;profile scripts;attributes;attribute;parameter
+seo-description: Profile attributes are parameters that are specific to the visitor. These attributes are stored in the visitor's profile to provide information about the visitor that can be used in your Adobe Target activities.
+seo-title: Profile attributes in Adobe Target
 solution: Target
 title: Profile attributes
 topic: Advanced,Standard,Classic
@@ -11,21 +11,19 @@ uuid: a76ed523-32cb-46a2-a2a3-aba7f880248b
 
 # Profile attributes{#profile-attributes}
 
-Profile attributes are parameters that are specific to the visitor. These attributes are stored in the visitor's profile to provide information about the visitor that can be used in your campaigns.
+Profile attributes are parameters that are specific to a visitor. These attributes are stored in the visitor's profile to provide information about the visitor that can be used in your activities.
 
-## Profile attributes {#concept_01A30B4762D64CD5946B3AA38DC8A201}
-
-Profile attributes are parameters that are specific to the visitor. These attributes are stored in the visitor's profile to provide information about the visitor that can be used in your campaigns. 
-
-As the visitor browses, or when the visitor returns for another session, the saved profile attributes can be used to target content, or log information for segment filtering.
+As a visitor browses your website, or when the visitor returns for another session, the saved profile attributes can be used to target content or log information for segment filtering.
 
 To set up profile attributes, click **[!UICONTROL Audiences]** > **[!UICONTROL Profile Scripts.]**
+
+![Profile Scripts tab](/help/c-target/c-visitor-profile/assets/profile-scripts.png)
 
 The following types of profile attributes are available:
 
 | Parameter Type | Description |
 |--- |--- |
-|Mbox|Passed in directly through page code when creating the mbox. See [Pass Parameters to a Global Mbox](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-understanding-global-mbox/pass-parameters-to-global-mbox.md).<br>Note:   Target  has a limit of 50 unique profile attributes per mbox call. If you need to pass more than 50 profile attributes to  Target , you can pass them using the  Profile Update  API method. For more information, see [Profile Update  in the Adobe Target API documentation](http://developers.adobetarget.com/api/#updating-profiles).|
+|mbox|Passed in directly through page code when creating the mbox. See [Pass Parameters to a Global Mbox](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-understanding-global-mbox/pass-parameters-to-global-mbox.md).<br>**Note**: Target has a limit of 50 unique profile attributes per mbox call. If you need to pass more than 50 profile attributes to  Target, you can pass them using the  Profile Update  API method. For more information, see [Profile Update  in the Adobe Target API documentation](http://developers.adobetarget.com/api/#updating-profiles).|
 |Script|Defined directly with a JavaScript code snippet. These can store running totals like total money spent by consumer and are executed on each mbox request. See Profile Script Attributes below.|
 
 ## Profile script attributes {#concept_8C07AEAB0A144FECA8B4FEB091AED4D2}
@@ -52,7 +50,7 @@ To copy an existing profile script, from the [!UICONTROL Profile Scripts] list, 
 
 You can then edit the audience to create a similar audience.
 
-![](assets/profile-script.png)
+![Create Profile Script dialog box](assets/profile-script.png)
 
 Profile scripts run profile attribute "catchers" on each location request. When a location request is received, Target determines which activity should run and displays content that is appropriate to that activity and that experience, tracks the success of the activity, and runs any relevant profile scripts. This enables you to track information about the visit, such as the visitor's location, time of day, number of times that visitor has been to the site, if they've purchased before and so on. This information is then added to the visitor's profile so you can better track that visitor's activity on your site.
 
@@ -68,7 +66,7 @@ if (mbox.name == 'Track_Interest') {
 
 * Refer to profile script attributes (including itself) in the code with `user.get('parameterName')` 
 * Save variables that may be accessed the next time the script is run (on the next mbox request) with `user.setLocal('variable_name', 'value')`. Reference the variable with `user.getLocal('variable_name')`. This is useful for situations where you want to reference the date and time of the last request. 
-* Parameters and values are case sensitive. Match the case of the parameters and values you will receive during the campaign or test. 
+* Parameters and values are case sensitive. Match the case of the parameters and values you will receive during the activity or test. 
 * See the "JavaScript reference for script profile parameters" section below for more JavaScript syntax.
 
 ## Viewing profile script information cards {#section_18EA3B919A8E49BBB09AA9215E1E3F17}
@@ -79,11 +77,11 @@ For example, the following profile script information card is accessed by hoveri
 
 The [!UICONTROL Script Info] tab contains the following information: Name, Status, Token Type, Script ID , Change Log, and Description.
 
-![](assets/profile_script_info_card.png)
+![Profile Script info card](assets/profile_script_info_card.png)
 
 The [!UICONTROL Script Usage] tab lists the activities (and their workspaces) that reference the selected profile script.
 
-![](assets/profile_script_info_card_usage_tab.png)
+![Profile Script info card > Script Usage tab](assets/profile_script_info_card_usage_tab.png)
 
 >[!Note] 
 >
@@ -111,7 +109,7 @@ Typical reasons for the system to disable profile scripts include the following:
 * Too many JavaScript instructions are used. Target has limit of 2,000 JavaScript instructions per script, but this cannot simply be calculated by manually reading the JavaScript. For example, Rhino treats all function calls and "new" calls as 100 instructions. Also, the size of any entry data, such as URL values, can impact the instructions count. 
 * Not following items highlighted in the [best practices](../../c-target/c-visitor-profile/profile-parameters.md#section_64AFE5D2B0C8408A912FC2A832B3AAE0) section below.
 
-## Best practices {#section_64AFE5D2B0C8408A912FC2A832B3AAE0}
+## Best practices {#best}
 
 The following guidelines are meant to help write simplified profile scripts that are as error-failing-free as possible by writing code that fails gracefully so the scripts are processed without forcing a system-script-halt. These guidelines are a result of best practices that have been proven to run efficiently. These guidelines are to be applied alongside principles and recommendations drawn by the Rhino development community.
 
@@ -121,7 +119,8 @@ The following guidelines are meant to help write simplified profile scripts that
 * Use limited for loops vs. open ended for or while loops. 
 * Do not exceed 1,300 characters or 50 loop iterations. 
 * Do not exceed 2,000 JavaScript instructions. Target has limit of 2,000 JavaScript instructions per script, but this cannot simply be calculated by manually reading the JavaScript. For example, Rhino treats all function calls and "new" calls as 100 instructions. Also, the size of any entry data, such as URL values, can impact the instructions count. 
-* Be mindful of not only the script performance, but the combined performance of all scripts. As best practice, we recommend fewer than 5,000 instructions in total. Counting the number of instructions is not obvious, but the important thing to note is that scripts exceeding 2 KB are automatically disabled. There is no set limit to the number of scripts you can run, but each script is executed with every single mbox call. Run only as many scripts as needed. 
+* Be mindful of not only the script performance, but the combined performance of all scripts. As best practice, we recommend fewer than 5,000 instructions in total. Counting the number of instructions is not obvious, but the important thing to note is that scripts exceeding 2 KB are automatically disabled. There is no set limit to the number of scripts you can run, but each script is executed with every single mbox call. Run only as many scripts as needed.
+* In a regex, having dot-star in the beginning (e.g.: `/.*match/`, `/a|.*b/`) is almost never needed. The regex search starts from all positions in a string (unless bound with `^`), so dot-star is already assumed. The script execution can be interrupted if such a regex is matched to a long enough input data (which can be as low as several hundred characters).
 * If all fails, wrap script in a try/catch. 
 * See the JS Rhino engine documentation for more information: [https://www.mozilla.org/rhino/doc.html](https://www.mozilla.org/rhino/doc.html).
 
@@ -145,7 +144,7 @@ To sort visitors into groups that each see a different activity, you must create
 ```
 if (!user.get('twogroups')) { 
     var ran_number = Math.floor(Math.random() * 99); 
-    if (ran_number < = 49) { 
+    if (ran_number <= 49) { 
         return 'GroupA'; 
     } else { 
         return 'GroupB'; 
@@ -176,11 +175,11 @@ For example, to create four groups, use the following JavaScript:
 ```
 if (!user.get('fourgroups')) { 
     var ran_number = Math.floor​(Math.random() * 99); 
-    if (ran_number < = 24) { 
+    if (ran_number <= 24) { 
         return 'GroupA'; 
-    } else if (ran_number < = 49) { 
+    } else if (ran_number <= 49) { 
         return 'GroupB'; 
-    } else if (ran_number < = 74) { 
+    } else if (ran_number <= 74) { 
         return 'GroupC'; 
     } else { 
         return 'GroupD'; 
@@ -203,9 +202,9 @@ For example, to place visitors in three equal groups, use the following code:
 ```
 if (!user.get('threegroups')) { 
     var ran_number = Math.random() * 99; 
-    if (ran_number < = 32.33) { 
+    if (ran_number <= 32.33) { 
         return 'GroupA'; 
-    } else if (ran_number < = 65.66) { 
+    } else if (ran_number <= 65.66) { 
         return 'GroupB'; 
     } else { 
         return 'GroupC'; 

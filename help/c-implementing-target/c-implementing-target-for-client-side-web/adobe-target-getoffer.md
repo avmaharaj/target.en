@@ -1,6 +1,6 @@
 ---
-description: Information about the adobe.target.getOffer(options) function for at.js. 
-keywords: adobe.target.notification;element;selector;notification;extension
+description: Information about the adobe.target.getOffer() function for at.js. 
+keywords: adobe.target.getOffer;getOffer;getoffer;get offer;at.js;functions;function
 seo-description: Information about the adobe.target.getOffer(options) function for the Adobe Target at.js JavaScript library.
 seo-title: Information about the adobe.target.getOffer(options) function for the Adobe Target at.js JavaScript library.
 solution: Target

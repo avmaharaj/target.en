@@ -1,8 +1,8 @@
 ---
-description: Target mobile devices based on parameters such as mobile device, type of device, device vendor, screen dimensions (by pixels), and more.
+description: Create audiences to target mobile devices based on parameters such as mobile device, type of device, device vendor, screen dimensions (by pixels), and more.
 keywords: targeting;mobile;target mobile;deviceatlas;iphone;iphone models;device atlas;displaywidth;display width;display height;type of device;displayheight;phone;tablet;device model
-seo-description: Target mobile devices based on parameters such as mobile device, type of device, device vendor, screen dimensions (by pixels), and more.
-seo-title: Mobile
+seo-description: Create audiences to in Adobe Target to target mobile devices based on parameters such as mobile device, type of device, device vendor, screen dimensions (by pixels), and more.
+seo-title: Mobile audience in Adobe Target
 solution: Target
 title: Mobile
 topic: Standard
@@ -11,7 +11,7 @@ uuid: a731e8c0-e9c1-4971-95b7-882cefcabfc7
 
 # Mobile{#mobile}
 
-Target mobile devices based on parameters such as mobile device, type of device, device vendor, screen dimensions (by pixels), and more.
+Create audiences to target mobile devices based on parameters such as mobile device, type of device,device vendor, screen dimensions (by pixels), and more.
 
 For example, you might want to show different content to users who enter your page from a phone than you would if they visit from a computer. In that case, you could select the Mobile audience, then select the **[!UICONTROL Is Mobile Phone]** option, then add any specific details that are important to you, such as the type of phone, size of the screen (in pixels), and so on.
 
@@ -40,9 +40,6 @@ Customers who are using a custom integration (not using at.js or the Mobile SDK)
 1. In the [!DNL Target] interface, click **[!UICONTROL Audiences]** > **[!UICONTROL Create Audience]**. 
 1. Name the audience. 
 1. Click **[!UICONTROL Add Rule]** > **[!UICONTROL Mobile]**.
-
-   ![](assets/target_mobile.png)
-
 1. Click **[!UICONTROL Select]**, then select one of the following options:
 
     * Device Marketing Name 
@@ -57,10 +54,20 @@ Customers who are using a custom integration (not using at.js or the Mobile SDK)
 
    >[!NOTE]
    >
+   >Due to the new changes introduced in iOS 12.2, creating an audience with rules defined by Device Marketing Name and Device Model that specify iPhone Models is impacted. We can no longer target users who have iPhones with iOS 12.2 installed on them. However, if those users do not have iOS 12.2, then the iPhone Model targeting continues to work correctly.
+   >
+   >The iOS 12.2 update does not affect the identification of the following models because these models do not support upgrading to iOS 12.2: iPhone, iPhone 3G, iPhone 3GS, iPhone 4, iPhone 4s, iPhone 5, iPhone 5c, iPad, iPad 2, iPad / Retina display, iPad Retina (4th Gen), iPod Touch 4, and iPod Touch 5.
+
+   >[!NOTE]
+   >
    >You can target by mobile device carrier using the [Geo settings](../../../c-target/c-audiences/c-target-rules/geo.md#concept_5B4D99DE685348FB877929EE0F942670).
 
 1. (Optional) Click **[!UICONTROL Add Rule]** and set up additional rules for the audience. 
 1. Click **[!UICONTROL Save]**.
+
+The following illustration shows an audience targeting visitors using devices manufactured by Google that are a mobile devices.
+
+![Target mobile devices](assets/target_mobile.png)
 
 ## Training video: Creating Audiences
 

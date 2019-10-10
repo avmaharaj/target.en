@@ -167,7 +167,7 @@ Currently, the logic favors visitors that convert quickly or visit more often. T
 
 **Can I use the sample size calculator when using Auto-Allocate to estimate how long the activity will take to identify the winner?**
 
-You can use the existing [sample size calculator](https://docs.adobe.com/content/target-microsite/testcalculator.html) with Bonferroni correction appropriately applied to get an estimate of how long the test will run. In our experiments, we’ve seen the Auto-Allocate activity end much sooner than this sample size. 
+You can use the existing [sample size calculator](https://docs.adobe.com/content/target-microsite/testcalculator.html) with Bonferroni correction appropriately applied to get an estimate of how long the test will run. Using the calculator for an Auto-Allocate activity is optional because Auto-Allocate will declare a winner for you. The calculator gives you a rough estimate of the sample size needed. In our experiments, we’ve seen the Auto-Allocate activity end much sooner than this sample size.
 
 **Should I remove an underperforming experience from an Auto-Allocate activity to speed the process of determining a winner?**
 

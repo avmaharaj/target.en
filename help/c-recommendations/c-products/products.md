@@ -1,8 +1,8 @@
 ---
 description: Entities refer to the items you want to recommend. Entities can be anything such as products, content (such as articles, slide shows, images, movies, and tv shows), job listings, restaurants, and so forth.
 keywords: product;collections
-seo-description: Entities refer to the items you want to recommend. Entities can be anything such as products, content (such as articles, slide shows, images, movies, and tv shows), job listings, restaurants, and so forth.
-seo-title: Entities
+seo-description: Entities refer to the items you want to recommend using Adobe Target. Entities can be anything such as products, content (such as articles, slide shows, images, movies, and tv shows), job listings, restaurants, and so forth.
+seo-title: Entities in Adobe Target
 solution: Target
 title: Entities
 title-outputclass: premium

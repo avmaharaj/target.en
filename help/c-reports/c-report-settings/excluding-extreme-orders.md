@@ -1,8 +1,8 @@
 ---
 description: You can exclude extreme values from affecting reports so a few unusual orders don't affect your activity results. An example of an unusual order might be a coach buying uniforms for an entire team instead of individual shoppers buying individual uniforms.
 keywords: Target;reports;report settings;extreme orders;extreme values
-seo-description: You can exclude extreme values from affecting reports so a few unusual orders don't affect your activity results. An example of an unusual order might be a coach buying uniforms for an entire team instead of individual shoppers buying individual uniforms.
-seo-title: Exclude extreme values
+seo-description: You can exclude extreme values from affecting reports in Adobe Target so a few unusual orders don't affect your activity results. An example of an unusual order might be a coach buying uniforms for an entire team instead of individual shoppers buying individual uniforms.
+seo-title: Exclude extreme values in Adobe Target reports
 solution: Target
 title: Exclude extreme values
 topic: Premium
@@ -28,9 +28,13 @@ When a value is marked extreme, its order value is replaced with the average ord
 **To exclude extreme values from your reports:** 
 
 1. Open an activity that includes Revenue or Engagement metric types, then click the **[!UICONTROL Reports]** tab.
-1. Click the gear icon to display the [!UICONTROL Report Settings] options.
+1. Click the gear icon.
+
+   ![Report settings](/help/c-reports/c-report-settings/assets/report-settings-gear-icon.png)
+
+   The [!UICONTROL Report Settings] options dialog box displays.
 
    ![Step Result](assets/exclude_extreme_values.png)
 
 1. Toggle the **[!UICONTROL Exclude Extreme Values]** option on or off, as desired.
-1. Click **[!UICONTROL Save Settings]**.
+1. Click **[!UICONTROL Save]**.

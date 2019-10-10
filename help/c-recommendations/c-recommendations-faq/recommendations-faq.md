@@ -15,6 +15,26 @@ badge: premium
 
 List of frequently asked questions (FAQs) about Recommendations activities.
 
+## How long will it take for updates to items in my catalog to be reflected on my site?
+
+After importing a feed file, or after receiving entity updates via API or mbox, the following changes will be reflected in under 60 minutes:
+
+* Item attributes that are returned in the Design template.
+* Item attributes used in global exclusion rules that prevent the item from being included in returned recommendations.
+* Item attributes used in inclusion rules within the criteria that impact whether the item is included or excluded in returned recommendations.
+
+The following changes are not reflected until the next algorithm run occurs (within 12-24 hrs):
+
+* Item attributes used in the Collection rules used for the activity.
+* Item attributes used in a promotion based on an attribute or collection associated with the activity.
+* Item category that the item appears in for a "Current Category" or "Favorite Category" in the Top Sellers or Most Viewed algorithm.
+* Ranking of recommended items when the attribute changed is a custom attribute that is used as the custom key for an algorithm.
+* Ranking of recommended items based on the changed attribute(s) when the recommendation logic is "Items with similar attributes," when "Content Similarity" weighting factors are used, or when "Attribute Weighting" factors are used.
+
+>[!NOTE]
+>
+>A feed file is considered imported when its status changes from "Importing Items" to "Preparing Search Index Updates". Updates may take more than 60 minutes to be reflected in the Catalog Search user interface; Catalog Search is up-to-date when the feed status changes to "Updates Completed". Even if Catalog Search is not yet up-to-date, your site will reflect updates on the timeframes listed above. The most recent Catalog Search index update time is displayed on the Catalog Search page.
+
 ## What should I do if special characters are breaking my array? {#section_D27214116EE443638A60887C7D1C534E}
 
 Use escaped values in JavaScript. Quotation marks ( " ) can break the array. The following code snippet is an example of escaped values:
@@ -75,7 +95,7 @@ Consider the following information if you see a collection go to zero that previ
 * Is your index up to date? Go t o [!DNL /target/products.html#productSearch] and check how many hours old the index is (for example, “Indexed 3 hour(s) ago”). You can refresh the index as needed. 
 * Did you change something in the feed or the data layer that resulted in your entities no longer matching the collection rules? Make sure your CASE matches (case-sensitive). 
 * Did your feed run successfully? Did someone change the FTP directory, password, etc? 
-* Target does its best to make updates to the delivery (on the customer’s page/app) happen as quickly as possible. Yet, we also have to provide some representation in the UI for the marketer. We don’t necessarily delay delivery updates to wait for the UI updates to be in sync. You can use [mboxTrace](https://marketing.adobe.com/resources/help/en_US/target/target/c_content_trouble.html#) to see what is in the system at the time a request comes in.
+* Target does its best to make updates to the delivery (on the customer’s page/app) happen as quickly as possible. Yet, we also have to provide some representation in the UI for the marketer. We don’t necessarily delay delivery updates to wait for the UI updates to be in sync. You can use [mboxTrace](/help/c-activities/c-troubleshooting-activities/content-trouble.md) to see what is in the system at the time a request comes in.
 
 ## What's the difference between general Attribute Weighting and Content Similarity-specific attribute weighting? {#section_FCD96598CBB44B16A4C6C084649928FF}
 
@@ -141,10 +161,12 @@ In the query string, you can pass entity IDs for entities that you want to exclu
 
 To enable the exclusion functionality, use the `excludedIds` mbox parameter. This parameter points to a list of comma-separated entity IDs. For example, `mboxCreate(..., "excludedIds=1,2,3,4,5")`. The value is sent when requesting recommendations.
 
+The exclusion is performed for the current Target call only; items are not excluded on subsequent Target calls unless the `excludedIds` value is passed again. To exclude items in the cart from recommendations on every page, continue to pass the `excludedIds` value on every page.
+
 >[!NOTE]
 >
 >If too many entities are excluded, recommendations behave as if there aren't enough entities to fill the recommendation template.
 
-To excluded `entityIds`, append the `&excludes=${mbox.excludedIds}` token to the offer content url. When the content url is extracted, the required parameters are substituted using current mbox request parameters.
+To exclude `entityIds`, append the `&excludes=${mbox.excludedIds}` token to the offer content url. When the content url is extracted, the required parameters are substituted using current mbox request parameters.
 
 By default, this feature is enabled for newly created recommendations. Existing recommendations must be saved to support Dynamically Excluded entities.

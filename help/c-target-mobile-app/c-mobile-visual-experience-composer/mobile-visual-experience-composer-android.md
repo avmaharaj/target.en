@@ -1,8 +1,8 @@
 ---
 description: Target's new SDK Library allows developers to do a one-time setup on their Android mobile apps and enable marketers to use the capabilities of the Mobile Visual Experience Composer (VEC).
 keywords: mobile vec;mobile visual experience composer;mobile experience composer options;setting up;android
-seo-description: Target's new SDK Library allows developers to do a one-time setup on their Android mobile apps and enable marketers to use the capabilities of the Mobile Visual Experience Composer (VEC).
-seo-title: Android - set up the mobile app
+seo-description: Adobe Target's new SDK Library allows developers to do a one-time setup on their Android mobile apps and enable marketers to use the capabilities of the Mobile Visual Experience Composer (VEC).
+seo-title: Android - set up the mobile app for Adobe Target
 solution: Target
 title: Android - set up the mobile app
 topic: Standard
@@ -21,18 +21,17 @@ For more information on enabling the Adobe Target VEC extension, see [Adobe Targ
 1. Add the following line to the dependencies section:
 
    ```
+   implementation 'com.adobe.marketing.mobile:target:1.+'
    implementation 'com.adobe.marketing.mobile:target-vec:1.+'
    ```
 
 1. The Mobile App VEC requires the following artifacts to be included as a dependency in `build.gradle`.
 
    ```
-    implementation 'com.google.code.gson:gson:2.8.2'
     implementation 'android.arch.lifecycle:extensions:1.1.1'
-    implementation('io.github.sac:SocketclusterClientJava:1.7.5')
-    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'io.github.sac:SocketclusterClientJava:1.7.5'
     implementation 'com.android.support:support-compat:28.0.0'
-    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-fragment:28.0.0'
    ```
 
 1. Add an intent filter in your `AndroidManifest.XML` file, choosing a unique deep-link scheme for Mobile App VEC authoring (for example, `[sdkbetabus://com.adobe.sdkbetabus](sdkbetabus://com.adobe.sdkbetabus)`):
@@ -73,12 +72,7 @@ For more information on enabling the Adobe Target VEC extension, see [Adobe Targ
                Identity.registerExtension();
                Lifecycle.registerExtension();
                Signal.registerExtension();
-               MobileCore.start(new AdobeCallback () {
-                  @Override
-                  public void call(Object o) {
-                     MobileCore.configureWithAppID("launch-EN4e833d644d1949e39e985ddad4f52bd4-development");
-                  }
-               });
+               MobileCore.start(null);
            } catch (InvalidInitException e) { 
              .. 
            }

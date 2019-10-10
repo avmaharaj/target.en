@@ -21,6 +21,8 @@ Two specialized reports are available to users of Automated Personalization (AP)
 >Personalization Insights reports are available only for AP and AT activities that use a conversion optimization goal. Activities where the optimization goal was changed to conversion from revenue after the activity was already live are also not supported.
 >
 >Personalization Insights reports are supported in the [default environment](../../administrating-target/hosts.md) only.
+>
+>Personalization Insights reports are generated only for activities that are in the Live status and have been activated and receiving traffic for at least 15 days.
 
 ## Personalization Insights Reporting overview {#section_B47CD4A50FEB43D587F9FACD9FFD6D9D}
 
@@ -28,7 +30,7 @@ The goal of the [!UICONTROL Personalization Insights] reports is to provide more
 
 Because the goal of the Personalization Insights reports is to understand how Target's personalization models decided to send which visitor to what piece(s) of content, the Personalization Insights reports reflect only a sub-segment of all the traffic served by your AP or AT activity. Specifically, the two reports are reflective of all traffic that used the personalization model. In other words, Personalization Insights reports do not consider control traffic or traffic that is served by the overall winner model.
 
-There are two reports available in:
+Two Personalization Insights reports are available:
 
 | Report | Details |
 |--- |--- |

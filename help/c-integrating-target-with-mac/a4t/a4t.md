@@ -4,7 +4,7 @@ keywords: a4t;analytics;analytics for target;analytics reporting source;adobe an
 seo-description: Adobe "Analytics for Target" (A4T) is a cross-solution integration that lets you create activities based on Analytics conversion metrics and audience segments. This integration lets you use Analytics reports to examine your results. If you use Analytics as the reporting source for an activity, all reporting and segmentation for that activity is based on Analytics data collection.
 seo-title: Adobe Analytics as the reporting source for Adobe Target (A4T)
 solution: Target
-subtopic: Multivariate Test
+subtopic: Integrating
 title: Adobe Analytics as the reporting source for Adobe Target (A4T)
 topic: Standard
 uuid: 616798a6-1587-410f-9ac6-473beb39e3fc
@@ -47,7 +47,9 @@ Keep the following points in mind when considering using A4T:
 * When viewing reporting of an A4T activity in the Target UI, you are viewing Analytics data. For example, if you use the Visitor metric in Target, you are using the Analytics Visitor metric, not the Target Visitors metric, which is now called Entrants. This difference is especially important for basic traffic metrics (Visitors, Visits, Page Views) and conversion metrics. 
 * Any existing Target activities continue to use Target data collection and are not affected by enabling A4T. 
 * Only one mbox-based metric is allowed when using Analytics as the reporting source. 
-* A server-to-server call from Target to Analytics sends activity and experience information to Analytics. This integration does not result in additional server calls for either Target or Analytics.
+* A server-to-server call from Target to Analytics sends activity and experience information to Analytics. This integration does not result in additional server calls for either Target or Analytics. 
+
+  In some situations, the classification call from Target to Analytics might fail and activities do not show data in Analytics. If this happens, see [Troubleshoot the Analytics and Target integration (A4T)](/help/c-integrating-target-with-mac/a4t/c-a4t-troubleshooting/a4t-troubleshooting.md). You can also [contact Client Care](/help/cmp-resources-and-contact-information.md#concept_34A1CA16F2244D42930BB77846A5ABBB) for further assistance.
 
 ## Supported Activity Types {#section_F487896214BF4803AF78C552EF1669AA}
 
@@ -62,7 +64,7 @@ The following table shows you which activity types support Analytics as the repo
 |Multivariate test (MVT)|Yes|Requires mbox-based goal metric goal to get the Element Contribution report.  The Element Contribution Report does not currently support Analytics metrics.|
 |Automated Personalization (AP) activity|No||
 |Recommendations activity|Yes||
-|Mobile App|Yes|Supported with the  Mobile Services SDK, version 4.13.1 or later.  For more information, see the [Mobile Services documentation](https://marketing.adobe.com/resources/help/en_US/mobile/).|
+|Mobile App|Yes|Supported with the  Mobile Services SDK, version 4.13.1 or later.  For more information, see the [Mobile Services documentation](https://docs.adobe.com/content/help/en/mobile-services/using/home.html).|
 |Email|No||
 |Server Side Delivery API|Yes|For more information, see [Server Side: implement Target](/help/c-implementing-target/c-api-and-sdk-overview/api-and-sdk-overview.md).|
 |NodeJS SDK|Yes|For more information, see [Server Side: implement Target](/help/c-implementing-target/c-api-and-sdk-overview/api-and-sdk-overview.md).|
@@ -124,4 +126,4 @@ This video is a recording of " [Office Hours](../../cmp-resources-and-contact-in
 * Learn about the ideal reports to use in Analytics 
 * Answers to common questions about A4T
 
->[!VIDEO](https://video.tv.adobe.com/v/22223/)
+[Analytics/Target Integration (A4T) Office Hours](https://helpx.adobe.com/customer-care-office-hours/target/analytics-target-A4T-integration.html)

@@ -17,11 +17,11 @@ badge: premium
 
 >[!NOTE]
 >
->[!UICONTROL Auto-Target] is available as part of the [!DNL Target Premium] solution. This feature is not available in [!DNL Target Standard] without a [!DNL Target Premium] license.
+>[!UICONTROL Auto-Target] is available as part of the [!DNL Target Premium] solution. This feature is not available in [!DNL Target Standard] without a [!DNL Target Premium] license. For more information about the advanced features this license provides, see [Target Premium](/help/c-intro/intro.md).
 
 While [creating an A/B activity using the three-step guided workflow](../c-activities/t-test-ab/t-test-create-ab/test-create-ab.md#task_68C8079BF9FF4625A3BD6680D554BB72), you can choose to allocate traffic using the [!UICONTROL Auto-Target For Personalized Experiences] option:
 
-![](assets/auto-target-ui.png)
+![Auto target for personalized experiences option](/help/c-activities/assets/auto-target-ui-new.png)
 
 ## Overview {#section_972257739A2648AFA7E7556B693079C9}
 
@@ -68,17 +68,19 @@ The [!UICONTROL Custom Allocation] drop-down list lets you choose from the follo
 * Maximize Personalization Traffic 
 * Custom Allocation
 
-![](assets/split.png)
+![Allocation Goal drop-down list](/help/c-activities/assets/split-new.png)
 
 | Activity Goal | Suggested Traffic Allocation | Tradeoffs |
 |--- |--- |--- |
-|Evaluate Personalization Algorithm (50/50)   Your goal is to determine how well the personalization algorithm is working compared to the control (i.e. a randomly served experience). You might be in the beginning stages of evaluating your personalization program.|50% Control / 50% Personalized Experience split|<ul><li>Maximizes accuracy of lift between control and personalized</li><li>Relatively fewer visitors will have a personalized experience</li></ul>|
-|Maximize Personalization Traffic (90/10)   Your goal is to create an "always on" personalization activity that maximizes the amount of traffic that is personalized. You want to maximize the lift while continuing to have a Control benchmark lift to compare against.|Best practice is to use a 10% - 30% Control / 70% - 90% Personalized Experience split|<ul><li>Maximizes number of visitors who have a personalized experience</li><li>Maximizes lift</li><li>Less accuracy as to what the lift is for the activity</li></ul>|
-|Custom Allocation|Manually split the percentage as desired.|<ul><li>You might not achieve the desired results. If you are unsure, follow the suggestions for either of the preceding options</li></ul>|
+|**Evaluate Personalization Algorithm (50/50)**: If your goal is to test the algorithm, use a 50/50 percent split of visitors between the control and the targeted algorithm. This split gives the most accurate estimate of the lift. Suggested for use with “random experiences” as your control.|50% Control / 50% Personalized Experience split|<ul><li>Maximizes accuracy of lift between control and personalized</li><li>Relatively fewer visitors will have a personalized experience</li></ul>|
+|**Maximize Personalization Traffic (90/10)**: If your goal is to create an “always on” activity, put 10% of the visitors into the control to ensure there is enough data for the algorithms to continue learning over time. Note the tradeoff here is that in exchange for personalizing a larger proportion of your traffic, you will have less precision in what the exact lift is. No matter your goal, this is the recommended traffic split when using a specific experience as the control.|Best practice is to use a 10% - 30% Control / 70% - 90% Personalized Experience split|<ul><li>Maximizes number of visitors who have a personalized experience</li><li>Maximizes lift</li><li>Less accuracy as to what the lift is for the activity</li></ul>|
+|**Custom Allocation**|Manually split the percentage as desired.|<ul><li>You might not achieve the desired results. If you are unsure, follow the suggestions for either of the preceding options</li></ul>|
 
-To adjust the Control percentage, click the - or + symbols. You cannot decrease the control group to less than 10%.
+To adjust the Control percentage, click the icons in the Allocation column. You cannot decrease the control group to less than 10%.
 
-![](assets/auto-target-control-bigl.png)
+![Change Auto-Target traffic allocation](/help/c-activities/assets/auto-target-control.png)
+
+You can [select a specific experience to use as control](/help/c-activities/t-automated-personalization/experience-as-control.md) or you can use the Random experience option.
 
 ## When should you choose [!UICONTROL Auto-Target] over Automated Personalization? {#section_BBC4871C87944DD7A8B925811A30C633}
 
@@ -202,6 +204,14 @@ No, there must be at least two models built within your activity for personaliza
 **When can I start to look at the results of my [!UICONTROL Auto-Target] activity?**
 
 You can begin to look at the results of your [!UICONTROL Auto-Target] test after you have at least two experiences with models built (green checkmark) for the experience that have models built.
+
+**Can I specify a specific experience to be used as control?**
+
+You can select an experience to be used as control while creating an [Automated Personalization](/help/c-activities/t-automated-personalization/automated-personalization.md) (AP) or [Auto-Target](/help/c-activities/auto-target-to-optimize.md) (AT) activity.
+
+This feature lets you route the entire control traffic to a specific experience, based on the traffic allocation percentage configured in the activity. You can then evaluate the performance reports of the personalized traffic against control traffic to that one experience.
+
+For more information, see [Use a specific experience as control](/help/c-activities/t-automated-personalization/experience-as-control.md).
 
 ## Troubleshooting [!UICONTROL Auto-Target] {#section_23995AB813F24525AF294D20A20875C8}
 

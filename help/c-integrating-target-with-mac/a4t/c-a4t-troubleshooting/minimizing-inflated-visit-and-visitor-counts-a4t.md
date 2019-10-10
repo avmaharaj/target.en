@@ -72,7 +72,7 @@ In most situations, a [!DNL Target] hit is stitched with an  [!DNL Analytics] hi
 
 **Partial-data hits:** Users sometimes don't remain on a page long enough to send an [!DNL Analytics] call, but [!DNL Target] has a proper MCID. This results in partial-data hits (hits with no [!DNL Analytics] page view). If these users come back to your site and view a page containing [!DNL Analytics] code, they'll be properly counted as returning visitors. These are hits that would have been lost if you had only [!DNL Analytics] code on the page. Some clients don't want data for these hits because they inflate certain metrics (visits) and deflate other metrics (page views per visit, time per visit, and so forth). You will also see visits without any page views. However, there are still valid reasons for keeping this data.
 
-To minimize partial-data hits, you can make your page load faster, update to the latest versions of the libraries, or create a [virtual report suite](https://marketing.adobe.com/resources/help/en_US/reference/virtual-report-suites.html) that excludes those hits. For step-by-step instructions, see [Creating Virtual Report Suites](https://marketing.adobe.com/resources/help/en_US/reference/vrs-create.html) in the [!DNL Analytics] product documentation.
+To minimize partial-data hits, you can make your page load faster, update to the latest versions of the libraries, or create a [virtual report suite](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) that excludes those hits. For step-by-step instructions, see [Create virtual report suites](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) in the *Analytics Components Guide*.
 
 The following illustration shows for the segment definition for the virtual report suite:
 
@@ -93,7 +93,7 @@ When creating the virtual report suite, specify the following configuration for 
 
 **Orphaned hits:&nbsp;** In fewer situations, users don't remain on the page long enough for an Analytics call and Target didn't get a proper MCID. These are what we define as "orphaned" hits. These hits represent customers that rarely return and they inflate visit and visitor counts inappropriately.
 
-To minimize these "orphaned" hits, you can create a [virtual report suite](https://marketing.adobe.com/resources/help/en_US/reference/vrs-create.html) that excludes those hits, as explained above.
+To minimize these "orphaned" hits, you can create a [virtual report suite](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) that excludes those hits, as explained above.
 
 ## What does this mean for my [!DNL Target] reporting? {#section_AAD354C722BE46D4875507F0FCBA5E36}
 

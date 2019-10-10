@@ -1,7 +1,7 @@
 ---
 description: Multivariate Testing (MVT) compares combinations of offers in elements on a page to determine which combination performs the best for a specific audience, and identifies which element most impacts the activity's success.
 keywords: multivariate test;mvt;full factorial;mvt or a/b;multivariate a/b;traffic estimator;when to use mvt;mvt considerations;multivariate
-seo-description: Multivariate Testing (MVT) compares combinations of offers in elements on a page to determine which combination performs the best for a specific audience, and identifies which element most impacts the activity's success.
+seo-description: Multivariate Testing (MVT) in Adobe Target compares combinations of offers in elements on a page to determine which combination performs the best for a specific audience, and identifies which element most impacts the activity's success.
 seo-title: Multivariate Test
 solution: Target
 title: Multivariate Test
@@ -11,7 +11,7 @@ uuid: a6f0cf9f-bd5e-4ae2-8dbe-0c94ec6a02ba
 
 # Multivariate Test{#multivariate-test}
 
-Multivariate Testing (MVT) compares combinations of offers in elements on a page to determine which combination performs the best for a specific audience, and identifies which element most impacts the activity's success.
+[!UICONTROL Multivariate Testing] (MVT) in [!DNL Adobe Target] compares combinations of offers in elements on a page to determine which combination performs the best for a specific audience, and identifies which element most impacts the activity's success.
 
 ## MVT Overview {#section_C73A2D1409EC42C9B0EDD4B976651C5E}
 
@@ -21,7 +21,7 @@ One advantage a multivariate test provides compared to an A/B test is the abilit
 
 Multivariate tests also help you find compound effects between two or more elements on a page. For example, a particular ad might produce more conversions when combined with a certain banner or hero image. This is also known as the "interaction effect."
 
-Adobe Target uses full-factorial multivariate tests to help you optimize your content. A full-factorial multivariate test tests all of the possible combinations of content with equal probability. For example, if you have two page elements with three offers each, there are nine possible combinations (3x3). Three elements, with two containing three possible offers and one with two offers, provide 18 options (3x3x2).
+[!DNL Target] uses full-factorial multivariate tests to help you optimize your content. A full-factorial multivariate test tests all of the possible combinations of content with equal probability. For example, if you have two page elements with three offers each, there are nine possible combinations (3x3). Three elements, with two containing three possible offers and one with two offers, provide 18 options (3x3x2).
 
 In Target, each combination is one experience. The multivariate test compares each experience so you can learn which combinations are the most successful. At the same time, data is collected and analyzed to understand how each location and the offers influence the success metric.
 
@@ -33,7 +33,7 @@ Because of the number of combinations that can be generated, a multivariate test
 
 When setting up a multivariate test, it is useful to understand some basic terminology.
 
-There are multiple terms used in different ways across the industry. This section defines the terms used by Target.
+There are multiple terms used in different ways across the industry. This section defines the terms used by [!DNL Target].
 
 **Combination:** The content variations created when you test multiple content options in multiple locations. For example, if you are testing three locations, each with three content options, then there are 27 possible combinations (3x3x3). A visitor to your site will see one combination, also referred to as an experience.
 
@@ -47,13 +47,13 @@ There are multiple terms used in different ways across the industry. This sectio
 
 Multivariate tests can be used together with A/B tests to optimize your page. Examples of when you might want to use them together include:
 
-* Use an A/B test to optimize your page layout, followed by an MVT test to determine the best content in each element on the page
+* Use an A/B test to optimize your page layout, followed by an MVT test to determine the best content in each element on the page.
 
-  An A/B test can provide important feedback on the layout, and MVT tests excel on testing the content within the elements in your page design. Running an A/B test on the layout before testing multiple content options can help you determine te best layout and the most impactful content. 
+  An A/B test can provide important feedback on the layout, and MVT tests excel on testing the content within the elements in your page design. Running an A/B test on the layout before testing multiple content options can help you determine the best layout and the most impactful content. 
 
 * Use an MVT test to determine which element is the most important, then follow up with a more focused A/B test on that element.
 
-  When the number of different experiences exceed five and span two or more elements, it's a good idea to consider an MVT test before running your A/B tests. The multivariate test shows which areas on the page are most likely to improve conversion. These are the elements that a marketer should focus on. For example, the MVT test might show that the call to action is the most important element for meeting your goals. Once you have determine which elements and content are most useful for helping you meet your goals, you can run an A/B test to further refine the results, such as to test two specific images against each other, or comparing the wording or colors of a call to action. By following an MVT test with one or more A/B tests, you can determine the best possible content for the results you desire.
+  When the number of different experiences exceeds five and span two or more elements, it's a good idea to consider an MVT test before running your A/B tests. The MVT test shows which areas on the page are most likely to improve conversion. These are the elements that a marketer should focus on. For example, the MVT test might show that the call to action is the most important element for meeting your goals. Once you have determine which elements and content are most useful for helping you meet your goals, you can run an A/B test to further refine the results, such as to test two specific images against each other, or comparing the wording or colors of a call to action. By following an MVT test with one or more A/B tests, you can determine the best possible content for the results you desire.
 
 ## Considerations {#section_979FE3F398654C1EA1C86E7DBC9A8DAD}
 
@@ -66,7 +66,7 @@ Multivariate tests can be used together with A/B tests to optimize your page. Ex
   For example, do not test your layout and content in the same test. 
 * Plan additional time for QA because of the increase in the number of experiences.
 
-  Target offers full-factorial multivariate testing as a built-in activity option. In statistics, Design of Experiments offers many approaches, or designs, to determine which factors influence results. One such approach is the Taguchi Method for partial-factorial testing. Taguchi enables marketers to make a set of assumptions that reduce the number of permutations of experiences that need to be tested, and in turn decreases the traffic requirements for a multivariate test. This functionality and testing approach can be leveraged in Target Standard/Premium using [this offline spreadsheet](https://marketing.adobe.com/resources/help/en_US/target/mvt/MVT-Taguchi-Partial-Factorial-Design-02102017.xlsx).
+  [!DNL Target] offers full-factorial multivariate testing as a built-in activity option. In statistics, Design of Experiments offers many approaches, or designs, to determine which factors influence results. One such approach is the [Taguchi Method](https://en.wikipedia.org/wiki/Taguchi_methods) for partial-factorial testing. Taguchi enables marketers to make a set of assumptions that reduce the number of permutations of experiences that need to be tested, and in turn decreases the traffic requirements for a multivariate test. This functionality and testing approach can be leveraged in [!DNL Target] using this [offline spreadsheet](/help/assets/MVT-Taguchi-Partial-Factorial-Design-02102017.xlsx).
 
   If your team uses other Design of Experiments approaches, you can use this calculation spreadsheet as a reference implementation for custom experiment designs.
 
@@ -75,7 +75,7 @@ Multivariate tests can be used together with A/B tests to optimize your page. Ex
     * Pick the elements you want to change and the number of versions of each element (3x2, 4x3, and so forth). 
     * Keep the numbering consistent. For example, if the button is Element 1 and the options are Blue, Green, and Yellow, the blue button is 1-1, the green button is 1-2, and the yellow button is 1-3. 
     * The offline spreadsheet provides the appropriate number of experiences needed (four for a 3x2, nine for a 4x3, and so forth). 
-    * Build the experiences in the A/B workflow with the Form-based Experience Composer or the Visual Experience Composer (VEC). If you use the VEC, you can use custom code, edit HTML, WYSIWYG, or any combination. 
+    * Build the experiences in the A/B workflow with the [Visual Experience Composer (VEC)](/help/c-experiences/experiences.md). You can use custom code, edit HTML, WYSIWYG, or any combination. 
     * After the activity is over (based on the sample size calculator), run results through the spreadsheet to get the other details.
 
 For more considerations and best practices, see [Multivariate Test Best Practices](../../c-activities/c-multivariate-testing/best-practices.md#reference_53635817FFB741EF8C4E56CC70688EDD). 

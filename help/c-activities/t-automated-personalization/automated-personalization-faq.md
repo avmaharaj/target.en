@@ -15,6 +15,14 @@ badge: premium
 
 List of frequently asked questions (FAQs) about Automated Personalization (AP).
 
+## Can I specify a specific experience to be used as control?
+
+You can select an experience to be used as control while creating an [Automated Personalization](/help/c-activities/t-automated-personalization/automated-personalization.md) (AP) or [Auto-Target](/help/c-activities/auto-target-to-optimize.md) (AT) activity.
+
+This feature lets you route the entire control traffic to a specific experience, based on the traffic allocation percentage configured in the activity. You can then evaluate the performance reports of the personalized traffic against control traffic to that one experience.
+
+For more information, see [Use a specific experience as control](/help/c-activities/t-automated-personalization/experience-as-control.md).
+
 ## How can I compare Automated Personalization to a default experience? {#section_46C1A620A2384C2C8392D6716DD18495}
 
 There is no turn-key option of comparing AP to a default experience. However, as a workaround, if a default offer or experience exists as part the overall activity, to understand its baseline performance you can click the “Control” segment in the reports and locate that particular offer in the resulting offer-level report. The conversion rate recorded for this offer can be used to compare with the conversation rate of the entire “Random Forest” segment. This helps to compare how the machine is doing compared to the default offer.
@@ -29,9 +37,11 @@ There is no turn-key option of comparing AP to a default experience. However, as
 * Make sure to use the [Traffic Estimator](../../c-activities/t-automated-personalization/ap-traffic-estimator.md#task_71AA6922AFD447EA8C5E610A78ABA714) so you can have a sense of how long it will take for personalization models to build in your Automated Personalization activity. 
 * Decide on the allocation between control and targeted before beginning the activity based on your goals.
 
-    * Is the goal of your Automated Personalization activity to determine how well the personalization algorithm works overall or to run an "always on" personalization optimization on your page? Depending on your answer to this question, you will want to use a different traffic allocation between control and targeted. 
-    * If your goal is to test the algorithm, use a 50/50 percent split of visitors between the control and the targeted algorithm. This split gives the most accurate estimate of the lift. 
-    * If your goal is to create an "always on" activity, put 10% to 30% of the visitors into the control to ensure there is enough data for the algorithms to continue learning over time. Note the tradeoff here is that in exchange for personalizing a larger proportion of your traffic, you will have less precision in what the exact lift is.
+  There are three scenarios to consider based on the goal of your activity and the type of control you’ve selected:
+
+  * **Random Experiences as your control and your activity goal is to test the effectiveness of the personalization algorithm**: If your goal is to evaluate the personalization algorithm, then you’ll want to have a more accurate picture of your lift. You also would want to likely compare to what the conversion rate for your experiences/offers would be if you simply did an A/B Test (a randomly served control). In that situation, using a 50% allocation to a control of randomly served experiences is recommended.
+  * **“Random Experiences” as your control and your activity goal is to maximize personalized traffic**: If you are comfortable with the algorithm and want to have the maximum amount of traffic personalized, a 10% to 30% allocation to control is recommended. The tradeoff here is the accuracy you’ll be able to see in your lift information (as the confidence intervals of your control traffic will be larger because there is less traffic flowing to them).
+  * **Specific Experience as your control, with either goal type**: If you want to compare a specific marketer-driven experience to the personalization models, a 10% to 30% allocation to control is recommended. When you select only one experience as a control, then that traffic isn’t spread across every offer/experience in the activity.
 
 * Targeting rules should be used as sparingly as possible because they can interfere with the model's ability to optimize. 
 * Reporting groups can limit the success of your Automated Personalization activity. They should only be used under specific conditions.

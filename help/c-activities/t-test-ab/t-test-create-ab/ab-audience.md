@@ -19,11 +19,13 @@ The audience determines which site visitors are entered into your activity.
 
 In the [!UICONTROL Audience] box, click the Edit icon (three vertical ellipses), then click **[!UICONTROL Replace Audience]**.
 
-By default, all visitors are your audience. However, you can change the audience. Audiences are selected from the audience library or you can create an activity-only audience. The audience library contains audiences that have previously been defined, including some common audiences that are pre-built as a part of Target. You can either select an audience from the library, [create a new audience](../../../c-target/c-audiences/create-audience.md#task_1D507519D3AD4390B507F188BD294DC1), or [create an activity-only audience](../../../c-target/creating-activity-only-audience.md#concept_A6BADCF530ED4AE1852E677FEBE68483). For an A/B test without specific audience targeting, choose the default, All Visitors.
+![Replace Audience option](/help/c-activities/t-test-ab/t-test-create-ab/assets/replace-audience.png)
+
+By default, all visitors are your audience. However, you can change the audience. Audiences are selected from the audience library or you can create an activity-only audience. The audience library contains audiences that have previously been defined, including some common audiences that are pre-built as a part of Target. You can select an audience from the library, [create a new audience](../../../c-target/c-audiences/create-audience.md#task_1D507519D3AD4390B507F188BD294DC1), or [create an activity-only audience](../../../c-target/creating-activity-only-audience.md#concept_A6BADCF530ED4AE1852E677FEBE68483). For an A/B test without specific audience targeting, choose the default, All Visitors.
 
 Note that you can also edit or copy an audience by hovering over the desired audience in the [!UICONTROL Choose Audience] dialog box, as shown below. Copying an audience is helpful if you want to create a similar audience to an existing audience. You can make a copy of the audience, make your edits, then save it as a new audience. This hover functionality exists in other activity types as well.
 
-![](assets/audience_picker_hover.png)
+![Audience hover](/help/c-activities/t-test-ab/t-test-create-ab/assets/audience_picker_hover-new.png)
 
 When creating an audience, you can select a location (mbox) and specify parameters for that location. Under Custom Parameters, select the mbox, then specify the desired parameters.
 
@@ -35,7 +37,7 @@ Click the down arrow to remove the existing audience or change the audience.
 
 You can specify the percentage of qualifying visitors to include in the activity. For example, you might choose to include 50% of all visitors.
 
-![](assets/audperc.png)
+![Audience Percentage](/help/c-activities/t-test-ab/t-test-create-ab/assets/audperc-new.png)
 
 You can also choose to let Target [allocate traffic automatically](../../../c-activities/automated-traffic-allocation/automated-traffic-allocation.md#concept_A1407678796B4C569E94CBA8A9F7F5D4).
 

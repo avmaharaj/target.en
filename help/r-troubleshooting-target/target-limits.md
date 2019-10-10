@@ -13,9 +13,19 @@ uuid: 603fb800-a26c-43ec-b2d9-ef7a8ed8721e
 
 Information about the character limits and other limits (offer size, audiences, profiles, values, parameters, etc.) that affect activities and other elements in Adobe Target.
 
- The limits listed below are recommended limits. When these limits are approached or exceeded, performance can slow. Slow interface load times can also be caused by a very complex activity, such as many audiences, targets, and experiences all in one activity. 
- 
- Highly complex activities should be reviewed with Adobe Consulting and tested in a limited environment before being released to production.
+>[!NOTE]
+>
+>The limits listed below should be considered "hard" limits unless specified as "recommended."
+>
+>When the limits designated as "recommended" are approached or exceeded, performance can slow. Slow interface load times can also be caused by a very complex activity, such as many audiences, targets, and experiences all in one activity.
+>
+>Highly complex activities should be reviewed with Adobe Consulting and tested in a limited environment before being released to production.
+
+## Activities
+
+**Recommended limit**: 10,000 active live activities.
+
+**Recommended limit**: 10,000 active saved (and not ended) activities.
 
 ## Activity names
 
@@ -26,6 +36,10 @@ Information about the character limits and other limits (offer size, audiences, 
 **Limit**: 256 characters.
 
 Values longer than 256 characters are truncated.
+
+## Audiences
+
+**Limit**: 50 audiences per mbox, metric, or experience.
 
 ## categoryId parameter
 
@@ -46,7 +60,7 @@ Values longer than 256 characters are truncated.
 * 15,000 characters (single-value, one- and two-byte languages)
 * 500 values, 100 characters per value (multi-value)
 
-The maximum length of single-value entity custom attributes is 15,000 characters (for one- and two-byte UTF-8 encoded languages such as English and other Latin-script alphabets) or 10,000 characters (for three-byte UTF-8 encoded languages such as Chinese, Japanese and Korean).
+The maximum length of single-value entity custom attributes is 15,000 characters (for one-byte and two-byte UTF-8 encoded languages such as English and other Latin-script alphabets) or 10,000 characters (for three-byte UTF-8 encoded languages such as Chinese, Japanese, and Korean).
 
 Multi-value entity custom attributes can contain no more than 500 values. Each individual value is limited to 100 characters. The total number of characters across all values must conform to the limitations for the maximum length of single-value entity custom attributes (see above.)
 
@@ -63,6 +77,12 @@ For GET requests, although the limit on the back end is 5 KB, due to the fact th
 ## Experience names
 
 **Limit**: 20 characters.
+
+## Experiences per activity
+
+**Limit**: 2,000 experiences per Experience Targeting (XT), A/B Test, Multivariate Test (MVT), and Auto-Target activity.
+
+30,000 experiences per Automated Personalization (AP) activity.
 
 ## In-mbox profile attribute value
 
@@ -124,17 +144,17 @@ If you are using a global mbox, the limit is for the whole set of content return
 
 "The content for the experience is too large to deliver. Please modify the experience to affect less page code."
 
+## Offers
+
+**Recommended limit**: 50,000 total offers.
+
 ## orderId parameter
 
-**Limit**: 120 characters.
-
-Recommended limit.
+**Recommended limit**: 120 characters.
 
 ## orderTotal parameter
 
-**Limit**: 120 characters.
-
-Recommended limit.
+**Recommended limit**: 120 characters.
 
 ## productPurchasedId parameter
 
@@ -142,17 +162,31 @@ Recommended limit.
 
 Anything longer is truncated by the system.
 
+## Profile scripts
+
+**Recommended limit**: 300 active profile scripts.
+
+**Recommended limit**: 500,000 maximum number of loops per profile script.
+
+## Properties
+
+**Recommended limit**: 5,000 properties.
+
+## Reporting audiences/segments
+
+**Limit**: 50 reporting audiences/segments per activity.
+
 ## Reusable Audiences/Account
 
-**Limit**: 75 audiences.
+**Recommended limit**: 75 audiences.
 
-Recommended limit. JavaScript timeouts occur in the interface if you have too many.
+JavaScript timeouts occur in the interface if you have too many.
 
 ## Script profile input box in the Target UI
 
-**Limit**: 2,000 characters.
+**Recommended limit**: 2,000 characters.
 
-Recommended limit. Depends on the size of the encoded string, which could be much longer than the raw string. If the string is too large, it fails before it gets to Adobe Target.
+Depends on the size of the encoded string, which could be much longer than the raw string. If the string is too large, it fails before it gets to Adobe Target.
 
 ## Script profile names
 
@@ -168,8 +202,20 @@ For a String return value, if the size of the return value exceeds 2,048 charact
 
 For an array return value, if the size of the concatenated values of the array exceeds 2,048 characters, the script is disabled by the system.
 
+## Success metrics
+
+**Limit**: 200 per activity.
+
 ## Target conditions
 
-**Limit**: 1,000 values.
+**Recommended limit**: 1,000 values.
 
-Recommended limit. This refers to the number of line-separated values in the targeting text area. For example, entering 1,000 zip codes into a zip code target.
+This refers to the number of line-separated values in the targeting text area. For example, entering 1,000 zip codes into a zip code target.
+
+## Targeting rules
+
+**Recommended limit**: 2,500 unique values per targeting rule.
+
+**Recommended limit**: 30,000 unique values per audience across targeting rules.
+
+**Recommended limit**: 100,000 unique targeting rule values per activity.

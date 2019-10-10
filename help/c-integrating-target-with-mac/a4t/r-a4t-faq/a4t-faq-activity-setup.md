@@ -19,7 +19,7 @@ For a full list, see "Supported Activity Types" in [Adobe Analytics as the Repor
 
 ## I just created an activity. Why don't I see any data coming in? {#section_9F8092BE4225442896F926540292F221}
 
-When an activity is created, Target sends a classification file to Analytics. Although Analytics is capturing the and processing the data, it does not show in the reports until the classification file has been updated. This can take up to 24 hours. If after 48 hours you don't see your data, please [contact Client Care](https://marketing.adobe.com/resources/help/en_US/target/target/r_problem.html). Alternately, if you know you will launch an activity, you can create the activity a few days beforehand and the classifications will be sent when the activity is saved. That way, data appears in the reports upon launch. Please note that it takes 45-90 minutes for data to be processed in Analytics.
+When an activity is created, Target sends a classification file to Analytics. Although Analytics is capturing the and processing the data, it does not show in the reports until the classification file has been updated. This can take up to 24 hours. If after 48 hours you don't see your data, please [contact Client Care](/help/cmp-resources-and-contact-information.md#reference_ACA3391A00EF467B87930A450050077C). Alternately, if you know you will launch an activity, you can create the activity a few days beforehand and the classifications will be sent when the activity is saved. That way, data appears in the reports upon launch. Please note that it takes 45-90 minutes for data to be processed in Analytics.
 
 ## Why can't I can't select Analytics as my reporting source when I create a new activity? {#section_9F4F69C3085F4C2480AF439127EB27CD}
 

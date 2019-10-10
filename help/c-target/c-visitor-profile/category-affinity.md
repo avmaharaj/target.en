@@ -1,8 +1,8 @@
 ---
 description: The category affinity feature automatically captures the categories a user visits and then calculates the user's affinity for the category so it can be targeted and segmented on. This helps to ensure that content is targeted to visitors who are most likely to act on that information.
 keywords: affinity;category affinity
-seo-description: The category affinity feature automatically captures the categories a user visits and then calculates the user's affinity for the category so it can be targeted and segmented on. This helps to ensure that content is targeted to visitors who are most likely to act on that information.
-seo-title: Category affinity
+seo-description: The category affinity feature in Adobe Target automatically captures the categories a user visits and then calculates the user's affinity for the category so it can be targeted and segmented on. This helps to ensure that content is targeted to visitors who are most likely to act on that information.
+seo-title: Use category affinity in Adobe Target
 solution: Target
 title: Category affinity
 topic: Standard
@@ -15,16 +15,19 @@ The category affinity feature automatically captures the categories a user visit
 
 ## Passing category affinity information into Target {#section_B0C8E46EEBAC4549AD90352A47787D04}
 
-Whenever a user visits your site, profile parameters specific to the visitor are recorded in the [!DNL Target] database. This data is tied to the user's cookie. One particularly useful parameter is `categoryId`, an mbox parameter assigned on a product page. As the visitor continues to browse, or returns for another session, the categories of products a particular user views can be recorded. You can also record category information by passing it as the mbox parameter `user.categoryId` in any mbox (including a nested mbox), as a URL parameter `user.categoryId`, or in Target page parameters with a global mbox. See your account representative for more details.
+Whenever a user visits your site, profile parameters specific to the visitor are recorded in the [!DNL Target] database. This data is tied to the user's cookie. One particularly useful parameter is `user.categoryId`, an mbox parameter assigned on a product page. As the visitor continues to browse, or returns for another session, the categories of products a particular user views can be recorded. You can also record category information by passing it as the mbox parameter `user.categoryId` in any mbox (including a nested mbox), as a URL parameter `user.categoryId`, or in Target page parameters with a global mbox. See your account representative for more details.
 
-Separate categories with a comma to create separate categories. For example:
+Separate categories with a comma to include an item in multiple categories. For example:
 
-* `categoryId=clothing,shoes,nike,running,shox,nike shox turbo,nike shox turbo VI` 
-* `entity.categoryId=clothing,shoes,nike,running,shox,nike shox turbo,nike shox turbo VI`
+* `user.categoryId=clothing,shoes,nike,running,nike clothing,nike shoes,nike running shoes`
 
 Based on the frequency and recency of visits to your product categories, the category affinity (if any) a user has is recorded. Category affinity can be used to target populations for your activities.
 
 You can use `user.categoryAffinities[]` in a profile script to return an array of the affinities that a visitor has populated.
+
+>[!IMPORTANT]
+>
+>The `user.categoryId` attribute used for Adobe Target's category affinity algorithm is distinct from the `entity.categoryId` attribute used for Adobe Target Recommendations' product and content recommendations. `user.categoryId` is required to track a user's favorite category. `entity.categoryId` is required to base recommendations on the current page's or current item's category. Pass both values to Adobe Target if you want to use both capabilities.
 
 ## Business case for category affinity {#section_D6FF913E88E6486B8FBCE117CA8B253B}
 
@@ -110,9 +113,13 @@ This section contains the following information:
 1. Click **[!UICONTROL + Add Rule]** > **[!UICONTROL Visitor Profile]**. 
 1. From the **[!UICONTROL Visitor Profile]** drop-down list, select **[!UICONTROL Category Affinity]**.
 
-   ![](assets/affinity.png)
+   ![Visitor Profile > Category Affinity](assets/affinity.png)
 
 1. Select the desired category:
+
+    ![Category Affinity > Category](/help/c-target/c-visitor-profile/assets/affinity-category.png)
+
+    Categories include:
 
     * Favorite Category 
     * First Category 

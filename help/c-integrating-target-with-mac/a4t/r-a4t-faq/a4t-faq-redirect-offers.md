@@ -17,6 +17,10 @@ This topic contains answers to questions that are frequently asked about using r
 
 Yes, provided that your implementation uses [!DNL at.js]. However, your implementation must meet the minimum requirements listed below in order to use [redirect offers](../../../c-experiences/c-manage-content/offer-redirect.md#task_33C80CD722564303B687948261484F94) in activities that use Analytics as the reporting source.
 
+>[!NOTE]
+>
+>A known issue exits that is causing a limited number of customers using redirects with A4T to see a higher percentage of unstitched hit rates. See [Known issues and resolved issues](/help/r-release-notes/known-issues-resolved-issues.md#redirect).
+
 ## What are the minimum requirements needed to use redirect offers with A4T? {#section_FA9384C2AA9D41EDBCE263FFFD1D9B58}
 
 Your implementation must meet the following minimum requirements:
@@ -35,15 +39,15 @@ Some data discrepancies are expected. For more information, see [Expected data v
 
 ## Why are page views on the original page and on the redirect page sometimes counted? {#section_B8F6CC2190B84CF08D945E797C5AF07B}
 
-There is a possibility that a race condition can occur that might cause the Analytics call to fire before the redirect executes on the first page. This can cause page views on the original page and on the redirect page to all be counted. This situation results in an extra page view on the first page, when the visitor never really "saw" this first page.
+When using at.js version 1.6.3 or later, this is not an issue. This race condition affects only customers using earlier versions. The Target team maintains two versions of at.js: the current version and the second-latest version. Upgrade at.js as necessary to ensure that you are running a [supported version](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md).
+
+If you are using an earlier, non-supported version of at.js, there is a possibility that a race condition can occur that might cause the Analytics call to fire before the redirect executes on the first page. This can cause page views on the original page and on the redirect page to all be counted. This situation results in an extra page view on the first page, when the visitor never really "saw" this first page.
 
 Using the form-based composer to build a redirect activity is recommended to increase the speed of the page redirect. This is because of where the code gets executed on the page. Also, creating a redirect offer for every experience, even the default experience, where the redirect would return the original page is recommended. This ensures that if mis-counting occurs, it happens across all experiences so reporting and analysis is still valid for the test.
 
->[!NOTE]
->
->This race condition affects only customers using at.js version 1.6.3 or earlier. Be aware that the Target team maintains only two versions of at.js—the current version and the second-latest version. Please upgrade at.js as necessary to ensure that you are running a [supported version](/help/c-implementing-target/c-implementing-target-for-client-side-web/target-atjs-versions.md).
+One reason you might want to use redirect offers for all experiences in the activity, including the default (control) experience, is to put the same conditions on all experiences. For example, if the default experience does not have a redirect offer but the other experiences have redirect offers, the speed of the experience without the redirect offer has an inherent advantage. Redirect offers are recommended for temporary scenarios only, such as testing. Redirect offers are not recommended for permanent scenarios, such as personalization. After you determine the “winner,” you should remove the redirect to improve page-load performance.
 
-For more information about this issue, see the "Redirect offers" column in the [Known Issues](../../../r-release-notes/known-issues-resolved-issues.md#concept_625C3A16B7F24D4B82EFF130F0945541) table.
+For more information about this issue, see the "Redirect offers" information in [Known Issues](/help/r-release-notes/known-issues-resolved-issues.md#redirect).
 
 ## Can I use redirect offers with A4T if I'm using the mbox.js JavaScript library? {#section_D2A8B182B7254D61A8BB2BCBA0C0F64A}
 

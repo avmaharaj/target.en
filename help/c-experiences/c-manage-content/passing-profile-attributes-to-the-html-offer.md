@@ -42,7 +42,7 @@ The following values can be "token replaced":
 |Unique visitor id|`${user.pcId}`|
 |Unique session id|`${user.sessionId}`|
 |Visitor's first session (true or false)|`${user.isFirstSession}`|
-|Past behavior|`{$user.endpoint.lastPurchasedEntity}`, `{$user.endpoint.lastViewedEntity}`, `{$user.endpoint.mostViewedEntity}`, `{$user.endpoint.categoryAffinity}`| 
+|Past behavior|`${user.endpoint.lastPurchasedEntity}`, `${user.endpoint.lastViewedEntity}`, `${user.endpoint.mostViewedEntity}`, `${user.endpoint.categoryAffinity}`| 
 
 Log information in the console for debugging purposes, such as `${campaign.name}`, `${campaign.id}`, `${campaign.recipe.name}`, `${campaign.recipe.id}`, `${offer.name}`, `${offer.id}`, `${campaign.name}`
 

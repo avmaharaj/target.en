@@ -22,13 +22,13 @@ The pre-built audiences in the Target Library category are legacy audiences and 
 1. Name the audience. 
 1. Click **[!UICONTROL Add Rule]** > **[!UICONTROL Target Library]**.
 
-   ![](assets/target_library.png)
+   ![Target Library](assets/target_library.png)
 
 1. Click **[!UICONTROL Select]**, then select a pre-built targeting rule.
 
    Pre-built targeting rules include, Window Operating System, Tablet Device, Safari Browser, Returning Visitors, Referred from Google, and more.
 
-   The predefined audience "Tablet Device" already qualifies when the user agent contains one of the following strings (some of which are model numbers of devices. You do not have to create custom targeting rules for these devices.
+   The predefined audience "Tablet Device" already qualifies when the user agent contains one of the following strings (some of which are model numbers of devices). You do not have to create custom targeting rules for these devices.
 
    Kindle, Silk, iPad, Sony Tablet, TF101, GT-P1000, GT-P1000R, GT-P1000M, SGH-T849, SHW-M180S, GT-I9000T, BNTV250, and Tablet PC. 
 

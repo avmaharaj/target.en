@@ -76,7 +76,7 @@ If you are creating a Recommendations activity, there are no experiences. Choose
       1. Type or paste your JSON code in the Code box.
       1. Click [!UICONTROL Save].
 
-   For a Recommendations activity, the Content drop-down gives you the Add Recommendation option. Click **[!UICONTROL Add Recommendation]**, then select the page type. Then follow the usual steps as defined in the interface to [create a Recommendations activity](https://marketing.adobe.com/resources/help/en_US/target/recs/t_create_recs_activity.html).
+   For a Recommendations activity, the Content drop-down gives you the Add Recommendation option. Click **[!UICONTROL Add Recommendation]**, then select the page type. Then follow the usual steps as defined in the interface to [create a Recommendations activity](/help/c-recommendations/t-create-recs-activity/create-recs-activity.md).
 
    While selecting Recommendations criteria in the Form-Based Experience Composer, there is now a direct link to the selected Criteria card so you can quickly and easily edit the criteria.
 

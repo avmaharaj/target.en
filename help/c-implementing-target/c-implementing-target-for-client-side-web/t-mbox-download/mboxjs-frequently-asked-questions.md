@@ -15,7 +15,7 @@ Answers to frequently asked questions about mbox.js.
 
 ## What is the impact of mbox.js on page-load times? {#section_90B3B94FE0BF4B369577FCB97B67F089}
 
-For more information, see [Understanding the Target JavaScript Libraries](../../../c-implementing-target/c-considerations-before-you-implement-target/target-implement.md#concept_60B748DE4293488F917E8F1FA4C7E9EB).
+For more information, see [Benefits of at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-target-atjs-implementation/target-atjs-implementation.md#benefits).
 
 ## Why do I get "Parser-blocking" warning messages in Google Chrome when using mbox.js and document.write? {#section_355A3A5BF02F42EEB8271C96EF41590A}
 

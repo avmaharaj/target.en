@@ -27,7 +27,7 @@ What you need to know before creating a [!DNL Recommendations] activity.
 |![Step 2](/help/c-recommendations/assets/step2_red.png)|Keys|The key determines the type of product or content that displays in your recommendations. For example, the key might be a product category. See [Base the Recommendation on a Recommendation Key](/help/c-recommendations/c-algorithms/create-new-algorithm.md#task_2B0ED54AFBF64C56916B6E1F4DC0DC3B).|
 |![Step 3](/help/c-recommendations/assets/step3_red.png)|Attributes|Attributes provide more specific information about the products you want to display. For example, you might want to show products within a certain price range, or items that meet an inventory threshold. Attributes can be provided in the mbox or through a [feed](/help/c-recommendations/c-products/feeds.md).<br>See [Inclusion Rules](/help/c-recommendations/c-algorithms/create-new-algorithm.md#task_28DB20F968B1451481D8E51BAF947079) and [Entity Attributes](/help/c-recommendations/c-products/entity-attributes.md).|
 |![Step 4](/help/c-recommendations/assets/step4_red.png)|Exclusions|Exclusions determine which specific items do not appear in your recommendations.<br>See [Exclusions](/help/c-recommendations/c-products/exclusions.md).|
-|![Step 5](/help/c-recommendations/assets/step5_red.png)|Purchase deals|Purchase details provide information about purchased items and the order when the purchase has been completed.|
+|![Step 5](/help/c-recommendations/assets/step5_red.png)|Purchase details|Purchase details provide information about purchased items and the order when the purchase has been completed.|
 
 ## Base Implementation {#concept_D1154A3FB0FB4467A29AD2BDD21C82D5}
 
@@ -40,7 +40,7 @@ There are two methods to provide information about products and services to [!DN
 | Method | Description |
 |--- |--- |
 |Pass parameters directly to the page|This method works well for items that change frequently. However, because it requires that changes be made directly to the page, in many organizations, this method requires the involvement of IT and the people who implement the pages.|
-|Pass parameters through a Google or CSV feed|This method works well for collections that do not change frequently. It is usually not necessary to change your mbox implementation or other page code to provide product information through a feed. However, the product list remains static, so quick changes are more difficult. For more information, see [Feeds](/help/c-recommendations/c-products/feeds.md).|
+|Pass parameters through a Google or CSV feed|This method works well for collections that do not change frequently. It is usually not necessary to change your implementation or other page code to provide product information through a feed. However, the product list remains static, so quick changes are more difficult. For more information, see [Feeds](/help/c-recommendations/c-products/feeds.md).|
 
 These methods can be used separately or together, as in the following examples.
 
@@ -50,7 +50,7 @@ One common [!DNL Recommendations] implementation option uses both page parameter
 
 This method might be preferred by a retailer who has a relatively set product catalog, but who might want to emphasize specific seasonal items or items that are on sale. Most customers might provide their information primarily through the feed, with only occasional adjustments on the page.
 
-Use a feed to provide information that will remain static. Whether using a CSV file or Google feed, use the following parameters:
+Use a feed to provide information that does not change frequently. Whether using a CSV file or Google feed, use the following parameters:
 
 * Required parameters
 
@@ -58,12 +58,15 @@ Use a feed to provide information that will remain static. Whether using a CSV f
 
 * Helpful parameters
 
-    * `entity.cust1` 
-    * `entity.cust2` 
-    * `entity.cust3` 
-    * All other attributes
+    * `entity.name` 
+    * `entity.categoryId` 
+    * `entity.brand` 
+    * `entity.pageUrl` 
+    * `entity.thumbnailUrl` 
+    * `entity.message`
+    * All custom attributes
 
-Once the feed is set up and passed to [!DNL Recommendations], pass parameters on the page for items that are frequently changing.
+Once the feed is set up and passed to [!DNL Recommendations], pass parameters on the page for attributes that change frequently, i.e. more often than daily.
 
 * Required parameters
 
@@ -94,17 +97,15 @@ This example might be especially useful for a media company, with content that c
 For example, you can use the following code in the header section of your product or content pages:
 
 ```
-function targetPageParams() { 
-   return { 
-      "entity": { 
-         "id": " 
-<i>32323</i>", 
-         "categoryId": " 
-<i>My Category</i>", 
-         "value": 105.56, 
-         "inventory": 329 
-      } 
-   } 
+function targetPageParams() {
+ return {
+    "entity": {
+       "id": "32323",
+       "categoryId": "My Category",
+       "value": 105.56,
+       "inventory": 329
+    }
+ }
 }
 ```
 
@@ -144,7 +145,7 @@ For more information about implementing [!DNL at.js], see [How to Deploy at.js](
 
 For more information about implementing [!DNL mbox.js], see [Mbox.js Implementation](../c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/mbox-download.md#task_4EAE26BB84FD4E1D858F411AEDF4B420).
 
-For more information about the differences between the two Target Javascript libraries, see [Understanding the Target JavaScript Libraries](../c-implementing-target/c-considerations-before-you-implement-target/target-implement.md#concept_60B748DE4293488F917E8F1FA4C7E9EB).
+For more information about the differences between the two Target Javascript libraries, see [Benefits of at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-target-atjs-implementation/target-atjs-implementation.md#benefits).
 
 ## Category Page {#section_F51A1AAEAC0E4B788582BBE1FEC3ABDC}
 
@@ -154,8 +155,7 @@ On a category page, you probably want to restrict your recommendations to produc
 function targetPageParams() { 
    return { 
       "entity": { 
-         "categoryId": " 
-<i>My Category</i>" 
+         "categoryId": "My Category" 
       } 
    } 
 }
@@ -169,10 +169,8 @@ On a product page, you might want to recommend specific items, or items with a p
 function targetPageParams() { 
    return { 
       "entity": { 
-         "id": " 
-<i>32323</i>", 
-         "categoryId": " 
-<i>My Category</i>", 
+         "id": "32323", 
+         "categoryId": "My Category", 
          "value": 105.56, 
          "inventory": 329 
       } 

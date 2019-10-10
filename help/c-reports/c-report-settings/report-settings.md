@@ -15,7 +15,7 @@ Information to help you set the elements you want to appear in your report. Repo
 
 To display a report, click **[!UICONTROL Activities]**, click the desired activity from the list, then click the **[!UICONTROL Reports]** tab.
 
-![](assets/report_ui.png)
+![Report UI](/help/c-reports/c-report-settings/assets/report_ui-new.png)
 
 ## Target Preset {#section_51F67341465045BEB4F1A2FB638A8EB1}
 
@@ -28,11 +28,11 @@ You can also configure an individual activity's report as desired and then save 
 1. Configure the activity's report as desired (metrics, date ranges, audiences, advanced settings, and so forth). 
 1. Next to **[!UICONTROL Target Preset]**, click the three vertical ellipses icon > **[!UICONTROL Save as New]**.
 
-   ![](assets/report_preset.png)
+   ![Report Preset](/help/c-reports/c-report-settings/assets/report_preset-new.png)
 
    The New Preset dialog box displays:
 
-   ![](assets/report_preset_dialog.png)
+   ![New Preset dialog box](/help/c-reports/c-report-settings/assets/report_preset_dialog-new.png)
 
 1. Review the information in the Filters and Settings sections to ensure that the report is configured as desired, then specify the **[!UICONTROL Preset Name]** (up to 50 characters). 
 1. (Conditional) If you want this to be your default/favorite report view, slide the **[!UICONTROL Set This as Default Preset]** toggle to the On position. 
@@ -42,7 +42,7 @@ You can also configure an individual activity's report as desired and then save 
 
 Select the desired preset from the **[!UICONTROL Target Preset]** drop-down list.
 
-![](assets/report_preset_drop-down.png)
+![Preset drop-down list](/help/c-reports/c-report-settings/assets/report_preset_drop-down-new.png)
 
 **Edit a Preset**
 
@@ -51,7 +51,7 @@ Select the desired preset from the **[!UICONTROL Target Preset]** drop-down list
 
    After you click [!UICONTROL Save] after editing the report's configuration, an asterisk ( &#42; ) displays after the preset name to indicate that the preset has changed, as shown below:
 
-   ![](assets/report_preset_asterisk.png)
+   ![Report Preset with asterisk](/help/c-reports/c-report-settings/assets/report_preset_asterisk-new.png)
 
 1. Click the three vertical ellipses icon > **[!UICONTROL Save as New]** to create a new preset.
 
@@ -59,14 +59,14 @@ Select the desired preset from the **[!UICONTROL Target Preset]** drop-down list
 
    Click the three vertical ellipses icon > **[!UICONTROL Update]** to update the current preset.
 
-   ![](assets/report_preset_update.png)
+   ![Report Default update](/help/c-reports/c-report-settings/assets/report_preset_update-new.png)
 
 **Delete a Preset**
 
 1. Select the preset that you want to delete. 
 1. Click the three vertical ellipses icon > **[!UICONTROL Delete]**.
 
-   ![](assets/report_preset_delete.png)
+   ![Report Default delete](/help/c-reports/c-report-settings/assets/report_preset_delete-new.png)
 
 1. Click **[!UICONTROL Delete]** again to confirm your deletion.
 
@@ -100,7 +100,7 @@ For more information, see [Audiences](../../c-target/target.md#concept_A782F8481
 
 The Date Range box displays the reports current date range. Click the drop-down icon to display a calendar that lets you change the report's date range.
 
-![](assets/date_range.png)
+![Calendar](/help/c-reports/c-report-settings/assets/date_range-new.png)
 
 Select new **[!UICONTROL Start]** and **[!UICONTROL End]** dates for the report. You can also use the **[!UICONTROL From Start of Activity]** and **[!UICONTROL Till End of Activity]** check boxes.
 
@@ -118,7 +118,7 @@ Click the Gear icon to configure report settings, then click **[!UICONTROL Save 
 
 The following illustration shows the Settings dialog box for an A/B activity:
 
-![](assets/ab_settings_dialog.png)
+![Settings dialog box](/help/c-reports/c-report-settings/assets/ab_settings_dialog-new.png)
 
 Depending on the selected activity type, the options vary:
 
@@ -179,9 +179,9 @@ Click the **[!UICONTROL Location Contribution]** icon to switch the report to sh
 
 Select or deselect experiences on the left side of the chart to display or hide the corresponding experiences from the chart.
 
-If the following illustration, only experiences B and C display in the report:
+If the following illustration, only experiences Default, Mid-East, and Total display in the report. The Asia experience is hidden in the graph.
 
-![](assets/report_experiences.png)
+![Experiences](/help/c-reports/c-report-settings/assets/report_experiences-new.png)
 
 ## Running Average {#section_59066693158C4433B87D07402C2BC6CD}
 
@@ -194,7 +194,7 @@ Select the desired graph view:
 * Daily 
 * Daily Lift
 
-![](assets/report_running_average.png)
+![Report Running Average](/help/c-reports/c-report-settings/assets/report_running_average-new.png)
 
 >[!NOTE]
 >
@@ -210,13 +210,13 @@ To access the Counting Methodology option, while viewing a report in graph mode,
 
 The counting methodology will be the same as the one selected in the [!UICONTROL Settings] dialog, described above.
 
-![](assets/counting_methodology.png)
+![Counting Methodology](/help/c-reports/c-report-settings/assets/counting_methodology-new.png)
 
 By default, the graph is plotted in [!UICONTROL Daily] mode.
 
 You can change the mode by clicking the [!UICONTROL Daily] drop-down list, then selecting [!UICONTROL Cumulative].
 
-![](assets/counting_methodology_2.png)
+![Cumulative](/help/c-reports/c-report-settings/assets/counting_methodology_2-new.png)
 
 >[!NOTE]
 >

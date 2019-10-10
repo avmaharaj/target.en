@@ -42,10 +42,10 @@ Before you use Adobe Campaign to set up your targeted email offers, set up the f
 
 * Two or more Target redirect offers
 
-  See [Create a Redirect Offer](https://marketing.adobe.com/resources/help/en_US/target/target/t_offer_redirect.html). 
-* A Target activity with an experience for each offer and the desired [success metric](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html).
+  See [Create redirect offer](/help/c-experiences/c-manage-content/offer-redirect.md). 
+* A Target activity with an experience for each offer and the desired [success metric](/help/c-activities/r-success-metrics/success-metrics.md).
 
-  See [Redirect to a URL](https://marketing.adobe.com/resources/help/en_US/target/target/t_redirect_offer.html).
+  See [Redirect to a URL](/help/c-experiences/c-visual-experience-composer/redirect-offer.md).
 
 Start the activity in Target before setting up the Campaign portion of the integration.
 

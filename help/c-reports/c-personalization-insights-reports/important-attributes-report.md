@@ -107,6 +107,18 @@ At this time, [!UICONTROL Personalization Insights] is available only for conver
 
 The importance score in the "Attribute Importance Ranking" part of the report provides input into what variables the algorithm used to learn were most important when it determined how to split all the visitors into the segments it identified. It assigned a percentage score to the top 100 attributes used by the model.
 
+**Why are some offers/experiences with a lower conversion rate receiving a larger amount of traffic compared to other offers/experiences for a certain automated segment?**
+
+There are several potential reasons why you might see more visits to a lower-conversion offer/experience within an automated segment, including:
+
+* A small number of views for some or all of the offers/experiences for a certain automated segment.
+* Lower-volume activities in which certain offers or experiences do not have models built. 
+* Lower-volume activities in which models were built sooner for some offers/experiences than others. For example, suppose an additional model was built on day 22, and you are looking at data from days 10-24.
+* Targeting rules on a specific offer that limit which visitors can see which offers/experiences.
+* There are no confidence intervals in the insight reporting. However, if conversion rates are close enough, the model might serve traffic so that it is higher in the point amount, but they aren’t “statistically different” numbers.
+
+Knowing how the model works that serves traffic can be helpful. Each individual is served based on his or her total profile. However, the Insights reports generalize this behavior to make it more interpretable by a human. As a result, segments are not mutually exclusive. This can lead to individual segments displaying this type of behavior because the same person can appear in multiple segments.
+
 **What are different ways I can leverage the information in Personalization Insights?**
 
 * Discover new audiences to target: If you see a particular automated segment that performs particularly well, you might consider creating an audience so you can reuse that segment in other reports. 

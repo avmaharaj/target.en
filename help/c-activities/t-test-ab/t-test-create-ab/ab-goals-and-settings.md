@@ -12,9 +12,9 @@ snippet: y
 
 The Goals and Settings page is where you enter information about the goals of the test.
 
-The available settings depend on whether you use Target or Analytics as the data source.
+The available settings depend on whether you use Target or [Analytics](/help/c-integrating-target-with-mac/a4t/a4t.md) as the data source.
 
-![](assets/ab_settings.png)
+![Activity Settings dialog box](/help/c-activities/t-test-ab/t-test-create-ab/assets/ab_settings-new.png)
 
 ## Activity Settings {#section_DCBDC354261F420EBD4B43EA34947BAC}
 
@@ -28,7 +28,7 @@ The available settings depend on whether you use Target or Analytics as the data
 
 | Settings | Description |
 |--- |--- |
-|Reporting Source|Specify whether data is collected from Adobe Target or from Adobe Analytics. See [Adobe Analytics as the Reporting Source for Target](https://marketing.adobe.com/resources/help/en_US/target/a4t/a4t.html) to learn about the differences between the reporting solutions and the advantages of each.  When selecting Analytics as the reporting source for Target, you select an Analytics report suite to receive Target activity data.<br>To do this, first choose from any of the Analytics companies your account is tied to, and then select the appropriate report suite for the activity. Only report suites that are provisioned to connect to Adobe Target will be available for selection. If you don't see the report suite(s) you expect, first try logging out and logging back in to the Adobe Experience Cloud to try again. If the report suite is still missing from the list, please contact Customer Care.<br>If a reporting source is specified in your account settings, the specified source is used and this setting is not visible.<br>Note:  You cannot change your reporting source after the activity goes live in order to keep reports consistent.|
+|Reporting Source|Specify whether data is collected from Adobe Target or from Adobe Analytics. See [Adobe Analytics as the Reporting Source for Target](/help/c-integrating-target-with-mac/a4t/a4t.md) to learn about the differences between the reporting solutions and the advantages of each.  When selecting Analytics as the reporting source for Target, you select an Analytics report suite to receive Target activity data.<br>To do this, first choose from any of the Analytics companies your account is tied to, and then select the appropriate report suite for the activity. Only report suites that are provisioned to connect to Adobe Target will be available for selection. If you don't see the report suite(s) you expect, first try logging out and logging back in to the Adobe Experience Cloud to try again. If the report suite is still missing from the list, please contact Customer Care.<br>If a reporting source is specified in your account settings, the specified source is used and this setting is not visible.<br>Note:  You cannot change your reporting source after the activity goes live in order to keep reports consistent.|
 |Goal|Select the action taken by a visitor to achieve the goal. For example, choose a Conversion metric, then set the parameters that determine when success is achieved.  For more information about setting metrics, see [Set Metrics](../../../c-activities/t-test-ab/t-test-create-ab/ab-set-metrics.md).<br>Note:  If the reporting solution is set to Analytics, the only available goal metric is Conversion. Analytics metrics cannot be selected as a goal.   When you select your success metric, a selector displays. Use this selector to choose the specifics for the success metric.<br>If enabled, the Estimated Value of the Conversion field (not available for the Page Score metrics) provides a value for your goal, but not for other metrics. This value enables Target to calculate an estimated lift in revenue. This field is optional; however, incremental revenue for any non-revenue metric cannot be calculated without it. For all revenue metrics (Revenue per Visitor, Average Order Value, Total Sales, and Orders), the estimate uses Revenue per Visitor. The data type is currency.<br>After reaching the activity goal, a visitor continues to see the activity content, unless that visitor qualifies for a higher priority activity. If the visitor reaches the goal again, it is counted as another conversion. Note that this is different than the default behavior in Target Classic, which counts visitors as new if they see the test again.|
 |Additional Metrics|Create additional success metrics.  This setting is not available if the reporting solution is set to Analytics. In this case, the metrics defined for the Analytics report suite are applied.|
 |Audiences for Reporting|By default, reports show results for all qualified visitors. You can add report audiences to show only information about specific audiences.  This setting is not available if you choose Analytics as your reporting solution. The audience defined for the Analytics report suite are applied.|
@@ -37,16 +37,19 @@ The available settings depend on whether you use Target or Analytics as the data
 
 Advanced settings are available for A/B Test goal metrics.
 
-![](assets/Menu_AdvancedSettings.png)
+![Advanced Settings menu](/help/c-activities/t-test-ab/t-test-create-ab/assets/menu-advanced-settings-new.png)
 
 >[!NOTE]
 >
 >If you use Adobe Analytics as your reporting source, settings are managed by the Analytics server. The advanced settings option will not be available.
 
+![Advanced Settings](/help/c-activities/t-test-ab/t-test-create-ab/assets/advanced-settings.png)
+
 | Setting | Description |
 |--- |--- |
 |Which success metric must be reached before incrementing this metric?|Use this option to only count someone as reaching the success metric if they’ve previously reached a different success metric. For example a test conversion might only be valid if the visitor clicks on the offer, or reaches a particular page before converting.  You can provided dependency on multiple metrics along with the flexibility to choose whether the metric should be reached or not reached for the count to increase.  You must define both (or multiple) success metrics before you can make one dependent on another.  The  Add Dependency  option allows the success metric to increment if another success metric has been reached or has not been reached.  To add a dependency:<ul><li>After adding additional metrics, click Advanced Settings.</li><li>Click the  Add Dependency  option:</li><li>Drag and drop the desired metrics from the left pane into the right pane, then click  Reached  to toggle the setting between  Reached  and  Not Reached.</li><li>You can edit or remove dependencies after adding them.</li></ul>|
 |What will happen after a user encounters this goal metric?|There are three options for what happens after a visitor reaches the goal metric:<ul><li>Select  Increment Count & Keep User in Activity  to specify how the count is incremented.</li><li>Select  Increment Count, Release User & Allow Reentry  to specify the experience the user sees if they reenter the activity.</li><li>Select  Increment Count, Release User & Bar from Reentry  to specify what the user sees instead of the activity content.</li></ul>|
+|How will the count be incremented?|There are three options for how the count is incremented:<ul><li>Once per Entrant</li><li>On Every Impression (Excluding page refreshes)</li><li>On Every Impression</li></ul>|
 
 See [Success Metrics](../../../c-activities/r-success-metrics/success-metrics.md#reference_D011575C85DA48E989A244593D9B9924) for more information about advanced settings.
 

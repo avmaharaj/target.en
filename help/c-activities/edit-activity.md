@@ -15,29 +15,29 @@ Information about the different ways you can edit an existing activity, includin
 
 Target provides various places in the UI where you can edit existing activities. The process varies depending on the method you choose.
 
-## Edit an Activity by Using the Hover Button on the Activities Page {#section_29EE2ECA6B88473A8F9AC5600FFBB174}
+## Edit an activity by using the hover button on the Activities page {#section_29EE2ECA6B88473A8F9AC5600FFBB174}
 
 1. From the **[!UICONTROL Activities]** page, hover over the activity you want to edit, then click the **[!UICONTROL Edit]** icon.
 
-   ![](assets/hover_edit.png)
+   ![Edit icon](/help/c-activities/assets/hover_edit.png)
 
-   Target opens the activity and you see the Experiences page (the first step in the three-step guided workflow). A split button displays at the top right fo the page, as shown below:
+   Target opens the activity in the Visual Experience Composer (VEC) and you see the [!UICONTROL Experiences] page (the first step in the three-step guided workflow).
 
-   ![](assets/edit_split_button.png)
+1. Edit the activity, as desired using the [VEC options](/help/c-experiences/c-visual-experience-composer/viztarget-options.md).
 
-1. Edit the activity, as desired using the split button:
+1. Click the split button to advance to the next step or to save the activity.
 
-   ![](assets/edit_split_button_2.png)
+   ![Split button](/help/c-activities/assets/edit_split_button_2.png)
 
-    * **Next:** To edit another page in the three-step workflow, click **[!UICONTROL Next]** to advance to the desired step. For example, in the illustration above, clicking [!UICONTROL Next] displays the Targeting step. 
+    * **Next:** To edit another page in the three-step workflow, click **[!UICONTROL Next]** to advance to the desired step. For example, in the illustration above, clicking [!UICONTROL Next] displays the [!UICONTROL Targeting] step. 
     * **Save & Close:** Make the desired changes on the current step, click the drop-down on the split button, then select **[!UICONTROL Save and Close]** to save your changes and display the activity's [!UICONTROL Overview] page. 
     * **Save:** Make the desired changes on a step, click the drop-down on the split button, then select **[!UICONTROL Save]** to save your changes and remain on that step where you can continue to make changes. Wait for the save to complete before making additional changes. The VEC reloads with the refreshed changes after the save is complete.
 
-## Edit an Activity by Opening the Activity by Clicking Its Name on the Activities Page {#section_176180DAD17E40CEA441903F39E0AA1C}
+## Edit an activity by opening the activity by clicking its name on the Activities page {#section_176180DAD17E40CEA441903F39E0AA1C}
 
 1. To avoid having to step through the workflow, click the desired activity from the Activities page to open it, then select an option from the **[!UICONTROL Edit Activity]** drop-down list.
 
-   ![](assets/edit_activity.png)
+   ![Edit Activity drop-down](/help/c-activities/assets/edit_activity.png)
 
 1. Select the desired option::
 
@@ -56,7 +56,19 @@ Target provides various places in the UI where you can edit existing activities.
         * Click **[!UICONTROL Save & Close]** to save your changes and display the activity's Overview page. 
         * Click **[!UICONTROL Save]** to save your changes and remain on that step where you can continue to make changes. Wait for the save to complete before making additional changes. The VEC reloads with the refreshed changes after the save is complete.
 
-## Save an Activity in Draft Form {#section_968CD7A63027432EBD8FAE3A0F7404C3}
+## Work with legacy activities created in Recommendations Classic {#classic}
+
+The [!UICONTROL Activities] list display activities created in various sources, including [!DNL Recommendations Classic]. The following actions are available when working with legacy activities created in [!DNL Recommendations Classic]:
+
+* [!UICONTROL Activate]
+* [!UICONTROL Deactivate]
+* [!UICONTROL Archive]
+* [!UICONTROL Copy]
+* [!UICONTROL Delete]
+
+You cannot edit a [!DNL Recommendations] activity directly. If you want to edit the activity, you should create a copy of the activity using [!DNL Target Premium] and then save the newly created activity. This newly created activity can then be edited as necessary.
+
+## Save an activity in draft form {#section_968CD7A63027432EBD8FAE3A0F7404C3}
 
 When you are creating a new activity that has not yet been saved, or you are editing an activity that was previously saved in draft form, the Save Draft options display in the split button.
 
@@ -65,7 +77,7 @@ You can save an activity in draft mode if the activity setup has been started bu
 1. Create new activity or edit an existing activity that is in draft form. 
 1. Select the desired option from the split button:
 
-   ![](assets/save_draft.png)
+    ![Save Draft](/help/c-activities/assets/save_draft.png)
 
     * **Next:** To edit another page in the three-step workflow, click **[!UICONTROL Next]** to advance to the desired step. 
     * **Save Draft & Close:** Make the desired changes on the current step, click the drop-down on the split button, then select **[!UICONTROL Save Draft and Close]** to save your changes and display the activity's [!UICONTROL Overview] page. 

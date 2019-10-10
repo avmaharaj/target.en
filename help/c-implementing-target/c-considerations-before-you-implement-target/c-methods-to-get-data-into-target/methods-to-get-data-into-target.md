@@ -50,7 +50,7 @@ Data gets sent to Target in real-time, and can be used on the same server call t
 * If the data needs to be used for targeting on a subsequent page/server call, it needs to be translated to a profile script.
 * Query strings can contain only characters as per the [Internet Engineering Task Force (IETF) standard](https://www.ietf.org/rfc/rfc3986.txt) .
 
-  In addition to those mentioned on the IETF site, Target allows the following characters in query stings:
+  In addition to those mentioned on the IETF site, Target allows the following characters in query strings:
 
   `< > # % " { } | \\ ^ \[\] \``
   
@@ -332,8 +332,8 @@ Requires Experience Cloud ID (ECID) implementation.
 
 ### Code Examples
 
-Details can be found in [Create a Customer Attribute Source and Upload the Data File](https://marketing.adobe.com/resources/help/en_US/mcloud/t_crs_usecase.html) .
+Details can be found in [Create a customer attribute source and upload the data file](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/t-crs-usecase.html).
 
 ### Links to Relevant Information
 
-[Create a Customer Attribute Source and Upload the Data File](https://marketing.adobe.com/resources/help/en_US/mcloud/t_crs_usecase.html)
+[Create a customer attribute source and upload the data file](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/t-crs-usecase.html).

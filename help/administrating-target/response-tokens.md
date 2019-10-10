@@ -1,8 +1,8 @@
 ---
 description: Response tokens let you automatically output Target-specific information (campaign details, user profile information, geo information, and so forth) to use in debugging or integrating with 3rd-party systems (such as Clicktale)
-keywords: response tokens;tokens;plugins;plug-ins
-seo-description: Response tokens let you automatically output Target-specific information (campaign details, user profile information, geo information, and so forth) to use in debugging or integrating with 3rd-party systems (such as Clicktale)
-seo-title: Response tokens
+keywords: response tokens;tokens;plugins;plug-ins;at.js;response
+seo-description: Response tokens let you automatically output Target-specific information (activity details, user profile information, geo information, and so forth) to use in debugging or integrating with 3rd-party systems (such as Clicktale)
+seo-title: Response tokens in Adobe Target
 solution: Target
 subtopic: Getting Started
 title: Response tokens
@@ -20,7 +20,7 @@ A key difference between plug-ins and response tokens is that while plug-ins del
 
 >[!NOTE]
 >
->Response tokens are available with [!DNL at.js] 1.1 or later. Response tokens are not supported with mbox.js.
+>Response tokens are available with at.js 1.1 or later. Response tokens are not supported with mbox.js.
 
 | Target Library in Use | Suggested Actions |
 |--- |--- |
@@ -280,6 +280,6 @@ The equivalent of the ttMeta plugin for debugging purposes can be created by add
 
 ## Training Video: Response Tokens and at.js Custom Events {#section_3AA0A6C8DBD94A528337A2525E3E05D5}
 
-Watch the following video to learn how to use Response Tokens and at.js Custom Events to share profile information from Target to third-party systems.
+Watch the following video to learn how to use response tokens and at.js custom events to share profile information from Target to third-party systems.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23253/)

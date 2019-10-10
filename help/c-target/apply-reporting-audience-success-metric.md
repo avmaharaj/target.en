@@ -1,8 +1,8 @@
 ---
 description: Choose a success metric that qualifies the user for the reporting audience.
 keywords: Targeting;audience;reporting;success metric
-seo-description: Choose a success metric that qualifies the user for the reporting audience.
-seo-title: Apply a reporting audience to a success metric
+seo-description: Choose a success metric in Adobe Target that qualifies the user for the reporting audience.
+seo-title: Apply a reporting audience to a success metric in Adobe Target
 solution: Target
 title: Apply a reporting audience to a success metric
 uuid: cc485785-84cc-4a60-acf8-788b842b243f

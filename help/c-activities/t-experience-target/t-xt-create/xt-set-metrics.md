@@ -1,14 +1,14 @@
 ---
 description: Use metrics in an Experience Targeting (XT) activity to determine when a visit is successful.
 keywords: experience targeting;xt;metrics;set metrics;goal metric;activity settings;success metric;conversion;revenue;engagement
-seo-description: Use metrics in an Experience Targeting (XT) activity to determine when a visit is successful.
+seo-description: Use metrics in an Adobe Target Experience Targeting (XT) activity to determine when a visit is successful.
 seo-title: Set Metrics
 solution: Target,standard
 title: Set Metrics
 uuid: 5b2f6613-0773-4614-9d39-d9a408566969
 ---
 
-# Set Metrics{#set-metrics}
+# Set metrics{#set-metrics}
 
 Use metrics in an Experience Targeting (XT) activity to determine when a visit is successful.
 
@@ -17,7 +17,7 @@ For detailed information about success metrics, see [Success Metrics](../../../c
 1. Specify the goal of the activity.
 1. Select a [success metric](../../../c-activities/r-success-metrics/success-metrics.md#reference_D011575C85DA48E989A244593D9B9924)
 
-   ![](assets/ab_metrics.png)
+   ![Select success metric](/help/c-activities/t-experience-target/t-xt-create/assets/ab_metrics-new.png)
 
    The [!UICONTROL Select Metrics] page lists the success metrics you can choose for your activity. The success metrics are divided into the following categories:
 

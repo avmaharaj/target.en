@@ -1,8 +1,8 @@
 ---
 description: Several settings can be used to describe and control a Recommendations activity.
 keywords: Recommendations;Settings;name;objective;priority;duration;reporting settings;other metadata
-seo-description: Several settings can be used to describe and control a Recommendations activity.
-seo-title: Recommendations Activity settings
+seo-description: Several settings can be used to describe and control a Recommendations activity in Adobe Target.
+seo-title: Recommendations Activity settings in Adobe Target
 solution: Target
 subtopic: Recommendations
 title: Recommendations Activity settings
@@ -15,6 +15,8 @@ badge: premium
 # ![PREMIUM](/help/assets/premium.png) Recommendations Activity settings{#recommendations-activity-settings}
 
 Information about the settings you can use to describe and control a [!UICONTROL Recommendations] activity.
+
+![Recommendations Goals & Settings page](/help/c-recommendations/t-create-recs-activity/assets/recs-settings.png)
 
 The following sections describe the available settings for a [!UICONTROL Recommendations] activity.
 
@@ -41,11 +43,7 @@ If you specify a [!UICONTROL Recommendations] activity name that already exists 
 
 ## Priority
 
-Adjust the slider to determine the priority level. There are three levels:
-
-*   0 = Low
-*   1 = Medium
-*   2 = High
+Adjust the slider to determine the priority level.
 
 The priority is used if multiple activities are assigned to the same location with the same audience. If two or more activities are assigned to the location, the activity with the highest priority displays.
 
@@ -53,11 +51,12 @@ The priority is used if multiple activities are assigned to the same location wi
 
 Set the duration of the activity.
 
-The activity can start when approved, or you can set a specific date and time. Likewise, the activity can either end when it is deactivated or you can set a date and time. The time picker uses a 24-hour clock, with 00:00 being midnight. The time zone is set to the time zone configured in your browser. To use a different time zone, set your browser to another time zone and restart the browser.
+The activity can start when activated, or you can set a specific date and time. Likewise, the activity can either end when it is deactivated or you can set a date and time. The time picker uses a 24-hour clock, with 00:00 being midnight. The time zone is set to the time zone configured in your browser. To use a different time zone, set your browser to another time zone and restart the browser.
 
 ## Reporting Settings
 
-* **Goal:** Name the goal, and select the success metric that determines whether the activity is successful.
+* **Reporting Source:** Select the reporting source: Adobe Target or [Analytics](/help/c-integrating-target-with-mac/a4t/a4t.md). Do not change the reporting source after the activity goes live. Changing the reporting source after an activity goes live causes inconsistent reporting.
+* **Goal Metric:** Select the success metric that determines whether the activity is successful.
 * **Additional Metrics:** Configure additional success metrics to be used in your reports.
 * **Audiences for Reporting:** Define audiences that can be used when filtering your reports.
 

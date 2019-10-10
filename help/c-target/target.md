@@ -1,8 +1,8 @@
 ---
-description: Target different content and experiences to specific audiences to optimize your web marketing by displaying the right messages to the right people at the right time.
+description: Use audiences to target different content and experiences to specific audiences to optimize your web marketing by displaying the right messages to the right people at the right time.
 keywords: Targeting;audiences;percentage target
-seo-description: Target different content and experiences to specific audiences to optimize your web marketing by displaying the right messages to the right people at the right time.
-seo-title: Audiences
+seo-description: Use audiences in Adobe Target to target different content and experiences to specific audiences to optimize your web marketing by displaying the right messages to the right people at the right time.
+seo-title: Audiences in Adobe Target
 solution: Target
 title: Audiences
 uuid: 12317898-e9c9-4605-b659-25bdf200849b
@@ -10,9 +10,9 @@ uuid: 12317898-e9c9-4605-b659-25bdf200849b
 
 # Audiences{#audiences}
 
-Target different content and experiences to specific audiences to optimize your web marketing by displaying the right messages to the right people at the right time.
+Use audiences to target different content and experiences to specific audiences to optimize your web marketing by displaying the right messages to the right people at the right time.
 
-An audience is a group of similar activity entrants who will see a targeted activity.  A group of people with the same characteristics, such as a new visitor, a returning visitor, or returning visitors from the Midwest. The Audience feature allows you to target different content and experiences to specific audiences to optimize your digital marketing by displaying the right messages to the right people at the right time. If a visitor is identified as part of a target audience, Target determines which experience to display, based on criteria defined during activity creation.
+An audience is a group of similar activity entrants who will see a targeted activity.  An audience is group of people with the same characteristics, such as a new visitor, a returning visitor, or returning visitors from the Midwest. The Audience feature allows you to target different content and experiences to specific audiences to optimize your digital marketing by displaying the right messages to the right people at the right time. If a visitor is identified as part of a target audience, Target determines which experience to display, based on criteria defined during activity creation.
 
 By default, traffic is split evenly between experiences. However, you can specify percentage targets for each experience.
 

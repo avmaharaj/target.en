@@ -27,11 +27,11 @@ Activity QA lets you fully test your Target activities prior to launching them l
 
 1. From an activity's [!UICONTROL Overview] page (all types except Automated Personalization), click the **[!UICONTROL Activity QA]** link.
 
-   ![](assets/qa_link.png)
+   ![Activity QA link](assets/qa_link.png)
 
 1. Configure the following settings:
 
-   ![](assets/qa_link_config.png)
+   ![QA Link configuration options](assets/qa_link_config.png)
 
     * **Match Audience Rules to See Experiences:** Sometimes you want to confirm that your audience matching works. Other times you just want to check the look and feel of the activity. If this setting is toggled to the "on" position, testers must meet targeting requirements to qualify to see the experiences. For Experience Targeting (XT) activities, a single activity URL is provided. The experience you see is determined by you qualifying for one of the targeting rules.
 

@@ -1,6 +1,6 @@
 ---
 cloud: experience-cloud
-solution-title: Target
+solution-title: Learn & Support
 solution-hub-url: https://helpx.adobe.com/support/target.html
 solution-image: assets/target-icon-24.png
 getting-started-title: Getting Started

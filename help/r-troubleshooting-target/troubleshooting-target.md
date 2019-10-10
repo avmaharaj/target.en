@@ -120,6 +120,11 @@ The following sections contain troubleshooting information about implementing Ta
 
 * [Known issues and resolved issues](/help/r-release-notes/known-issues-resolved-issues.md)
 
+## Mobile Apps
+
+* [Mobile App Visual Experience Composer](/help/c-target-mobile-app/c-mobile-visual-experience-composer/mobile-visual-experience-composer.md#ts)
+* [Target for mobile apps FAQ](/help/c-target-mobile-app/target-for-mobile-apps-faq.md)
+
 ## Reporting
 
 * [Target optimization and personalization FAQ](/help/c-intro/cmp-target-standard-cheatsheet.md)

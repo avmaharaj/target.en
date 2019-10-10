@@ -71,15 +71,15 @@ Actions performed in the VEC are visible in real-time in the app, thereby allowi
 
 ![](assets/mobile-vec-create-4.png)
 
-## Troubleshooting {#troubleshooting}
+**Manage multiple app versions**
 
-**The Mobile App VEC says that my app has disconnected.**
+When a new app version is detected, you are notified that the app version has been added to the list of targeted versions.
 
-Your internet connection might have dropped. Relaunch the application after the internet is available and a fresh connection will be established. We recommend authoring a Mobile App VEC activity on a Wifi connection.
+![New app notification](/help/c-target-mobile-app/c-mobile-visual-experience-composer/assets/manage-versions-notification-new.png)
 
-**The Mobile App VEC is not in sync with my mobile app.**
+Multiple mobile app versions can be added and removed manually from the [!UICONTROL Manage Versions] dialog box.
 
-Click the [!UICONTROL Refresh] button in the VEC to sync the display.
+![Manage Versions dialog box](/help/c-target-mobile-app/c-mobile-visual-experience-composer/assets/manage-versions-dialog.png)
 
 ## Target Views & Mobile Applications {#target-views}
 
@@ -178,10 +178,19 @@ For additional flexibility, you can also call the `TargetVEC.prefetchOffers()` A
 
 Note that each time Target offers are prefetched, the offers for the last Target view triggered with `AdobeTargetMobile.targetView()` are also applied, if possible.
 
+## Troubleshooting {#ts}
+
+**The Mobile App VEC says that my app has disconnected.**
+
+Your internet connection might have dropped. Relaunch the application after the internet is available and a fresh connection will be established. We recommend authoring a Mobile App VEC activity on a Wifi connection.
+
+**The Mobile App VEC is not in sync with my mobile app.**
+
+Click the [!UICONTROL Refresh] button in the VEC to sync the display.
+
 ## Known limitations {#limitations}
 
 * The Mobile App VEC can currently be used to create [A/B Test](/help/c-activities/t-test-ab/test-ab.md) and [Experience Targeting (XT)](/help/c-activities/t-experience-target/experience-target.md) activities for mobile apps. Support for other activity types will be available in the future. 
-* The Preview feature is not supported yet. It will be made available in an upcoming release.
 * When trying to reconnect the app to the Mobile App VEC, you must exit the app completely and relaunch it.
 
   If the mobile app is already open during any of the scenarios listed below, you must close the app and then reopen it. However, you *must* close the app by closing it from the recent apps section and *not* by pressing the Back button. There might be intermittent connection issues if the app is closed by pressing the Back button.

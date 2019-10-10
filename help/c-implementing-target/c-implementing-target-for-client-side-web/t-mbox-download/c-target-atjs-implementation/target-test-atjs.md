@@ -6,7 +6,7 @@ title: Deploy at.js to a Non-Production Environment
 uuid: 7f1adc43-35b4-442c-bb06-feab60604a87
 ---
 
-# Deploy at.js to a Non-Production Environment{#deploy-at-js-to-a-non-production-environment}
+# Deploy at.js to a non-production environment{#deploy-at-js-to-a-non-production-environment}
 
 Information about the techniques to safely deploy at.js to a non-production environment.
 
@@ -16,7 +16,7 @@ If you use DTM, you can easily save at.js in your Adobe Target Tool configuratio
 
 After you have saved the library, use the DTM Switch tool to test it against your production code. This will also make it easy for your Adobe consultants to support you.
 
-For more information, see [Option 3: Implement Target Manually with the Target JavaScript Library Hosted by DTM](https://marketing.adobe.com/resources/help/en_US/dtm/target/t_implementing-target-manually-js-hosted-dtm.html) in the _Best Practices for Implementing Adobe Target using Dynamic Tag Management_ guide.
+For more information, see [Option 3: Implement Target Manually with the Target JavaScript Library Hosted by DTM](https://docs.adobe.com/content/help/en/dtm/implementing/target/add-target/t-implementing-target-manually-js-hosted-dtm.html) in the *Best Practices for Implementing Adobe Target using Dynamic Tag Management* guide.
 
 ## Use "Requestly" Chrome extension to map to another file
 

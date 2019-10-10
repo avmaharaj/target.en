@@ -116,11 +116,21 @@ There are multiple ways to reach the [!UICONTROL Create New Criteria] screen. So
 
    If you are creating a new [!UICONTROL Recommendations] activity or editing an existing one, the **[!UICONTROL Save criteria for later]** check box is selected by default. If you do not want to use the criteria in other activities, clear the check box before saving.
 
-### Expected criteria processing time
+## Expected criteria processing time {#process-time}
 
-* **mboxes**: If the criteria uses mboxes as the Behavioral Data Source, once created, the criteria will immediately run. Depending on the amount of behavioral data used and the size of the catalog, the algorithm can take up to 12 hours to run. Making changes to the criteria configuration results in the criteria re-running. 
+After saving an Activity containing a Criteria, [!DNL Target] computes recommendations based on the selected Collection and Criteria. This computation takes some time to perform and the timeframe differs based on the selected recommendation logic, data range, number of items in your catalog, amount of behavioral data your customers have generated, and the selected behavioral data source. The behavioral data source has the largest impact on processing time, as follows:
 
-* **Analytics**: If the criteria uses [!DNL Adobe Analytics] as the Behavioral Data Source, once created, the time for criteria availability depends on whether the selected report suite and lookback window has been used for any other criteria. If the report suite has been previously used with a lookback window at least as long as the selected lookback window, then behavioral data is already available in Target and Recommendations runs the criteria immediately. The algorithm can take up to 12 hours to run depending on the amount of behavioral data used and the size of the catalog. If the report suite has not been previously used, or is used with a longer lookback window, Recommendations must request and receive data from Adobe Analytics, then subsequently run the algorithm. The sync process with Analytics generally takes at least 2 days and might take up to 7 days to complete depending on Analytics system load. 
+### mboxes
+
+If mboxes is selected as the behavioral data source, once created, the criteria immediately runs. Depending on the amount of behavioral data used and the size of the catalog, the algorithm can take up to 12 hours to run. Making changes to the criteria configuration generally results in the algorithm re-running. Depending on the change made, the previously computed recommendations might be available until a re-run is complete, or for larger changes, only backup or default content is available until a re-run is complete. If an algorithm is not modified, it is automatically re-run by [!DNL Target] every 12-48 hours, depending on the selected data range.
+
+### Adobe Analytics
+
+If the criteria uses [!DNL Adobe Analytics] as the behavioral data source, once created, the time for criteria availability depends on whether the selected report suite and lookback window has been used for any other criteria.
+
+* **One-time report suite setup**: The first time a report suite is used with a given data range lookback window, [!DNL Target Recommendations] can take from two to seven days to fully download the behavioral data for the selected report suite from [!DNL Analytics]. This timeframe is dependent on the [!DNL Analytics] system load.
+* **New or edited criteria using an already available report suite**: When creating a new criteria or editing an existing criteria, if the selected report suite has already been used with [!DNL Target Recommendations], with a data range equal to or lesser than the selected data range, then the data is immediately available and no one-time setup is required. In this case, or if an algorithm's settings are edited while not modifying the selected report suite or data range, the algorithm runs or re-runs within 12 hours.
+* **Ongoing algorithm runs**: Data flows from [!DNL Analytics] to [!DNL Target Recommendations] on a daily basis. For example, for the [!UICONTROL Viewed Affinity] recommendation, when a user views a product, a product-view tracking call is passed into [!DNL Analytics] close to real-time. The [!DNL Analytics] data is pushed to [!DNL Target] early the next day and [!DNL Target] runs the algorithm in less than 12 hours.
 
 ## Base the recommendation on a recommendation key {#task_2B0ED54AFBF64C56916B6E1F4DC0DC3B}
 
@@ -329,6 +339,10 @@ The Recently Viewed Items criteria now returns results specific to a given [envi
 
 General pages, such as home or landing pages and offsite ads.
 
+>[!NOTE]
+>
+>Recently Viewed Items respects both Exclusions global settings and the selected Collection setting for the Activity. If an item is excluded by a global Exclusion, or is not contained in the selected Collection, it will not be displayed; therefore, when using a Recently Viewed Items criteria, the "All Collections" setting should generally be used.
+
 ## Inclusion Rules {#task_28DB20F968B1451481D8E51BAF947079}
 
 Several options help you narrow the items that display in your recommendations. You can use inclusion rules while creating criteria or promotions. 
@@ -431,3 +445,13 @@ When you select **[!UICONTROL Items]**/ **[!UICONTROL Media with Similar Attribu
 Because content similarity uses keywords to compare items, some attributes, such as *message* or *description*, can introduce "noise" into the comparison. You can create rules to ignore these attributes. 
 
 By default, all attributes are set to *Baseline*. You do not need to create a rule unless you want to change this setting.
+
+## Training video: Create criteria in Recommendations (12:33)
+
+This video contains the following information:
+
+* Create criteria
+* Create criteria sequences
+* Upload custom criteria
+
+>[!VIDEO](https://video.tv.adobe.com/v/27694?quality=12)

@@ -1,7 +1,7 @@
 ---
-description: Definitions of terms.
+description: Definitions of terms used in Adobe Target.
 seo-description: Definitions of terms.
-seo-title: Glossary
+seo-title: Adobe Target Glossary
 solution: Target
 title: Glossary
 topic: Standard
@@ -25,6 +25,10 @@ Dashboard that displays a quick overview of activities.
 **activity**
 
 Enables you to test page designs and target content to specific audiences.
+
+**activity change log**
+
+A record of who changed your activities and when the changes occurred.
 
 **activity collision**
 
@@ -68,15 +72,11 @@ Tests and tracks visits to ads and other offsite content. You can also use behav
 
 **campaign**
 
-Tests different experiences to determine which will be most successful.
-
-**campaign change log**
-
-A record of who changed your campaigns and when the changes occurred.
+Same as "activity"
 
 **capture score**
 
-An engagement metric that calculates an aggregated score based on the value assigned to pages visited on the site, from the point the visitor first sees the campaign's first display mbox.
+An engagement metric that calculates an aggregated score based on the value assigned to pages visited on the site, from the point the visitor first sees the activity's first display mbox.
 
 **catalog**
 
@@ -100,7 +100,7 @@ The text or image comprising a test variation within a location. In a multivaria
 
 **conversion mbox**
 
-Logs your test or campaign results, such as registrations, orders, or sales. Typically, a conversion mbox displays nothing but merely listens. Common locations for the conversion mbox are a registration completion page, an order thank you page, or a click-through. You might also use a global mbox to calculate conversion metrics.
+Logs your test or activity results, such as registrations, orders, or sales. Typically, a conversion mbox displays nothing but merely listens. Common locations for the conversion mbox are a registration completion page, an order thank you page, or a click-through. You might also use a global mbox to calculate conversion metrics.
 
 **criteria**
 
@@ -120,21 +120,17 @@ Displays if the visitor does not meet the requirements of the test, or if defaul
 
 Template-enabled HTML that displays your recommended items to the web page. A design defines the appearance of the recommendations in a Recommendations activity.
 
-**display ad campaign**
-
-Used for offsite Flash ad testing.
-
 **duration**
 
 The length of time than an activity runs, from the start date and time to the end date and time.
 
 **dynamic content**
 
-Can be part of any type of test or campaign. No additional programming is required. The visitor's session on your domain is preserved.
+Can be part of any type of test or activity. No additional programming is required. The visitor's session on your domain is preserved.
 
 **dynamic mbox**
 
-Enables Rich Internet Applications (RIAs) to manipulate HTML after the page has already loaded by using technologies like DHTML and AJAX.
+Enables Rich Internet Applications (RIAs) to manipulate HTML after the page has already loaded, by using technologies like DHTML and AJAX.
 
 **dynamic offer**
 
@@ -144,7 +140,7 @@ Uses dynamic page technology to pass values to the offer.
 
 **engagement**
 
-The measurement of a visitors interest in a site, measured my time on site, clicks, conversions, and other engagement metrics.
+The measurement of a visitor's interest in a site, measured by time on site, clicks, conversions, and other engagement metrics.
 
 **enhanced experience composer**
 
@@ -180,19 +176,11 @@ Experience Targeting (XT) delivers content to a specific audience based on a set
 
 Provides methods to get product or content information into your recommendations.
 
-**flash campaign**
-
-Used for onsite Flash testing.
-
-**Flashbox**
-
-Returns content elements to a Flash file.
-
 **flow diagram**
 
 The visual representation of an activity in Target Standard.
 
-**Form-Based Experience Composer
+**Form-Based Experience Composer**
 
 A non-visual experience and offer creation interface that’s useful in creating experiences for use in A/B tests, Experience Targeting, Automated Personalization, and Recommendations activities when the visual experience composer is not available or practical for use. For example, you might use the form-based composer to create experiences and offers for delivery in emails, kiosks, and voice assistants. 
 
@@ -200,7 +188,7 @@ A non-visual experience and offer creation interface that’s useful in creating
 
 **geo location parameter**
 
-Allows you to target campaigns and experiences based on your visitors' geography. Also known as geo targeting parameter.
+Allows you to target activities and experiences based on your visitors' geography. Also known as geo targeting parameter.
 
 **goal**
 
@@ -224,9 +212,9 @@ Visitor-specific parameter passed to the visitor's cookie from the mbox. Returni
 
 ## L {#section_9F81FB4EED15412BB51B286512E1C5FC}
 
-**landing page campaign**
+**landing page activity**
 
-A landing page campaign allows you to use targeting to display different landing page content for different visits. Otherwise, the landing page shows the same content for each visit. A landing page campaign compares different versions of the page to help you see which version of the landing page produces more successful results. In Target Standard, replaced by *experience targeting*.
+A landing page activity allows you to use targeting to display different landing page content for different visits. Otherwise, the landing page shows the same content for each visit. A landing page activity compares different versions of the page to help you see which version of the landing page produces more successful results. In Target Standard, replaced by *experience targeting*.
 
 **location**
 
@@ -244,11 +232,7 @@ Prior to Target 16.3.1, [!DNL Target] required a call to [!DNL mbox.js] to creat
 
 **mbox parameter**
 
-Passed in the page, not the URL. Rendered uniquely for each visitor, they are used to pass data from your database and to track sales data or to run Adobe Recommendations. Also known as page parameter.
-
-**monitoring campaign**
-
-Tracks the performance of a conversion, success metric, or segment over time, independently of tests or campaigns run to affect it.
+Passed in the page, not the URL. Parameters are used to pass data from your database and to track sales data or to run Adobe Recommendations. Also known as page parameter.
 
 **multivariate test**
 
@@ -262,21 +246,17 @@ An activity field where you enter a description of what you'd like to learn from
 
 **offer**
 
-An offer is the content displayed within an mbox during campaigns and tests. An experience determines which offer displays when particular conditions are met.
+An offer is the content displayed within an mbox during activities and tests. An experience determines which offer displays when particular conditions are met.
 
 **opt-out link**
 
-Enables visitors to opt-out of all counting and content delivery.
-
-**optimizing campaign**
-
-Ensures the most effective experiences are shown more often by automatically distributing traffic to the best performing segments.
+Enables visitors to opt-out of all tracking and content delivery.
 
 ## P {#section_C4ED86CA8CE74D03A8C6586A205C04B4}
 
 **page count**
 
-An engagement metric that measures the number of pages seen in a visit from the point the visitor first sees the campaign's first display mbox.
+An engagement metric that measures the number of pages seen in a visit from the point the visitor first sees the activity's first display mbox.
 
 **priority**
 
@@ -294,7 +274,7 @@ Redirects a visitor to a different web page. Use this Redirector similarly to ho
 
 **referring URL parameter**
 
-Passes values to the destination page's mbox as referring URL parameters and values. Use these to target on the visitor's source, for example.
+Passes values to the destination page's mbox as referring URL parameters and values. Use these to target on the visitor's origin, for example.
 
 **role**
 
@@ -306,17 +286,17 @@ Use remote offers to host content outside of [!DNL Target] that [!DNL Target] re
 
 **reports**
 
-Reports provide information about the progress and results of your activities that help you make decisions based on your data. Report data can help you decide when to end a test, show you which experience of offer is the winner, and provide insights or learnings you need to determine next actions.
+Reports provide information about the progress and results of your activities that help you make decisions based on your data. Report data can help you decide when to end a test, show you which experience or offer is the winner, and provide insights you need to determine next actions.
 
 ## S {#section_9482B06EBB09486784492F838289E54D}
 
 **script profile parameter**
 
-Similar to in-mbox profile parameter, but defined with JavaScript in Target itself rather than in the page code.
+Similar to in-mbox profile parameter, but defined with JavaScript that runs on the Target backend, rather than in the browser.
 
 **segment**
 
-A specified set of criteria used for targeting a campaign. Only visitors who meet the criteria see the content of a campaign targeted to that segment. Some segments are reusable across multiple campaigns and other are specific to a campaign.
+A specified set of criteria used for targeting an activity. Only visitors who meet the criteria see the content of an activity targeted to that segment. Some segments are reusable across multiple activities and others are specific to an activity.
 
 **segment filter**
 
@@ -324,41 +304,37 @@ A report filter used to display reports related to a specific segment.
 
 **single-page application**
 
-A single-page application (SPA) is a web application or web site that fits on a single web page to provide a more fluid user experience similar to a desktop application.
-
-**smart targeter profile parameter**
-
-Similar to script profile parameter, but predefined to provide useful targeting functionality.
+A single-page application (SPA) is a web application or web site that fits on a single web page to provide a more fluid user experience, similar to a desktop application.
 
 **success metrics**
 
-The parameters used to measure the success of an activity. Success metrics include key business measures that enable you to determine the success of a given experience or offer in a Target activity. For example, you can determine if a new offer increases your revenue per visitor or adding an item to a shopping cart. Success metrics can be useful for discovering issues with registration, ordering, or purchase funnels, but also simply with visitor or customer engagement. 
+The parameters used to measure the success of an activity. Success metrics include key business measures that enable you to determine the success of a given experience or offer in a Target activity. For example, you can determine if a new offer or adding an item to a shopping cart increases your revenue per visitor. Success metrics can be useful for discovering issues with registration, ordering, or purchase funnels, but also simply with visitor or customer engagement. 
 
 ## T {#section_1841144841AF41169AF1E83B90C18292}
 
 **test**
 
-A campaign that compares two or more experiences against the success metrics you specify so you can choose the experience that is most likely to provide the results you want.
+An activity that compares two or more experiences against the success metrics you specify, so you can choose the experience that is most likely to provide the results you want.
 
 **time on site**
 
-An engagement type that represents the time spent in the visit (in seconds) from the point the visitor sees the campaign's first display mbox to the load of the final page in the session with an mbox.
+An engagement type that represents the time spent in the visit (in seconds) from the point the visitor sees the activity's first display mbox to the load of the final page in a session with an mbox.
 
 ## U {#section_6407B81326FF43049D92265746E6C402}
 
 **URL parameters**
 
-All referring page and page URL variables are automatically passed to an mbox whenever the page with the mbox is viewed by any visitor. These URL variables are then available to use through the for display targeting or segment filters in reports.
+All referring page and page URL variables are automatically passed to an mbox whenever the page with the mbox is viewed by any visitor. These URL variables are then available to use through display targeting or segment filters in reports.
 
 ## V {#section_0B85CE959BA948CDAC3BAEFB4EEDFAD2}
 
 **visitor**
 
-A visitor is any person who accesses your site. A visitor is evaluate against activity criteria to determine whether the visitor is included in an activity. See *entrant*.
+A visitor is any person who accesses your site. A visitor is evaluated against activity criteria to determine whether the visitor is included in an activity. See *entrant*.
 
 **Visual Experience Composer**
 
-In Target Standard, a WYSIWYG user interface that lets you easily create and test personalized experiences and offers in the site context. You can create experiences and offers for Target activities by dragging and dropping, swapping, and modifying the layout and content of a web page (or offer) or mobile web page.
+In Target Standard, a WYSIWYG user interface that lets you easily create and test personalized experiences and offers in the site context. You can create experiences and offers for Target activities by dragging and dropping, swapping, and modifying the layout and content of a web page (or offer).
 
 ## W {#section_62E7B598DBB34ECABAF4EF913B0895EC}
 

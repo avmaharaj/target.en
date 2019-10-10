@@ -60,7 +60,7 @@ The following settings are available:
 
 ### Reporting Solution
 
-Specify whether data is collected from Adobe Target or from Adobe Analytics. See [Adobe Analytics as the Reporting Source for Target](https://marketing.adobe.com/resources/help/en_US/target/a4t/a4t.html) to learn about the differences between the reporting solutions and the advantages of each.
+Specify whether data is collected from Adobe Target or from Adobe Analytics. See [Adobe Analytics as the Reporting Source for Target](/help/c-integrating-target-with-mac/a4t/a4t.md) to learn about the differences between the reporting solutions and the advantages of each.
 
 When selecting Analytics as the reporting source for Target, you select an Analytics report suite to receive Target activity data. To do this, first choose from any of the Analytics companies your account is tied to, and then select the appropriate report suite for the activity. Only report suites that are provisioned to connect to Adobe Target will be available for selection. If you don't see the report suite(s) you expect, first try logging out and logging back in to the Adobe Experience Cloud to try again. If the report suite is still missing from the list, please contact Customer Care.
 
@@ -100,7 +100,7 @@ Audiences for Reporting
 
 Advanced settings are available for Multivariate Test goal metrics.
 
-![](assets/Menu_AdvancedSettings.png)
+![Advanced Settings menu](/help/c-activities/c-multivariate-testing/t-create-multivariate-test/assets/Menu_AdvancedSettings.png)
 
 >[!NOTE]
 >
@@ -118,15 +118,14 @@ The Add Dependency option allows the success metric to increment if another succ
 
 To add a dependency:
 
-1.  After adding additional metrics, click Advanced Settings .
+1.  After adding additional metrics, click **[!UICONTROL Advanced Settings]**.
 2.  Click the Add Dependency option:
+
+    ![Add Dependency](/help/c-activities/c-multivariate-testing/t-create-multivariate-test/assets/add_dependency.png)
     
-    ![](assets/add_dependency.png)
+3.  Drag and drop the desired metrics from the left pane into the right pane, then click **[!UICONTROL Reached]** to toggle the setting between Reached and Not Reached .
     
-3.  Drag and drop the desired metrics from the left pane into the right pane, then click Reached to toggle the setting between Reached and Not Reached .
-    
-    ![](assets/add_dependency_reached.png)
-    
+    ![Dependency Reached](/help/c-activities/c-multivariate-testing/t-create-multivariate-test/assets/add_dependency_reached.png)
 
 You can edit or remove dependencies after adding them.
 

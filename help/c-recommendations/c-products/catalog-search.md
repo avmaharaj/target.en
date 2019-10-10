@@ -1,8 +1,8 @@
 ---
 description: The catalog search helps you locate the products or content in your catalog.
 keywords: catalog;search
-seo-description: The catalog search helps you locate the products or content in your catalog.
-seo-title: Catalog search
+seo-description: The catalog search in Adobe Target helps you locate the products or content in your catalog.
+seo-title: Catalog search in Adobe Target
 solution: Target
 title: Catalog search
 title-outputclass: premium
@@ -15,21 +15,36 @@ badge: premium
 
 The catalog search helps you locate the products or content in your catalog.
 
+To access catalog search, click **[!UICONTROL Recommendations]** > **[!UICONTROL Catalog Search]**.
+
 You can refine your search by selecting a search option from the options menu that displays when you click the down arrow in the search field.
 
 ![](assets/searchproductsmenu.png)
 
+Search options include the following:
+
+* ALL
+* Name
+* Brand
+* Category
+* ID
+* Message
+
 **[!UICONTROL ALL]** searches across all of the other search criteria, using OR logic.
 
-In the search results, you click the **[UICONTROL Environment]** filter to specify the production host group environment whose catalog you are displaying. You can also scroll through the items in the search results to view thumbnails and other product information.
+In the search results, you click the **[!UICONTROL Environment]** filter to specify the production [host group environment](/help/administrating-target/hosts.md) whose catalog you are displaying. You can also scroll through the items in the search results to view thumbnails and other product information.
 
 The number that displays next to "Products" is the number of products that match the search term, out of the total available in the specified environment.
 
-Click the refresh icon to re-index your catalog. Be aware that indexing can take some time, depending on the size of your feed.
+The catalog is automatically refreshed when updates are received via feed files, API, or mbox updates. Updates are usually completed in an hour. If updates are in progress, the time that the most recent update started displays. If no updates are in progress, the time that the most recent update started and finished displays.
 
-The catalog is automatically refreshed every hour. Click **[!UICONTROL Refresh]** to re-index the catalog between automatic refreshes.
+## Create a collection or exclusion based on Advanced Search
 
-You can create collections or exclusions using Advanced Search on the Catalog Search page ([!UICONTROL Recommendations] > [!UICONTROL Catalog Search] > [!UICONTROL Advanced Search]). After creating a search using "id > contains," for example, you can then click [!UICONTROL Save As] > [!UICONTROL Collection or Exclusion].
+You can create [collections](/help/c-recommendations/c-products/collections.md) or [exclusions](/help/c-recommendations/c-products/exclusions.md) using Advanced Search on the Catalog Search page ([!UICONTROL Recommendations] > [!UICONTROL Catalog Search] > [!UICONTROL Advanced Search]). 
+
+![Save as](/help/c-recommendations/c-products/assets/save-as.png)
+
+After creating a search using "id > contains," for example, you can then click [!UICONTROL Save As] > [!UICONTROL Collection or Exclusion].
 
 >[!IMPORTANT]
 >

@@ -25,6 +25,10 @@ Here are a few scenarios in which you might experience expected data variance:
 
   This is something we hope to address in the future as we work toward A4T on the Adobe Experience Platform. Our teams are working through how best to handle these different events occurring at different times on the page.
 
+  >[!NOTE]
+  >
+  >A known issue exits that is causing a limited number of customers using redirects with A4T to see a higher percentage of unstitched hit rates. See [Known issues and resolved issues](/help/r-release-notes/known-issues-resolved-issues.md#redirect).
+
 * Suppose you create an Auto-Allocate activity open to all visitors to a particular page. Because Auto-Allocate activities don't support A4T, all of the activity data is collected by [!DNL Target]. You might expect that the visitors to the activity in the [!DNL Target] reporting should match the visitors to that page in the [!DNL Analytics] reporting for the same date range. This is a scenario in which the variance described below is expected.
 
   For a complete list of activity types that support A4T, see [Supported Activity Types](../../c-integrating-target-with-mac/a4t/a4t.md#section_F487896214BF4803AF78C552EF1669AA).

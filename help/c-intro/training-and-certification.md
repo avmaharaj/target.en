@@ -1,18 +1,18 @@
 ---
-description: Adobe Training Services provides classes and certifications.
-keywords: Overview and Reference
-seo-description: Adobe Training Services provides classes and certifications.
-seo-title: Training and certification
+description: Adobe Training Services provides classes and certifications for Adobe products and solutions, including Adobe Target.
+keywords: training;certification;target;online courses;courses;class;classes
+seo-description: Adobe Training Services provides classes and certifications for Adobe products and solutions, including Adobe Target.
+seo-title: Training and certification for Adobe products and solutions, including Adobe Target
 solution: Target
 subtopic: Getting Started
-title: Training and certification
+title: Training and certification for Adobe Target
 topic: Standard
 uuid: a1be34dd-9790-4c8f-be61-07f46966d56f
 ---
 
 # Training and certification{#training-and-certification}
 
-Adobe Training Services provides classes and certifications.
+Adobe Training Services provides classes and certifications for Adobe products and solutions, including Adobe Target.
 
 For a list of available instructor-led and online courses, visit the [Adobe Customer Training website](https://training.adobe.com/training/courses.html#solution=adobeTarget).
 

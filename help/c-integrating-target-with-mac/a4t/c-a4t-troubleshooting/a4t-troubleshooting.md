@@ -14,13 +14,13 @@ uuid: a5aa3be5-68a2-4f12-8226-f32a76136bbd
 
 This topic covers some common issues that have been encountered when using Analytics as the reporting source for Target (A4T).
 
-## Activities do not show data in Analytics, but are instead listed as "unspecified." {#section_EB97F0499B0E40E69A21C30DC539BF67}
+## Activities do not show data in Analytics, but are instead listed as "unspecified." {#unspecified}
 
 There are several reasons why this could happen:
 
 * Classification in [!DNL Target] hasn't fully processed.
 
-  Classification can take as many as 24 hours to process from the first save of the activity. 
+  Classification generally takes between 24 and 72 hours to classify reports after the first save.
 
 * The report suite doesn't contain any data, but [!DNL Target] has tried to classify hits. [!DNL Target] cannot classify data until the first hit occurs.
 
@@ -30,9 +30,9 @@ There are several reasons why this could happen:
 
   [Contact Customer Care](../../../cmp-resources-and-contact-information.md#reference_ACA3391A00EF467B87930A450050077C) for assistance.
 
-Sometimes data displays correctly in reports, but then reverts back to "unspecified" because a new activity was added that hasn’t completed classification. Remember that it can take as many as 24 hours to classify reports after the first save.
-
 >[!NOTE]
+>
+>Sometimes data displays correctly in reports, but then reverts back to "unspecified" because a new activity was added that hasn’t completed classification. Remember that it generally takes between 24 and 72 hours to classify reports after the first save.
 >
 >No data is lost when listed as "unspecified." The data is properly assigned to the appropriate activity or experience after the classification runs.
 

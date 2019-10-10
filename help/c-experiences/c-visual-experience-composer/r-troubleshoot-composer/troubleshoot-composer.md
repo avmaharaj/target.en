@@ -18,4 +18,8 @@ The EEC is an extension of the VEC that helps you edit an experience for an ifra
 
 For information about the VEC and the EEC, see [Experiences](../../../c-experiences/experiences.md#concept_A2E10F6AFB3D4AEAB6951EE14688848D).
 
-Note that some issues affect both the VEC and the EEC, and some issues affect only one of the two composers. Please review the appropriate page to find more information. 
+Note that some issues affect both the VEC and the EEC, and some issues affect only one of the two composers. Please review the appropriate page to find more information.
+
+* [Troubleshooting Issues Related to the Visual Experience Composer and Enhanced Experience Composer](/help/c-experiences/c-visual-experience-composer/r-troubleshoot-composer/issues-related-to-the-visual-experience-composer-vec-and-enhanced-experience-composer-eec.md)
+* [Troubleshooting Issues Related to the Visual Experience Composer](/help/c-experiences/c-visual-experience-composer/r-troubleshoot-composer/troubleshooting-issues-related-to-the-visual-experience-composer-vec.md)
+* [Troubleshooting Issues Related to the Enhanced Experience Composer](/help/c-experiences/c-visual-experience-composer/r-troubleshoot-composer/troubleshooting-issues-related-to-the-enhanced-experience-composer-eec.md)

@@ -30,13 +30,13 @@ Target provides tools to help ensure that your activity has a large enough sampl
 
   For more information, see [Auto-Allocate](../../c-activities/automated-traffic-allocation/automated-traffic-allocation.md#concept_A1407678796B4C569E94CBA8A9F7F5D4). 
 
-* **Target Sample Size Calculator:** If you choose to use a manual A/B test rather than Auto-Allocate, the Target Sample Size Calculator helps you determine the sample size needed for a successful test. Continue reading for more information about how to use the calculator.
+* **Target Sample Size Calculator:** If you choose to use a manual A/B test rather than Auto-Allocate, the Target Sample Size Calculator helps you determine the sample size needed for a successful test. A manual A/B test is a fixed horizon test, so the calculator is extremely helpful. Using the calculator for an Auto-Allocate activity is optional because Auto-Allocate will declare a winner for you. The calculator gives you a rough estimate of the sample size needed. Continue reading for more information about how to use the calculator.
 
 ## Adobe Target Sample Size Calculator {#section_6B8725BD704C4AFE939EF2A6B6E834E6}
 
 Before setting up your A/B test, access the Adobe Target [sample size calculator](https://docs.adobe.com/content/target-microsite/testcalculator.html).
 
-![](assets/sample_size_calculator.png)
+![Adobe Target Sample Size Calculator](/help/c-activities/t-test-ab/assets/sample_size_calculator-new.png)
 
 It is important to determine an adequate sample size (number of visitors) prior to doing any A/B test, in order to establish the time that the test should be allowed to run before evaluating the results. Simply monitoring the test until statistical significance is achieved causes the confidence interval to be vastly underestimated, making the test unreliable. The intuition behind this result is that, in the event a statistically significant result is detected, the test is stopped and a winner is declared. However, if the result is not statistically significant the test is allowed to continue. This procedure strongly favors the positive outcome, which increases the false positive rate, and so distorts the effective significance level of the test.
 

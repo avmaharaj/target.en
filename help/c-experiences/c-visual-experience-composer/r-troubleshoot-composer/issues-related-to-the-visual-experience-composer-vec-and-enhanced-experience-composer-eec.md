@@ -12,6 +12,12 @@ uuid: 93f646d9-fcbc-43f0-9f84-0ce8e486ff7f
 
 Display problems sometimes occur in the Visual Experience Composer (VEC) and the Enhanced Experience Composer (EEC) under certain conditions.
 
+## Does Target support multi-level iframes?
+
+Target does not support multi-level iframes. If your website loads an iframe that has a child iframe, Target libraries (at.js and mbox.js) interact with the parent iframe only. Target libraries do not interact with the child iframe.
+
+As a workaround, you can add a page in the experience with the URL of the child iframe.
+
 ## When I try to edit a page, all I see is a spinner instead of my page. (VEC and EEC) {#section_313001039F79446DB28C70D932AF5F58}
 
 This can happen if the URL contains a # character. To fix the issue, switch into Browse mode in the Visual Experience Composer, and then switch back to Compose mode. The spinner should go away and the page should load.

@@ -1,8 +1,8 @@
 ---
 description: Download data in a .csv format for quick import into Excel, Access, or other data analysis programs.
 keywords: reports;download reports;csv;success metrics;order details
-seo-description: Download data in a .csv format for quick import into Excel, Access, or other data analysis programs.
-seo-title: Downloading data in a CSV file
+seo-description: Download data in a .csv format for quick import into Excel, Access, or other data analysis programs using Adobe Target.
+seo-title: Downloading data in a CSV file using Adobe Target
 solution: Target
 subtopic: Multivariate Test
 title: Downloading data in a CSV file
@@ -16,12 +16,17 @@ Download data in a .csv format for quick import into Excel, Access, or other dat
 
 To download data in a CSV file:
 
-1. Click [!DNL Activities], then click the desired activity from the list.
+1. Click **[!UICONTROL Activities]**, then click the desired activity from the list.
 
    If you have many activities, you can filter the list by selecting options from the [!UICONTROL Type], [!UICONTROL Status], [!UICONTROL Reporting Source], [!UICONTROL Experience Composer], [!UICONTROL Metrics Type], and [!UICONTROL Activity Source] drop-down lists. 
 
 1. Click the **[!UICONTROL Reports]** tab. 
-1. Click the [!UICONTROL Download] icon, then select a report type to download for analysis in Excel and other tools.
+1. Click the **[!UICONTROL Download]** icon, then select a report type to download for analysis in Excel and other tools.
+
+   * [!UICONTROL Export Reports to CSV]
+   * [!UICONTROL Export Order Details to CSV]
+
+   ![Download options](/help/c-reports/assets/download-options.png)
 
 ## Export Report to CSV {#section_38BD9743EB254453B5F4A0A6F2720CD3}
 
@@ -34,7 +39,7 @@ Data is saved until the end of the activity.
 
 >[!NOTE]
 >
->The CSV report includes only raw data and does not include calculated metrics like revenue per visitor, lift, or confidence used for A/B tests. To calculate these calculated metrics, download the [Target's Complete Confidence Calculator](https://marketing.adobe.com/resources/help/en_US/target/target/complete_confidence_calculator.xlsx) Excel file to input the activity's value, or review the [statistical calculations used by Target](https://marketing.adobe.com/resources/help/en_US/target/target/statistical-calculations.pdf).
+>The CSV report includes only raw data and does not include calculated metrics such as revenue per visitor, lift, or confidence used for A/B tests. To calculate these calculated metrics, download the Target's [Complete Confidence Calculator](/help/assets/complete_confidence_calculator.xlsx) Excel file to input the activity's value, or review the [statistical calculations used by Target](/help/assets/statistical-calculations.pdf).
 
 ## Export Order Details to CSV {#section_96B3F578F91F4CA3AFE38BACA2A0F11E}
 
@@ -76,7 +81,7 @@ The Order Details report (known as the Audit report in [!DNL Target Classic]) sh
 
 The following information applies to the Download option:
 
-* You can download both reports for A/B, Automated Personalization, Experience Targeting, and Multivariate activities. You cannot download the Success Metrics report for Recommendation activities. 
+* You can download both reports for A/B Test, Automated Personalization, Experience Targeting, and Multivariate activities. You cannot download the Success Metrics report for Recommendation activities. 
 * The Download option is not available for A/B and Experience Targeting activities created before Target version 15.7.1 (July, 2015). 
 * Experiences with no associated data are not recorded in the downloaded report.
-
+* Audiences applied in the Target reporting UI do not carry over to the download report.

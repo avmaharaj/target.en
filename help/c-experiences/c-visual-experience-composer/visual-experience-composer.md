@@ -107,15 +107,6 @@ To continue managing experiences in the current activity or to add new modificat
 
 The following videos contain more information about the concepts discussed in this article.
 
-### Visual Experience Composer (7:17)
-
-This video provides information about using the Visual Experience Composer options.
-
-* Change the content of a page 
-* Change the layout of a page
-
->[!VIDEO](https://video.tv.adobe.com/v/17399)
-
 ### Visual Experience Composer (1 of 2) (7:17)
 
 * Change the content of a page 

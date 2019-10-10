@@ -82,7 +82,7 @@ Use the following steps to migrate from [!DNL mbox.js] to [!DNL at.js] and to ch
 
    >[!NOTE]
    >
-   >If you are not currently using a tag manager to deploy [!DNL Target], now might be a good time to consider it. Adobe's [Dynamic Tag Management](https://dtm.adobe.com) is free to [!DNL Target] customers and is the recommended method to deploy [!DNL Target]. For more information, see [Best Practices for Implementing Adobe Target using Dynamic Tag Management](https://marketing.adobe.com/resources/help/en_US/dtm/target/).
+   >If you are not currently using a tag manager to deploy [!DNL Target], now might be a good time to consider it. Adobe's [Dynamic Tag Management](https://dtm.adobe.com) is free to [!DNL Target] customers and is the recommended method to deploy [!DNL Target]. For more information, see [Best Practices for Implementing Adobe Target using Dynamic Tag Management](https://docs.adobe.com/content/help/en/dtm/implementing/overview.html).
 
 1. Verify that all current activities and integrations are working as expected.
 

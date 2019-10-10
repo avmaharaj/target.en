@@ -15,7 +15,7 @@ badge: premium
 
 Use single- and multi-value custom entity attributes to define additional information about items in your catalog.
 
-## Limits {limits}
+## Limits {#limits}
 
 You can include up to 100 custom entity attributes to define additional information about items in your catalog. For example, you might create a custom attribute called `entity.genre` to define a book or movie. Or, a ticket vendor might create attributes for an event venue to include a secondary performer, such as a visiting team in a sporting event or an opening act at a concert.
 

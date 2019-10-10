@@ -18,7 +18,7 @@ Target enables you to track clicks on any element as a success metric.
 >
 >Tracking clicks is not supported on the target global mbox when it is used as a location in a form-based activity.
 
-## Setting Up Click Tracking {#section_5540C5A533114E57BAE022A600B02E72}
+## Setting Up click tracking {#section_5540C5A533114E57BAE022A600B02E72}
 
 1. When setting your goals on the [!UICONTROL Goals & Settings] page for your activity , select the **[!UICONTROL Conversion]** success metric. 
 1. For the action, select **[!UICONTROL Clicked an element]**, then click **[!UICONTROL Select elements]**.
@@ -32,6 +32,32 @@ Target enables you to track clicks on any element as a success metric.
 1. Click the check mark at the top of the screen to save your selections.
 
 When an activity entrant clicks a selected element, that click is counted as a conversion.
+
+## Selected Elements panel {#selected-elements}
+
+For A/B Test, Experience Targeting (XT), Automated Personalization (AP), and Multivariate Test (MVT) activities, a [!UICONTROL Selected Elements] panel lists all of the selected elements for click tracking on the right side.
+
+![Selected Elements panel](/help/c-activities/r-success-metrics/assets/selected-elements.png)
+
+There are a several actions that can be applied when you hover over an element in the [!UICONTROL Selected Elements] panel. The following table describes each action that can be performed on an element:
+
+|Action|Description|
+| --- | --- |
+|Information|Displays the element type and the full DOM path to the selector.|
+|Edit|Lets you edit the CSS selector.|
+|Delete|Deletes the element.|
+
+### Add element
+
+If you already know the DOM path to the selector, you can add it manually by clicking the plus icon located at the top of the panel.
+
+![Add Element icon](/help/c-activities/r-success-metrics/assets/add-element.png)
+
+### Selected Elements hover popup
+
+After selecting multiple elements for click tracking, you can click the [!UICONTROL Elements Selected] link on the activity's [!UICONTROL Goals & Settings] step to see the full list of elements selected for click tracking. The list contains the full DOM path for the element to help you validate that the selected element is to be used for click tracking.
+
+![Elements Selected link](/help/c-activities/r-success-metrics/assets/elements-selected-link.png)
 
 ## Considerations {#considerations}
 
@@ -58,7 +84,7 @@ There are several things to consider when selecting elements:
   |  :  | Colon  |
   |  .  | Period  |
   |  $  | Dollar sign  |
-  |  [ ]  | Square brackets  |
+  |  `[ ]`  | Square brackets  |
 
 * If you use [!DNL at.js] click tracking and you also use Analytics AppMeasurement, [!DNL at.js] click tracking cancels all other click event handlers. As a result, the AppMeasurement click handler never executes.
 

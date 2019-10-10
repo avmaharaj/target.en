@@ -1,8 +1,8 @@
 ---
 description: If your page does not display the expected content, there are a few steps you can take to debug content delivery.
 keywords: debug mbox;troubleshoot mbox;mbox issues;flicker;mboxDebug;mboxTrace;token;debugger;priority;activity priority;Adobe Experience Cloud Debugger;orderConfirmPage mbox;SiteCatalyst  purchase mbox;top selling;top seller
-seo-description: If your page does not display the expected content, there are a few steps you can take to debug content delivery.
-seo-title: Troubleshoot content delivery
+seo-description: If your page does not display the expected content, there are a few steps you can take to debug content delivery in Adobe Target.
+seo-title: Troubleshoot content delivery in Adobe Target
 solution: Target
 subtopic: Multivariate Test
 title: Troubleshoot content delivery
@@ -30,9 +30,11 @@ To retrieve the authorization token:
 1. Select **[!UICONTROL mbox.js]** or **[!UICONTROL at.js]**. 
 1. Click **[!UICONTROL Generate Authentication Token]**.
 
-   ![](assets/gen-auth-token.png)
+   ![Generate Authorization token](/help/c-activities/c-troubleshooting-activities/assets/generate-auth-token.png)
 
 1. Add the generated token as a parameter to your URL to enable one of the advanced debugging tools.
+
+   ![Authorization token](/help/c-activities/c-troubleshooting-activities/assets/gen-auth-token.png)
 
 ## mboxTrace {#section_256FCF7C14BB435BA2C68049EF0BA99E}
 
@@ -73,7 +75,7 @@ You do not need to include `=console`, `=json`, or `=window` in the query parame
 
 The normal functioning and appearance of your site is not affected by mboxTrace. Visitors will see your regular Recommendations design.
 
-## mboxDebug {#section_DC92A0E4388A4A2787365AD9D556FEFA}
+## mboxDebug {#mboxdebug}
 
 To use mboxDebug, append an mboxDebug parameter to the end of your URL. The following table contains information about mbox-related URL parameters.
 
@@ -90,13 +92,17 @@ To use mboxDebug, append an mboxDebug parameter to the end of your URL. The foll
 |`mboxDebug=x-time`|Show response time for each mbox request|
 |`mboxOverride.browserIp=<Insert IP address>`|Test geotargeting<br>Test geotargeting with this URL parameter. Type an IP address as the value for this attribute, and Test&Target's geotargeting evaluates that IP address to match against any geotargeting or segmentation set in a campaign.|
 
+>[!NOTE]
+>
+>Ensure that the URL fragment is after query string parameters. Anything after the first `#` is a fragment identifier and causes debugging parameters not to function correctly.
+
 ## Adobe Experience Cloud Debugger {#section_A2798ED3A431409690A4BE08A1BFCF17}
 
 The Adobe Experience Cloud Debugger makes it fast and easy to understand your Target implementation. You can quickly view your library configuration, examine requests to make sure your custom parameters are being passed correctly, turn on console logging, and disable all Target requests. Authenticate into the Experience Cloud and you can use the powerful Mbox Trace tool to inspect your activity and audience qualifications as well as your visitor profile.
 
 For more information, see the training videos below:
 
-For more detailed information, see the [*Adobe Experience Cloud Debugger Extension* documentation](https://marketing.adobe.com/resources/help/en_US/experience-cloud-debugger/).
+For more detailed information, see [Debug at.js using the Adobe Experience Cloud debugger](/help/c-implementing-target/c-implementing-target-for-client-side-web/c-target-debugging-atjs/target-debugging-atjs.md).
 
 ## If target.js Fails to Load During Delivery {#section_ABBA5EFDFFB749D8BEE172DB1F973058}
 
@@ -141,6 +147,10 @@ Or
 For remote offers, the mbox response can contain `/* invalid remote offer URL */`
 
 You can check the mbox response in the browser or using mboxTrace. See [https://tools.ietf.org/html/std66](https://tools.ietf.org/html/std66) for more information on valid URLs. 
+
+## mboxes are not firing on my site.
+
+at.js does not fire Target mboxes if you are using an invalid doctype. at.js requires the HTML 5 doctype.
 
 ## Training videos
 

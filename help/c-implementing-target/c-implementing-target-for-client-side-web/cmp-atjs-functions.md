@@ -1,6 +1,6 @@
 ---
-description: List of functions that can be used with at.js.
-keywords: adobe.target.notification;element;selector;notification;extension
+description: List of functions that can be used with the Adobe Target at.js JavaScript library.
+keywords: at.js;functions;javascript library
 seo-description: List of functions that can be used with the at.js JavaScript library in Adobe Target.
 seo-title: Adobe Target at.js functions
 solution: Target
@@ -28,4 +28,6 @@ List of functions that can be used with the Adobe Target at.js JavaScript librar
 |[targetPageParams(options)](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetpageparams.md)|This method allows you to attach parameters to the global mbox from outside of the request code.|
 |[targetPageParamsAll(options)](/help/c-implementing-target/c-implementing-target-for-client-side-web/targetpageparamsall.md)|This method allows you to attach parameters to all mboxes from outside of the request code.|
 |[registerExtension(options)](/help/c-implementing-target/c-implementing-target-for-client-side-web/registerextension-atjs-1x.md)<br>(at.js 1.x)|Provides a standard way to register a specific extension.<br>**Note:** This function is available for at.js versions 1.*x* only. This function was deprecated with the release of at.js 2.x. This function returns default content if used with at.js 2.x.|
-|[at.js custom events](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs-custom-events.md)|at.js custom events let you know when an mbox request or offer succeeds or fails.|
+|[at.js custom events](/help/c-implementing-target/c-implementing-target-for-client-side-web/atjs-custom-events.md)|at.js custom events let you know when an mbox request or offer fails or succeeds.|
+|[adobe.target.sendNotifications(options)](/help/c-implementing-target/c-implementing-target-for-client-side-web/adobe.target.sendnotifications-atjs-21.md)<br>(at.js 2.1.0)|This function sends a notification to Target edge when an experience is rendered without using `adobe.target.applyOffer()` or `adobe.target.applyOffers()`.<br>**Note**: This function has been introduced in at.js 2.1.0 and will be available for any versions above 2.1.0.|
+

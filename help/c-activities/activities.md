@@ -66,7 +66,7 @@ The following actions are available (depending on your permissions):
 |Activate|Start an inactive or ready activity.|
 |Archive|Send the activity to the archive. By default, archived activities no longer appear in the Activities list. Change the filter for the activities list to include archived activities to see them. You can activate an archived activity to use it again.<br>If you deactivate or archive an activity and then later reactivate it, a visitor will continue being a part of that activity after the reactivation if they were in it before it was deactivated or archived. Any conversion metrics recorded during the time between the two events won't be attributed to that activity.|
 |Copy|Copy an activity. Any activity can be copied. Copying an activity creates a new activity with the same name, appended with "Copy." For example, a test called "Browser Offers" is copied to "Browser Offers Copy."<br>Visual offers are copied with the activity. You can safely edit the offers in the copy without impacting the original activity. The only exception is saved offers and images in the Content/Assets folder.|
-|Delete|Delete a draft or ready activity. Deleted activities cannot be recovered.|
+|Delete|Delete a draft or activity.<BR>**NOTE**: Deleted activities cannot be recovered. Unless you are absolutely sure that you'll never need this activity again, use the [!UICONTROL Archive] action. You can then re-activate the activity if necessary.|
 
 Note the following details about the Activity list:
 

@@ -14,7 +14,7 @@ uuid: aa53dfd4-db42-4a33-b561-7e84ca7e4497
 
 To use Target Standard or Target Premium, add one line of code to call mbox.js.
 
- You can use either of two library references: [!DNL mbox.js] or [!DNL at.js]. [Understanding the Target JavaScript Libraries](../../../c-implementing-target/c-considerations-before-you-implement-target/target-implement.md#concept_60B748DE4293488F917E8F1FA4C7E9EB) explains the differences between the two libraries.
+ You can use either of two library references: [!DNL mbox.js] or [!DNL at.js]. [Benefits of at.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-target-atjs-implementation/target-atjs-implementation.md#benefits) explains the differences between the two libraries.
 
 >[!NOTE]
 >

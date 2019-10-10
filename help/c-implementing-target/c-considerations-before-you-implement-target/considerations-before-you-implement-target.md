@@ -20,7 +20,6 @@ This section includes information for developers specific to their implementatio
 >
 >Modifications to at.js or mbox.js will not be supported by Adobe Customer Care.
 
-- [Understand the Target JavaScript libraries](target-implement.md)
 - [Prepare to implement Target](prepare-to-implement-target.md)
 - [Privacy](c-privacy/privacy.md)
 - [Methods to get data into Target](c-methods-to-get-data-into-target/methods-to-get-data-into-target.md)

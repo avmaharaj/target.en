@@ -1,8 +1,8 @@
 ---
-description: You can target users who use a specific browser or specific browser options when they visit your page.
+description: You can create audiences in Adobe Target to target users who use a specific browser or specific browser options when they visit your page.
 keywords: browser options;type;browser type;browser language;language;version;browser version
-seo-description: You can target users who use a specific browser or specific browser options when they visit your page.
-seo-title: Browser
+seo-description: You can create audiences in Adobe Target to target users who use a specific browser or specific browser options when they visit your page.
+seo-title: Browser options in Adobe Target audiences
 solution: Target
 subtopic: Multivariate Test
 title: Browser
@@ -13,10 +13,6 @@ uuid: 9059aae2-477f-4e8d-99ce-ef2dad2d17bb
 # Browser{#browser}
 
 You can target users who use a specific browser or specific browser options when they visit your page.
-
-## Browser {#concept_925EAD7A8A42431395F9792AC7C3F76B}
-
-You can target users who use a specific browser or specific browser options when they visit your page. 
 
 The following browsers can be targeted:
 
@@ -31,32 +27,32 @@ The following browsers can be targeted:
 
 There are two ways to target browsers:
 
-* **Pre-built Audience:** Use the pre-built audience if you want to target only visitors who use a specific browser to visit your site. For example, if you are offering a Chrome extension, you would target only Chrome users.
+**Pre-built Audience:** Use the pre-built audience if you want to target only visitors who use a specific browser to visit your site. For example, if you are offering a Chrome extension, you would target only Chrome users.
 
-    1. When setting up your activity, select the browser from the audience drop-down list.
+1. When setting up your activity, select the browser from the audience drop-down list.
 
-       This option targets the activity only to visitors who use the specified browser.
+   This option targets the activity only to visitors who use the specified browser.
 
-* **Customized Browser Audience Rule:** A customized audience enables you to target multiple browsers, or to set up rules or exclusions for specific browsers, browser versions, or browser languages. This provides significant flexibility when targeting a campaign based on browser attributes.
+**Customized Browser Audience Rule:** A customized audience enables you to target multiple browsers, or to set up rules or exclusions for specific browsers, browser versions, or browser languages. This provides significant flexibility when targeting a campaign based on browser attributes.
 
-    1. In the [!DNL Target] interface, click **[!UICONTROL Audiences]** > **[!UICONTROL Create Audience]**. 
-    1. Name the audience. 
-    1. Click **[!UICONTROL Add Rule]** > **[!UICONTROL Browser]**.
+1. In the [!DNL Target] interface, click **[!UICONTROL Audiences]** > **[!UICONTROL Create Audience]**. 
+1. Name the audience. 
+1. Click **[!UICONTROL Add Rule]** > **[!UICONTROL Browser]**.
 
-       ![](assets/target_browser.png)
+   ![Rules > Brower](assets/target_browser.png)
 
-    1. Click **[!UICONTROL Select]**, then select one of the following options:
+1. Click **[!UICONTROL Select]**, then select one of the following options:
 
-        * **Type:** Target or exclude a certain browser. See [Type](../../../c-target/c-audiences/c-target-rules/browser.md#section_6ADC758F23F145B3A310151546D83D56). 
-        * **Language:** Target or exclude a certain browsers that are set to use specific languages. See [Language](../../../c-target/c-audiences/c-target-rules/browser.md#section_7520D1AA464A45A6843EABE2D2B431A1). 
-        * **Version:** Target or exclude certain browser versions. See [Version](../../../c-target/c-audiences/c-target-rules/browser.md#section_37CC8CE45DA04E8682AE6388321BA6EF).
+   * **Type:** Target or exclude a certain browser. See [Type](../../../c-target/c-audiences/c-target-rules/browser.md#section_6ADC758F23F145B3A310151546D83D56). 
+   * **Language:** Target or exclude a certain browsers that are set to use specific languages. See [Language](../../../c-target/c-audiences/c-target-rules/browser.md#section_7520D1AA464A45A6843EABE2D2B431A1). 
+   * **Version:** Target or exclude certain browser versions. See [Version](../../../c-target/c-audiences/c-target-rules/browser.md#section_37CC8CE45DA04E8682AE6388321BA6EF).
 
-    1. (Optional) Click **[!UICONTROL Add Rule]** and set up additional rules for the audience. 
-    1. Click **[!UICONTROL Save]**.
+1. (Optional) Click **[!UICONTROL Add Rule]** and set up additional rules for the audience. 
+1. Click **[!UICONTROL Save]**.
 
 The following example shows an audience that includes Internet Explorer users on versions 10 or 11:
 
-![](assets/target_exclude_ie.png)
+![Target IE 10 and 11](/help/c-target/c-audiences/c-target-rules/assets/target_ie-10-11.png)
 
 ## Browser Options {#concept_221D8EEF53CC45AEACEB17CF336A3658}
 
@@ -71,15 +67,13 @@ Select **[!UICONTROL Type]**, then choose either equals or does not equal.
 * Equals: Target the selected browsers. 
 * Does not equal: Exclude the selected browsers.
 
-Select one or more browsers.
-
-Multiple options are connected with an OR.
+Select one or more browsers. Multiple options are connected with an OR.
 
 ### Language {#section_7520D1AA464A45A6843EABE2D2B431A1}
 
-Target or exclude a certain browsers that are set to use specific languages.
+Target or exclude certain browsers that are set to use specific languages.
 
-For example, if an offer is only available in English, you might target browsers with their language set to English. Or, if your page is not double-byte enabled, you might exclude browsers set to East Asian languages.
+For example, if an offer is available only in English, you might target browsers with their language set to English. Or, if your page is not double-byte enabled, you might exclude browsers set to East Asian languages.
 
 Including or excluding browser language can provide more accurate visitor targeting than targeting based on geography in cases where language is more important than location. For example, if you are offering an article written in English, you could either target English-speaking countries, or you could target browsers that are set to English. Targeting to the browser makes the article available to English speakers in countries where English is not the primary language.
 
@@ -88,7 +82,7 @@ Select **[!UICONTROL Language]**, then choose either equals or does not equal.
 * Equals: Target the selected browser languages. 
 * Does not equal: Exclude the selected browser languages.
 
-Select one or more languages.
+Select one or more languages. Multiple options are connected with an OR.
 
 The following browser languages can be targeted or excluded:
 
@@ -101,8 +95,6 @@ The following browser languages can be targeted or excluded:
 * Russian 
 * Spanish 
 * Traditional Chinese
-
-Multiple options are connected with an OR.
 
 ### Version {#section_37CC8CE45DA04E8682AE6388321BA6EF}
 

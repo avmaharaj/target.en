@@ -30,7 +30,7 @@ To get started, create an [!UICONTROL A/B Test] or [!UICONTROL Experience Target
    >
    >For A/B Tests, remember that you can choose the [Auto-Allocate](/help/c-activities/automated-traffic-allocation/automated-traffic-allocation.md) option to automatically push traffic to the best-performing recommendations or the [Auto-Target](/help/c-activities/auto-target-to-optimize.md) option to assign visitors to tailored recommendations experiences based on their profile.
 
-1. While creating an [experience](/help/c-experiences/c-visual-experience-composer/viztarget-options.md), click the element you want to add a recommendation to as an offer, select the [!UICONTROL Insert Before], [!UICONTROL Insert After], or [!UICONTROL Replace With] action, then select [!UICONTROL Recommendation].
+1. While creating an [experience](/help/c-experiences/c-visual-experience-composer/viztarget-options.md), click the element you want to add a recommendation to as an offer, select the **[!UICONTROL Insert Before]**, **[!UICONTROL Insert After]**, or **[!UICONTROL Replace With]** action, then select [!UICONTROL Recommendation].
 
    The following illustration shows the [!UICONTROL Insert After > Recommendation] option.
 
@@ -38,11 +38,14 @@ To get started, create an [!UICONTROL A/B Test] or [!UICONTROL Experience Target
 
 1. Select from the following options to view popular recommendations criteria by page type:
 
-   * Article Page
    * Cart Page
    * Category Page
    * Home Page
    * Landing Page
+   * Product Page
+   * Search Results Page
+   * Thank You Page
+   * Other
 
 1. Select the desired [criteria](/help/c-recommendations/c-algorithms/algorithms.md), then click [!UICONTROL Next].
 1. Select the desired [design](/help/c-recommendations/c-design-overview/design-overview.md), then click [!UICONTROL Next].
@@ -63,9 +66,9 @@ There are two ways you can edit an offer's configuration:
 
 ### Edit a recommendations offer using the Edit menu
 
-1. Click the offer you want to edit, then click Edit.
+1. Click the offer you want to edit, then click **[!UICONTROL Edit]**.
 
-   ![Edit menu](/help/c-recommendations/assets/recs-offer-edit.png)
+   ![Edit recommendations offer](/help/c-recommendations/assets/recs-offer-edit.png)
 
 1. Choose from the following options:
 
@@ -78,8 +81,8 @@ There are two ways you can edit an offer's configuration:
 
 ### Edit a recommendations offer using the Modifications panel
 
-1. Click the [!UICONTROL Modifications] icon *`</>'* to display the [Modifications](/help/c-experiences/c-visual-experience-composer/c-vec-code-editor/vec-code-editor.md) pane.
-1. Hover over the desired action, then click the [!UICONTROL Edit] icon.
+1. Click the [!UICONTROL Modifications] icon  **( `</>` )** to display the [Modifications](/help/c-experiences/c-visual-experience-composer/c-vec-code-editor/vec-code-editor.md) pane.
+1. Hover over the desired action, then click the **[!UICONTROL Edit]** icon.
 
    ![Modifications panel](/help/c-recommendations/assets/recs-offer-modifications.png)
 
@@ -94,13 +97,27 @@ There are two ways to delete a recommendations offer:
 
 ### Delete a recommendations offer using the Edit Menu
 
-1. Click the offer you want to remove, then click [!UICONTROL Layout > Remove].
+1. Click the offer you want to remove, then click **[!UICONTROL Layout > Remove]**.
 
    ![Remove](/help/c-recommendations/assets/recs-offer-remove.png)
 
 ### Delete a recommendations offer using the Modifications panel
 
-1. Click the [!UICONTROL Modifications] icon *`</>'* to display the [Modifications](/help/c-experiences/c-visual-experience-composer/c-vec-code-editor/vec-code-editor.md) pane.
+1. Click the [!UICONTROL Modifications] icon **( </> )** to display the [Modifications](/help/c-experiences/c-visual-experience-composer/c-vec-code-editor/vec-code-editor.md) pane.
 1. Hover over the desired action, then click the [!UICONTROL Delete] icon.
 
    ![Delete icon](/help/c-recommendations/assets/recs-offer-delete.png)
+
+### Viewing the recommendations offer's status {#status}
+
+The recommendations offer's (algorithm) status displays at the bottom of the [!UICONTROL Overview] page for A/B Test and XT activities that contain Recommendations offers: 
+
+* Results Ready
+* Results Not Ready
+* Feed Failure
+
+![Recommendations offer status](/help/c-recommendations/assets/recs-offer-status.png)
+
+## Training video: Recommendations as an offer
+
+>[!VIDEO](https://video.tv.adobe.com/v/28878)

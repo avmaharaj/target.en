@@ -50,11 +50,11 @@ Use the advanced settings to manage how you measure success. Options include cou
 >
 >If you use [!DNL Adobe Analytics] as your reporting source, settings are managed by the [!DNL Analytics] server. The advanced settings option will not be available.
 
-![](assets/Menu_AdvancedSettings.png)
+![Advanced Settings drop-down](/help/c-activities/r-success-metrics/assets/Menu_AdvancedSettings.png)
 
 You can also use the advanced settings to create dependent success metrics, incrementing one metric only if a visitor reaches another metric first.
 
-![](assets/UI_dep_success_metric.png)
+![Add Dependency](/help/c-activities/r-success-metrics/assets/UI_dep_success_metric.png)
 
 For example, a test conversion might only be valid if a visitor clicks the offer, or reaches a particular page before converting.
 

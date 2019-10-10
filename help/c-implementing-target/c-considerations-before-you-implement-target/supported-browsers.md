@@ -16,16 +16,16 @@ The [!DNL Adobe Target] application and content delivery has been tested across 
 
 For additional important information about TLS, see [TLS (Transport Layer Security) Encryption Changes](../../c-implementing-target/c-considerations-before-you-implement-target/tls-transport-layer-security-encryption.md#concept_CC1001E9D3AE4BABAF90B8311B0A6451).
 
-## [!DNL Target] Standard/Premium Interface {#section_1B73CA4B7BBC460BB7009DF00A2AFC4D}
+## [!DNL Target] Standard/Premium interface {#section_1B73CA4B7BBC460BB7009DF00A2AFC4D}
 
 The [!DNL [!DNL Target]] Standard/Premium] interface supports the following browsers and devices:
 
 | Device Type | Browser Version |
 |--- |--- |
-|Windows|<ul><li>Microsoft Internet Explorer 11.<br>**Note**: [!DNL Target] and the Adobe Marketing Cloud will drop support for Microsoft Internet Explorer 11 starting in March 2019. This change affects [!DNL Target] authoring only; this change does not affect experience delivery. Please switch to Microsoft Edge or another supported browser.</li><li>Microsoft Edge</li><li>Google Chrome (Latest, Latest minus 1)</li><li>Mozilla Firefox (Latest, Latest minus 1)</li></ul>|
+|Windows|<ul><li>Microsoft Edge</li><li>Google Chrome (Latest, Latest minus 1)</li><li>Mozilla Firefox (Latest, Latest minus 1)</li></ul>|
 |Mac|<ul><li>Firefox (Latest, Latest minus 1)</li><li>Chrome (Latest, Latest minus 1)</li></ul>|
 
-## Content Delivery {#section_1045A946056441268D40025529918D3D}
+## Content delivery {#section_1045A946056441268D40025529918D3D}
 
 Content delivery has been tested across the following browsers and devices:
 

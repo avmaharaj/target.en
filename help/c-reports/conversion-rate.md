@@ -51,7 +51,7 @@ See [Confidence Level and Confidence Interval](../c-reports/conversion-rate.md#c
 
 ## Retail Data {#section_30A674731BA6440E9BB93C421BE990EE}
 
-AOV, RPV, and Sales data are displayed for each experience if you inserted a [Place Order](https://marketing.adobe.com/resources/help/en_US/target/ov/t_orderconfirm_create.html) ( `orderConfirmPage`) mbox and selected it as the conversion mbox. 
+AOV, RPV, and Sales data are displayed for each experience if you inserted a [Place Order](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/orderconfirm-create.md) ( `orderConfirmPage`) mbox and selected it as the conversion mbox. 
 
 ## Confidence Level and Confidence Interval {#concept_0D0002A1EBDF420E9C50E2A46F36629B}
 
@@ -103,7 +103,7 @@ The *confidence interval* is a range within which the true value can be found at
 
 The [downloaded CSV report](../c-reports/downloading-data-in-csv-file.md#concept_3F276FF2BBB2499388F97451D6DE2E75) includes only raw data and does not include calculated metrics, such as revenue per visitor, lift, or confidence used for A/B tests.
 
-To calculate these calculated metrics, download the [Target's Complete Confidence Calculator](https://marketing.adobe.com/resources/help/en_US/target/target/complete_confidence_calculator.xlsx) Excel file to input the activity's value, or review the [statistical calculations used by Target](https://marketing.adobe.com/resources/help/en_US/target/target/statistical-calculations.pdf).
+To calculate these calculated metrics, download the Target's [Complete Confidence Calculator](/help/assets/complete_confidence_calculator.xlsx) Excel file to input the activity's value, or review the [statistical calculations used by Target](/help/assets/statistical-calculations.pdf).
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ For example, if you’re optimizing to page views per visitor, you’d export a 
 1. Click **[!UICONTROL Tools]** > **[!UICONTROL Data Warehouse]**. 
 1. On the **[!UICONTROL Data Warehouse Request]** tab, fill in the fields.
 
-   For more information about each field, see "Data Warehouse Descriptions" in [Data Warehouse](https://marketing.adobe.com/resources/help/en_US/reference/data_warehouse.html).
+   For more information about each field, see "Data Warehouse Descriptions" in [Data Warehouse](https://docs.adobe.com/content/help/en/analytics/export/data-warehouse/data-warehouse.html).
 
    | Field | Instructions |
    |--- |--- |
@@ -143,8 +143,8 @@ For example, if you’re optimizing to page views per visitor, you’d export a 
 
 For more information about [!DNL Data Warehouse], see the following links in the [!DNL Analytics] Help documentation:
 
-* [Create a Data Warehouse Request](https://marketing.adobe.com/resources/help/en_US/reference/t_dw_create_request.html) 
-* [Data Warehouse Best Practices](https://marketing.adobe.com/resources/help/en_US/reference/data_warehouse_bp.html)
+* [Create a Data Warehouse request](https://docs.adobe.com/content/help/en/analytics/export/data-warehouse/t-dw-create-request.html) 
+* [Data Warehouse best practices](https://docs.adobe.com/content/help/en/analytics/export/data-warehouse/data-warehouse-bp.html)
 
 ## Counting Methodology {#concept_EC19BC897D66411BABAF2FA27BCE89AA}
 

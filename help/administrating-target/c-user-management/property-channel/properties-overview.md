@@ -80,7 +80,7 @@ Users can be part of multiple workspaces and can even have different roles withi
 >[!NOTE]
 >See the training video below for more information about configuring workspaces.
 
-### Obtain your Workspace ID {workspace-id}
+### Obtain your Workspace ID {#workspace-id}
 
 You'll need to pass the workspace ID to leverage Enterprise Permissions in [Target APIs](/help/c-implementing-target/c-api-and-sdk-overview/api-and-sdk-overview.md).
 

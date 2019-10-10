@@ -43,3 +43,12 @@ You can create a [!UICONTROL Recommendations] design using a default design or b
    >The maximum number of entities that can be referenced in a design, either hardcoded or via loops, is 99.
 
 1. Click **[!UICONTROL Save]**.
+
+## Training video: Create custom designs in Recommendations (3:20)
+
+This video contains the following information:
+
+* Create a custom design
+* Understand how to reference display variables in you designs
+
+>[!VIDEO](https://video.tv.adobe.com/v/27687)

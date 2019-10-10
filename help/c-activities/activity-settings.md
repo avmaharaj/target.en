@@ -54,7 +54,7 @@ The [!UICONTROL Goal & Settings] page includes additional settings that vary bas
 * [Multivariate Test](../c-activities/c-multivariate-testing/t-create-multivariate-test/goals-and-settings.md#reference_B25389FD6F3A4989801E740364B089CC) 
 * [Recommendations](../c-recommendations/t-create-recs-activity/recs-activity-settings.md#reference_3FDA8388CEEC4159949151C1829E2FBB)
 
-## Training video: Activity Settings**
+## Training video: Activity Settings
 
 This video includes information about activity settings.
 

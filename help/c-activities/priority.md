@@ -1,8 +1,8 @@
 ---
 description: Target determines which activity (or activities) to deliver to a page differently depending on which Target interface and which activity creation function (Visual Experience Composer or Form Based composer) you're using.
 keywords: settings;priority
-seo-description: Target determines which activity (or activities) to deliver to a page differently depending on which Target interface and which activity creation function (Visual Experience Composer or Form Based composer) you're using.
-seo-title: Priority
+seo-description: Adobe Target determines which activity (or activities) to deliver to a page differently depending on which Target interface and which activity creation function (Visual Experience Composer or Form Based composer) you're using.
+seo-title: Priority in Adobe Target
 solution: Target
 title: Priority
 topic: Standard
@@ -87,7 +87,7 @@ If your company uses mboxes other than the global mbox in the form-based compose
 >
 >Depending on your settings, the priority values vary. You can use the legacy settings of Low, Medium, or High, or you can enable fine-grained priorities from 0 to 999. For more information, see [Activity Settings](../c-activities/activity-settings.md#task_C6B2FF8374724933BE79A83549B9CD02).
 
-**Two Target Classic campaigns use non-global mboxes **
+**Two Target Classic campaigns use non-global mboxes**
 
 * Campaign 1: homePageHero, offer1, priority high 
 * Campaign 2: homePageHero, offer2, priority low

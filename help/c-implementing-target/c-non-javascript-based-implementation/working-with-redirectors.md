@@ -92,7 +92,7 @@ Use a redirector to pass the costs per click.
 
 >[!NOTE]
 >
->Best practice is to determine the cost value using the **Score per visit** engagement metric, as described in [Engagement](https://marketing.adobe.com/resources/help/en_US/tnt/help/c_Capturing_Engagement.html).
+>Best practice is to determine the cost value using the **Score per visit** engagement metric.
 
 Add `&mboxPageValue=-value` to the URL. Note the negative value.
 
@@ -109,7 +109,7 @@ Use a redirector to pass the revenue per click.
 
 >[!NOTE]
 >
->Best practice is to determine the revenue value using the **Score per visit** engagement metric, as described in [Engagement](https://marketing.adobe.com/resources/help/en_US/tnt/help/c_Capturing_Engagement.html).
+>Best practice is to determine the revenue value using the **Score per visit** engagement metric.
 
 Add `&mboxPageValue=value` to the URL.
 

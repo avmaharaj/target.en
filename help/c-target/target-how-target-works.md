@@ -12,7 +12,7 @@ uuid: 8b5a36c0-555d-42c5-8b24-c08d07440a53
 
 Adobe Target integrates with your web pages by means of the at.js or mbox.js JavaScript library.
 
- [!DNL Target Classic] used mboxes around each area on your page where you want to display targeted content or collect data. These mboxes are not required in [!DNL Target Standard]. Instead, one [JavaScript library](../c-implementing-target/c-considerations-before-you-implement-target/target-implement.md#concept_60B748DE4293488F917E8F1FA4C7E9EB) referenced on each page is all you need to run your optimization activities.
+ [!DNL Target Classic] used mboxes around each area on your page where you want to display targeted content or collect data. These mboxes are not required in [!DNL Target Standard]. Instead, one JavaScript library referenced on each page is all you need to run your optimization activities.
 
 Each time a visitor requests a Target-enabled page, [!DNL Target] uses the following process to serve offers:
 

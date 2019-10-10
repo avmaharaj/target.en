@@ -33,7 +33,7 @@ By default all [!DNL Target] users start with observer permissions.
 
 System admin users are identified in the Users list. Contact one of those system admin users if you need your access level changed.
 
-## Access the Adobe Admin Console {#section_79796E0227D048F59BAE0AB02E544EBE}
+## Access the Adobe Admin Console {#access}
 
 For tasks performed in the Adobe Admin Console, access the console by following these steps:
 
@@ -45,21 +45,21 @@ For tasks performed in the Adobe Admin Console, access the console by following 
 
 1. (Conditional) If you have access to the [!DNL Admin Console for Enterprise] for more than one organization, click the user avatar in the right corner or the top navigation bar, then select the desired organization.
 
-## Add Users {#section_A92AF0F921B743FEB9E9033433BD816A}
+## Add Users {#add-users}
 
 All user management must be performed in the [!DNL Adobe Admin Console for Enterprise]. However, all of your existing users in [!DNL Target] will be migrated from [!DNL Target] to the [!DNL Admin Console for Enterprise].
 
 1. [In the Admin Console](../../../administrating-target/c-user-management/c-user-management/user-management.md#section_79796E0227D048F59BAE0AB02E544EBE), click **[!UICONTROL Users]** > **[!UICONTROL Users]** to create new users or to edit existing users. 
 1. Follow the instructions in [Manage Users and Groups in the Experience Cloud](https://helpx.adobe.com/enterprise/help/users.html) in the *Enterprise User Guide*.
 
-## Create User Groups {#section_5F5CB9AA7A9F4D26953E22016DA59605}
+## Create User Groups {#user-groups}
 
 You can create user groups, such as Developers, Analysts, Marketers, Executives, etc., and then assign privileges across multiple Adobe products and workspaces. Assigning a new team member all the appropriate privileges across different Adobe products can be as easy as adding them to a specific user group.
 
 1. [In the Admin Console](../../../administrating-target/c-user-management/c-user-management/user-management.md#section_79796E0227D048F59BAE0AB02E544EBE), click **[!UICONTROL Users]** > **[!UICONTROL User Groups]** to create new user groups or to edit existing groups. 
 1. Follow the instructions in [Manage Users and Groups in the Experience Cloud](https://helpx.adobe.com/enterprise/help/users.html) in the *Enterprise User Guide*.
 
-## Specify Roles and Permissions {#section_8C425E43E5DD4111BBFC734A2B7ABC80}
+## Specify Roles and Permissions {#roles-permissions}
 
 Only system admins can set user roles in [!DNL Target]. For example, a Standard approver user cannot change an observer to an approver, without also having Experience Cloud Admin rights.
 

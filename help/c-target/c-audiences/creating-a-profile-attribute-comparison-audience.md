@@ -1,8 +1,8 @@
 ---
-description: Define an audience to compare two profile attributes for your audience library or in an activity-only audience. Using operators, such as greater than, less than, or equal to, define an audience to dynamically compare the values of two different profile attributes.
+description: Define an audience to compare two profile attributes for your Target Audience library or in an activity-only audience. Using operators, such as greater than, less than, or equal to, define an audience to dynamically compare the values of two different profile attributes.
 keywords: audience;propensity;profile attribute;compare;comparison;create audience;creating audience
-seo-description: Define an audience to compare two profile attributes for your audience library or in an activity-only audience. Using operators, such as greater than, less than, or equal to, define an audience to dynamically compare the values of two different profile attributes.
-seo-title: Create a profile attribute comparison audience
+seo-description: Define an audience to compare two profile attributes for your Target Audience library or in an activity-only audience. Using operators, such as greater than, less than, or equal to, define an audience to dynamically compare the values of two different profile attributes.
+seo-title: Create a profile attribute comparison audience in Adobe Target
 solution: Target
 title: Create a profile attribute comparison audience
 topic: Advanced,Standard,Classic
@@ -11,7 +11,7 @@ uuid: 17c1f2e0-4c1e-4b7a-8398-9ec147253a5f
 
 # Create a profile attribute comparison audience{#create-a-profile-attribute-comparison-audience}
 
-Define an audience to compare two profile attributes for your audience library or in an activity-only audience. Using operators, such as greater than, less than, or equal to, define an audience to dynamically compare the values of two different profile attributes.
+Define an audience to compare two profile attributes for your [Audience library](/help/c-target/c-audiences/audiences.md) or in an [activity-only audience](/help/c-target/creating-activity-only-audience.md). Using operators, such as greater than, less than, or equal to, define an audience to dynamically compare the values of two different profile attributes.
 
 >[!NOTE]
 >
@@ -30,30 +30,28 @@ You could create an audience defined as the propensity to buy dining room furnit
 
 For more information, see [Methods to get Data into Target](../../c-implementing-target/c-considerations-before-you-implement-target/c-methods-to-get-data-into-target/methods-to-get-data-into-target.md#concept_0069C0EFB56C4700BB33F2F35C2B9B17).
 
-## Create a Profile Attribute Comparison Audience {#section_7A62FD47D5C74C3EBC3417ACDBB85013}
+## Create a profile attribute comparison audience {#section_7A62FD47D5C74C3EBC3417ACDBB85013}
 
 1. Click **[!UICONTROL Audiences]** > **[!UICONTROL Create Audience]** > **[!UICONTROL Add Rule]** > **[!UICONTROL Visitor Profile]**. 
 1. From the **[!UICONTROL Visitor Profile]** drop-down list, choose an attribute:
 
-   ![](assets/propensity_score_1.png)
+   ![Propensity Score 1](assets/propensity_score_1.png)
 
 1. Choose your Evaluator:
 
-   ![](assets/propensity_score_2.png)
+   ![Propensity Score 2](assets/propensity_score_2.png)
 
 1. From the **[!UICONTROL Choose Comparison Type]** drop-down list, choose **[!UICONTROL Attribute]**.
 
    The "static value" comparison type lets you compare your visitor profile attribute to specific value(s).
 
-   ![](assets/propensity_score_3.png)
+   ![Propensity Score 3](assets/propensity_score_3.png)
 
    >[!NOTE]
    >
    >If you are using one of the default visitor profile categories in Step 1 (for example, New Visitor or Returning Visitor), you can choose only the static value option. The dynamic comparison options are not available for default categories. Other examples where the dynamic comparison options are not available include "First page of session," "Not in other tests," "Not first page of session," and "Category Affinity."
 
 1. Choose the additional attribute you want to compare to your initial attribute.
-
-   For example, if the "Kitchen" attribute score for a specific visitor is greater than the score for "Decor," then that visitor would be included in this audience.
 
    ![](assets/propensity_score_4.png)
 

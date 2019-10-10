@@ -1,8 +1,8 @@
 ---
 description: Information about known issues for this release of Target. Also includes information about issues that have been resolved.
-keywords: known issues;resolved issues;release notes
-seo-description: Information about known issues for this release of Target. Also includes information about issues that have been resolved.
-seo-title: Known issues and resolved issues
+keywords: known issues;resolved issues;release notes;bugs;issues;fixes
+seo-description: Information about known issues for this release of Adobe Target. Also includes information about issues that have been resolved.
+seo-title: Known issues and resolved issues in Adobe Target
 solution: Target
 title: Known issues and resolved issues
 topic: Premium
@@ -20,6 +20,21 @@ Information about known issues for this release of Target. Also includes informa
 ## Known Issues {#section_AEDC98B67CF24C9F8E0CF0D2EB9ACAEF}
 
 The following sections list the known issues for [!DNL Target]:
+
+### Activity QA preview links {#preview}
+
+[Activity QA preview](/help/c-activities/c-activity-qa/activity-qa.md) links for saved activities might not load if there are too many saved activities in your account. Re-trying the preview links should work. To prevent this from continuing to happen, archive saved activities that are no longer actively used. (TNT-32697)
+
+### Redirect offers {#redirect}
+
+The following are known issues with redirect offers:
+
+* Under some conditions, a limited number of customers have reported higher degrees of variance in traffic distribution when using a redirect offer in activities configured with Analytics for Target (A4T). Adobe engineers are currently working on this issue.
+* Redirect activities in at.js implementations might cause the preview URL to enter into a loop (the offer is delivered repeatedly). You can use [QA Mode](../c-activities/c-activity-qa/activity-qa.md#concept_9329EF33DE7D41CA9815C8115DBC4E40) instead to perform Preview and QA. This issue does not impact the actual delivery of the offer. (TGT-23019)
+
+### Graph report for an Auto-Target activity fails to render when using a custom experience as control
+
+The graph report for an Auto-Target activity fails to render for "differential" modes (Average Lift and Daily Lift) if there is no data (0 visits) in any experience. This situation might occur during the early stage of an activity if the control experience is set to custom. For the other modes (Running Average Control and Targeted, Daily Control and Targeted, and Visits) it works fine. As soon as there is some data (non-zero visits), the report renders as expected.
 
 ### Cancel loading of a page within the VEC {#cancel}
 
@@ -43,20 +58,11 @@ Code offers created from the Target UI in the Offers library might display in th
 
 The following are known issues with Recommendations activities:
 
-* Recommendations feed index can show "Waiting for index" if the items in the feed are the same as in the previous run. The product ingestion for delivery is not impacted. (RECS-6663)
-* Recommendations "error.restapi.algorithmProfileAttributeInvalid" error occurs when specific profile attributes are used as the criteria key.
-* When Back Promotion is used in a Recommendations activity, Criteria inclusion filters don't apply on backup ERs.
-* The Recommendation Feeds UI does not show the correct status of indexing. The backend jobs are functioning correctly, but the UI is not able to fetch and display the current state.
-  
-  **Workaround**: An Alternative way to determine if a Recommendation Feed for a given Host Group has indexed properly is to check the Product Search UI (logged in as Admin) and view the last indexing time. This timestamp represents the last time the feed for a given host group was indexed. (TGT-27116)
-
-* Recommended products might not display values up to two decimal points. For example, if you try to display the value in the design as 35.00, Recommendations displays 35 (no decimal points rather than two decimal points). (RECS-5972)
-
-  **Workaround**: Pass the value of the entity into two entity.attributes . The first, `entity.value`, is a reserved parameter that expects a double. The second, can be a custom entity.attribute that will store the value of the entity as a string to allow for proper rending.
-  
-  For example:
-
-  `"entity.value" : 35.00, "entity.displayValue" : "35.00",`
+* Entities are correctly expired after 60 days of receiving no updates via feed or API; however, the expired entities are not removed from the Catalog Search index after expiration. (IRI-857)
+* The "Usage Info" overlays for Criteria and Designs do not reflect their usage in A/B and Experience Targeting activities (TGT-34331)
+* Recommendations Offers in A/B and Experience Targeting activities do not show a visual preview of the Recommendations tray (TGT-33426)
+* Collections, exclusions, criteria, and designs created via API are not visible in the Target user interface and can only be edited via API. (TGT-35777)
+* Recommendations activities created via API can be viewed in the user interface, but can only be edited via API.
 
 ### Multivariate Test (MVT) activities
 
@@ -66,7 +72,11 @@ In an MVT activity, the winner shown in the table and graph are not consistent w
 
 The following are known issues with at.js:
 
-* When a page is loaded into the Visual Experience Composer (VEC), Target needs to determine if the global mbox setting is enabled or disabled and whether entityID or categoryID is present at the location where the user is trying to apply the recommendation in the VEC. Based on this information the criteria list is filtered. The default list has filtered algorithms, but the [Compatible checkbox](https://marketing.adobe.com/resources/help/en_US/target/recs/t_algo_select_recs.html) lets you view the complete algorithms list.
+* If you create an experience with no modifications using at.js 2.*x* (for example, a default experience), the experience might not be counted in reports, Analytics for Target (A4T), Analytics, or Google Analytics. In addition, the [ttMeta plug-in](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-target-atjs-implementation/target-atjs-plugins.md) might not work correctly.
+
+  As a workaround, use a whitespace in the experience content. (TNT-33366)
+
+* When a page is loaded into the Visual Experience Composer (VEC), Target needs to determine if the global mbox setting is enabled or disabled and whether entityID or categoryID is present at the location where the user is trying to apply the recommendation in the VEC. Based on this information the criteria list is filtered. The default list has filtered algorithms, but the [Compatible checkbox](/help/c-recommendations/t-create-recs-activity/algo-select-recs.md) lets you view the complete algorithms list.
 
   When using at.js , the Compatibility checkbox is hidden, so you cannot see incompatible algorithms.
 
@@ -84,13 +94,6 @@ The following are known issues with at.js:
 The mbox.js library does not support client-side templating languages, such as Handlebars and Mustache. The at.js library *does* support these languages.
 
 **Note**: The mbox.js library is no longer being developed. All customers should migrate from mbox.js to at.js. For more information, see [Migrate to at.js from mbox.js](../c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-target-atjs-implementation/target-migrate-atjs.md#task_DE55DCE9AC2F49728395665DE1B1E6EA).
-
-### Redirect offers
-
-The following are known issues with redirect offers:
-
-* A race condition on your page might cause page views on the original page and on the redirect page to be counted. Updates are planned in Q2 2018 to the at.js implementation to ensure that this race condition can be avoided. For more information about the issue and a workaround, see [Redirect Offers - A4T FAQ](../c-integrating-target-with-mac/a4t/r-a4t-faq/a4t-faq-redirect-offers.md#concept_21BF213F10E1414A9DCD4A98AF207905) .
-* Redirect activities in at.js implementations might cause the preview URL to enter into a loop (the offer is delivered repeatedly). You can use [QA Mode](../c-activities/c-activity-qa/activity-qa.md#concept_9329EF33DE7D41CA9815C8115DBC4E40) instead to perform Preview and QA. This issue does not impact the actual delivery of the offer. (TGT-23019)
 
 ### Implementation: Global Mbox Auto Create
 
@@ -119,6 +122,26 @@ Customers cannot perform CRUD operations on Auto-Allocate activities through the
 ## Resolved Issues {#section_FD2FC86E7C734D60B1EDC9DEF60E1014}
 
 As known issues above are resolved, they will be moved to the following sections and additional notes, if necessary, will be added.
+
+### Recommendations
+
+* Recommendations feed index can show "Waiting for index" if the items in the feed are the same as in the previous run. The product ingestion for delivery is not impacted. (RECS-6663)
+
+  This issue was fixed in the Target 19.4.2 release.
+
+* Recommendations feeds take longer to process than expected. (COR-2836)
+
+  Fixed in the Target 16.10.1 release.
+
+* The Recommendation Feeds UI does not show the correct status of indexing. The backend jobs are functioning correctly, but the UI is not able to fetch and display the current state.
+
+  This was fixed in the 17.10.1 release.
+
+### Redirect offers
+
+A race condition on your page might cause page views on the original page and on the redirect page to be counted. Updates are planned to the at.js implementation to ensure that this race condition can be avoided.
+
+This issue was fixed in at.js 1.6.3.
 
 ### Exclusion groups
 
@@ -174,12 +197,6 @@ This was fixed in the 18.9.1 release.
 When you edit or copy a Recommendations activity that uses an Attribute Promotion rule, the "Has missing field" error displays when clicking Save .
 
 This was fixed in the 17.8.1 release.
-
-### Recommendations Feeds index status
-
-The Recommendation Feeds UI does not show the correct status of indexing. The backend jobs are functioning correctly, but the UI is not able to fetch and display the current state.
-
-This was fixed in the 17.10.1 release.
 
 ### Backup Recommendations
 
@@ -239,12 +256,6 @@ The second issue was fixed in the Target 17.6.1 release (June 2017).
 Since the release of Target 17.4.1 (April 27, 2017), using the Insert Image action in the Visual Experience Composer (VEC) causes the offer content to not be delivered when using the at.js library.
 
 A fix for this issue has been made to at.js version 0.9.7 released May 22, 2017.
-
-### Recommendations
-
-Recommendations feeds take longer to process than expected. (COR-2836)
-
-Fixed in the Target 16.10.1 release.
 
 ### Reporting: A/B and Experience Targeting (XT) activities
 

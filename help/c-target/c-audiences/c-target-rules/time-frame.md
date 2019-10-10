@@ -32,11 +32,11 @@ For example, using the [combined, ad-hoc audiences feature](../../../c-target/co
 
 1. (Conditional) Click **[!UICONTROL Week and Day Parting]** to set recurring patterns, including days of the weeks and times.
 
-   ![](assets/week_and_day_parting.png)
+   ![Week and Day Parting](assets/week_and_day_parting.png)
 
    You could use Week and Day Parting options, for example, to display a "Chat Now" option to visitors only during the days and hours that your call center is staffed.
 
-   Select one or more days of the week, then set the start and end times. Click [!UICONTROL Add More]to specify additional patterns, as desired.
+   Select one or more days of the week, then set the start and end times. Click **[!UICONTROL Add More]** to specify additional patterns, as desired.
 
    >[!NOTE]
    >

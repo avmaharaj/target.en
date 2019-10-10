@@ -16,9 +16,6 @@ You can target visitors who use a certain operating system.
 1. In the [!DNL Target] interface, click **[!UICONTROL Audiences]** > **[!UICONTROL Create Audience]**. 
 1. Name the audience. 
 1. Click **[!UICONTROL Add Rule]** > **[!UICONTROL Operating System]**.
-
-   ![](assets/target_os.png)
-
 1. Click **[!UICONTROL Select]**, then select one of the following options:
 
     * Linux 
@@ -27,6 +24,10 @@ You can target visitors who use a certain operating system.
 
 1. (Optional) Click **[!UICONTROL Add Rule]** and set up additional rules for the audience. 
 1. Click **[!UICONTROL Save]**.
+
+The following illustrations shows an audience targeting visitors using a Macintosh OS.
+
+![](assets/target_os.png)
 
 ## Training video: Creating Audiences
 

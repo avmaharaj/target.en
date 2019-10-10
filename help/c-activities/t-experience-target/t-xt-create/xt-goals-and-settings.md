@@ -19,7 +19,7 @@ The Goals and Settings page is where you enter information about the goals of th
 
 The available settings depend on whether you use [!DNL Target] or [!DNL Analytics] as the data source.
 
-![](assets/ab_settings.png)
+![Activity Settings page](/help/c-activities/t-experience-target/t-xt-create/assets/ab_settings-new.png)
 
 ## Activity Settings {#section_DCBDC354261F420EBD4B43EA34947BAC}
 
@@ -60,7 +60,7 @@ The following settings are available:
 
 ### Reporting Solution
 
-Specify whether data is collected from Adobe Target or from Adobe Analytics. See [Adobe Analytics as the Reporting Source for Target](https://marketing.adobe.com/resources/help/en_US/target/a4t/a4t.html) to learn about the differences between the reporting solutions and the advantages of each.
+Specify whether data is collected from Adobe Target or from Adobe Analytics. See [Adobe Analytics as the Reporting Source for Target](/help/c-integrating-target-with-mac/a4t/a4t.md) to learn about the differences between the reporting solutions and the advantages of each.
 
 When selecting Analytics as the reporting source for Target, you select an Analytics report suite to receive Target activity data. To do this, first choose from any of the Analytics companies your account is tied to, and then select the appropriate report suite for the activity. Only report suites that are provisioned to connect to Adobe Target will be available for selection. If you don't see the report suite(s) you expect, first try logging out and logging back in to the Adobe Experience Cloud to try again. If the report suite is still missing from the list, please contact Customer Care.
 
@@ -72,7 +72,7 @@ If a reporting solution is specified in your account settings, the specified sol
 >
 >You cannot change your reporting source after the activity goes live in order to keep reports consistent.
 
-### Goal
+### Goal Metric
 
 Select the action taken by a visitor to achieve the goal. For example, choose a Conversion metric, then set the parameters that determine when success is achieved.
 
@@ -100,11 +100,15 @@ By default, reports show results for all qualified visitors. You can add report 
 
 This setting is not available if you choose Analytics as your reporting solution. The audience defined for the Analytics report suite are applied.
 
+## Other Meta Data
+
+Type any information about your activity that is useful to keep on hand for yourself or other team members. The Notes pane is resizable.
+
 ## Advanced Settings {#section_E2FE441AFB324E498793ABB025ED9974}
 
 Advanced settings are available for Experience Targeting goal metrics.
 
-![](assets/Menu_AdvancedSettings.png)
+![Advanced Settings](/help/c-activities/t-experience-target/t-xt-create/assets/Menu_AdvancedSettings-new.png)
 
 >[!NOTE]
 >
@@ -114,7 +118,7 @@ The following settings are available:
 
 ### Which success metric must be reached before incrementing this metric?
 
-Use this option to only count someone as reaching the success metric if they’ve previously reached a different success metric. For example a test conversion might only be valid if the visitor clicks on the offer, or reaches a particular page before converting.
+Use this option to only count someone as reaching the success metric if they’ve previously reached a different success metric. For example a test conversion might only be valid if the visitor clicks the offer or reaches a particular page before converting.
 
 You can provided dependency on multiple metrics along with the flexibility to choose whether the metric should be reached or not reached for the count to increase.
 
@@ -124,15 +128,14 @@ The Add Dependency option allows the success metric to increment if another succ
 
 To add a dependency:
 
-1.  After adding additional metrics, click Advanced Settings .
-2.  Click the Add Dependency option:
+1.  After adding additional metrics, click **[!UICONTROL Advanced Settings]**.
+2.  Click **[!UICONTROL Add Dependency]**:
 
-    ![](assets/add_dependency.png)
-    
-3.  Drag and drop the desired metrics from the left pane into the right pane, then click Reached to toggle the setting between Reached and Not Reached .
-    
-    ![](assets/add_dependency_reached.png)
-    
+    ![Add dependency link](/help/c-activities/t-experience-target/t-xt-create/assets/add_dependency-new.png)
+
+3.  Drag and drop the desired metrics from the left pane into the right pane, then click Reached to toggle the setting between Reached and Not Reached.
+
+    ![Add Metrics Dependency dialog box](/help/c-activities/t-experience-target/t-xt-create/assets/add_dependency_reached-new.png)
 
 You can edit or remove dependencies after adding them.
 
@@ -145,14 +148,6 @@ There are three options for what happens after a visitor reaches the goal metric
 * Select Increment Count, Release User & Bar from Reentry to specify what the user sees instead of the activity content.
 
 See [Success Metrics](../../../c-activities/r-success-metrics/success-metrics.md#reference_D011575C85DA48E989A244593D9B9924) for more information about advanced settings.
-
-## Other Metadata {#section_2E8917BEFB954480A4206B9E9E917F80}
-
-The following setting is available:
-
-### Notes
-
-Type any information about your activity that is useful to keep on hand for yourself or other team members. The Notes pane is resizable.
 
 ## Training video: Activity Settings (3:02)
 

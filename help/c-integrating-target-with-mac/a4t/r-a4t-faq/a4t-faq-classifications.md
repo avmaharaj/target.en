@@ -15,7 +15,7 @@ This topic contains answers to questions that are frequently asked about classif
 
 ## After using the Classifications Importer to download classifications, how do I match the post-tnt-action value with an activity name? {#section_6045DAC488B248418F430E663C38D001}
 
-You can download the classifications for the A4T/TNT string from the Admin Tools [Classification Importer](https://marketing.adobe.com/resources/help/en_US/reference/c_working_with_saint.html). The variable is called “TNT” in the export list. The downloaded data includes the friendly names for activities, experiences, and so forth.
+You can download the classifications for the A4T/TNT string from the Admin Tools [Classification Importer](https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-importer/c-working-with-saint.html). The variable is called “TNT” in the export list. The downloaded data includes the friendly names for activities, experiences, and so forth.
 
 This lookup file is useful for customers that receive Adobe’s clickstream data feed. The file provides friendly names for the `post_tnt` and `post_tnt_action` columns.
 
@@ -27,4 +27,4 @@ The string format of the TNT variable is `activityID:experienceID:targettype|eve
 * Event = 2 represents an activity impression. 
 * Event = 32767 represents an activity conversion.
 
-You can download the classification file on a frequent basis from the UI using a [browser export](https://marketing.adobe.com/resources/help/en_US/reference/browser_export.html) or an [FTP export](https://marketing.adobe.com/resources/help/en_US/reference/ftp_export.html). You can also engage with Engineering Services to obtain the file as a lookup table along with a clickstream data feed. 
+You can import the classification file on a frequent basis from the UI using a [browser import](https://docs.adobe.com/help/en/analytics/components/classifications/classifications-importer/browser-import.html) or an [FTP import](https://docs.adobe.com/help/en/analytics/components/classifications/classifications-importer/import-file.html). You can also engage with Engineering Services to obtain the file as a lookup table along with a clickstream data feed. 

@@ -21,6 +21,17 @@ Among other benefits, [!DNL at.js] improves page-load times for web implementati
 >
 >Adobe Experience Manager (AEM) 6.2 with FP-11577 (or later) supports at.js implementations with its Adobe Target Cloud Services integration. For more information, see [Feature Packs](https://docs.adobe.com/docs/en/aem/6-2/release-notes/feature-packs.html) and [Integrating with Adobe Target](https://docs.adobe.com/docs/en/aem/6-2/administer/integration/marketing-cloud/target.html) in the *Adobe Experience Manager 6.2 documentation*.
 
+## Benefits of at.js {#benefits}
+
+The following table explains the differences between the two libraries:
+
+| Library Reference | Description |
+|--- |--- |
+|at.js|at.js replaces mbox.js for [!DNL Target] implementations.<br>Among other benefits, at.js improves page-load times for web implementations, improves security, prevents  document.write warnings in Google Chrome, and provides better implementation options for single-page applications.<br>For more information, see [at.js Implementation](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-target-atjs-implementation/target-atjs-implementation.md).|
+|mbox.js|Prior to [!DNL Target] 16.3.1 (March 2016), [!DNL Target] required a call to mbox.js to create the global mbox required for [!DNL Target] to deliver activities, track clicks, and track most success metrics. This file contains the libraries needed for all of your activities. You do not need to maintain different activity-specific versions of the file.<br>If you already have wrapping mboxes on your pages from an older style of [!DNL Target] implementation, these mboxes can still be used in the new interface. The updated mbox.js file is still required, but these mboxes can be selected for activities and edited using the  Visual Experience Composer.<br>[!DNL Target] Standard and Premium update and supplement mbox.js with a reference to a  target.js file. The  target.js file is hosted by Adobe. The  Target.js file makes it possible to edit content on any page using the  Visual Experience Composer, even if the page does not contain predefined mboxes. You must reference this file on every page on your site.<br>For more information, see [mbox.js Implementation](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/mbox-download.md).<br>**Important**: The mbox.js library is still supported, but there will be no feature updates. All customers should migrate to at.js. For more information, see [Migrate to at.js from mbox.js](/help/c-implementing-target/c-implementing-target-for-client-side-web/t-mbox-download/c-target-atjs-implementation/target-migrate-atjs.md)<br>|
+
+## Implement at.js
+
 To use [!DNL at.js], replace the [!DNL mbox.js] reference on pages where you want to implement it. You cannot use both [!DNL mbox.js] and [!DNL at.js] on a single page. However, you can use either on each page on your site.
 
 The [!DNL at.js] library works for existing implementations using the `mboxCreate()`, `mboxDefine()`, and `mboxUpdate()` functions and supports new functionality focused on single-page-app based implementations.

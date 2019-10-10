@@ -15,6 +15,20 @@ badge: premium
 
 List of frequently asked questions (FAQs) about recommendations designs.
 
+## My recommended item's price isn't displaying both values to the right of the decimal point. How can I display them?
+
+By default, numeric values (such as `entity.value`) returned in design templates won't display any trailing zeroes after the decimal point. For example, if an item is $35.00, `entity.value` is equal to 35 and only 35 is displayed on the page, not $35.00. 
+
+Two options are available to address this issue. 
+
+* You can use Velocity scripting or Javascript to apply formatting to the returned value.
+
+* You can pass the price of the item into two separate entity attributes. The first, `entity.value`, can be used for numeric comparisons (such as price comparison rules). The second should be a custom attribute, such as `entity.displayValue` that stores the value of the entity as a string to allow for proper rendering.
+
+  For example,
+
+  `"entity.value" : 35.00, "entity.displayValue" : "$35.00"`
+
 ## Why isn't category showing in the design? I'm using $entity1.categoryId. {#section_073309B8051049C7953D396A93EA0713}
 
 Category ID can't be displayed in the design. Because multiple categories can be stored, the system wouldn't know which category to display.

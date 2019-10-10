@@ -1,8 +1,8 @@
 ---
 description: Select multiple metrics to view in a report.
 keywords: Target;reports;report settings;multiple metrics;metrics
-seo-description: Select multiple metrics to view in a report.
-seo-title: View multiple metrics in a report
+seo-description: Select multiple metrics to view in a report using Adobe Target.
+seo-title: View multiple metrics in a report using Adobe Target
 solution: Target
 title: View multiple metrics in a report
 topic: Premium
@@ -15,9 +15,9 @@ Select multiple metrics to view in a report.
 
 Be aware of the following information as you work with multiple metrics in reports:
 
-* The ability to view multiple metrics is available for A/B and Experience Targeting (XT) activities only. 
-* You cannot add more than 20 metrics to a report for an activity that uses Analytics for Target (A4T). You can add as many metrics as you have in your activity to reports for activities that do not use A4T. 
-* You cannot use the [!UICONTROL Download] option to download reports to CSV if you have selected multiple metrics. You must select a single metric only to enable the [!UICONTROL Download] option. 
+* The ability to view multiple metrics is available for [A/B Test](/help/c-activities/t-test-ab/test-ab.md) and [Experience Targeting](/help/c-activities/t-experience-target/experience-target.md) (XT) activities only. 
+* You cannot add more than 20 metrics to a report for an activity that uses [Analytics for Target](/help/c-integrating-target-with-mac/a4t/a4t.md) (A4T). You can add as many metrics as you have in your activity to reports for activities that do *not* use A4T. 
+* You cannot use the [Download option](/help/c-reports/downloading-data-in-csv-file.md) to download reports to CSV if you have selected multiple metrics. You must select a single metric only to enable the [!UICONTROL Download] option. 
 * You cannot view multiple metrics for activities created before the July 2015 Target release (July 30, 2015).
 
 **To select multiple metrics to display in the report:**
@@ -42,17 +42,13 @@ Be aware of the following information as you work with multiple metrics in repor
    You can rearrange the metrics by dragging and dropping them into the desired order in the [!UICONTROL Shown Metrics] list. The selected order will be reflected in the Table View and Graph View. To remove a metric from the [!UICONTROL Shown Metrics] list, hover your mouse pointer over the metric, then click the **X** icon. 
 
 1. Click **[!UICONTROL Save]** when finished. 
-1. While viewing the report in the Table View, hover your mouse pointer on any metric's column header to display a blue arrow. Click the arrow to expand the table to display the [!UICONTROL Lift] and [!UICONTROL Confidence] for that metric.
+1. (Conditional) While viewing the report in the Table View, hover your mouse pointer on any metric's column header to display a blue arrow. Click the arrow to expand the table to display the [!UICONTROL Lift] and [!UICONTROL Confidence] for that metric.
 
    ![](assets/multiple_metrics_table.png)
 
    You can expand only one metric/column at a time. Click the arrow again to collapse the columns. 
 
-1. While viewing the report in the Graph View, the you can select individual metrics to display from the drop-down list:
+1. (Conditional) While viewing the report in the Graph View, you can select individual metrics to display from the drop-down list:
 
    ![](assets/multiple_metrics_graph.png)
-
-   Likewise, when viewing the report in the Graph View, the Revenue dimension displays as a drop-down list:
-
-   ![](assets/muttiple_revenue.png)
 

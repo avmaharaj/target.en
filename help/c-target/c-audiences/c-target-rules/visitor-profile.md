@@ -1,17 +1,17 @@
 ---
-description: Target visitors who meet specific profile parameters.
+description: Create audiences to target visitors who meet specific profile parameters.
 keywords: visitor profile;target visitor profile
-seo-description: Target visitors who meet specific profile parameters.
+seo-description: Create audiences in Adobe Target to target visitors who meet specific profile parameters.
 seo-title: Visitor Profile
 solution: Target
-title: Visitor Profile
+title: Create audiences to target visitor profiles using Adobe Target
 topic: Premium
 uuid: 462c80f4-bd5f-4dce-b02b-21b2c33c5bf6
 ---
 
 # Visitor Profile{#visitor-profile}
 
-Target visitors who meet specific profile parameters.
+Create audiences to target visitors who meet specific profile parameters.
 
 1. In the [!DNL Target] interface, click **[!UICONTROL Audiences]** > **[!UICONTROL Create Audience]**. 
 1. Name the audience. 

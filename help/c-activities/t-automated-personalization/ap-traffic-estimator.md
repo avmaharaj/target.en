@@ -22,6 +22,8 @@ Remember that Target randomly serves experiences until the personalization algor
 
 1. From the Experience Composer, click **[!UICONTROL Traffic]**.
 
+   ![Traffic icon](/help/c-activities/t-automated-personalization/assets/icon-traffic.png)
+
    The Traffic Estimator opens. You can click **[!UICONTROL Traffic]** again to hide the Traffic Estimator.
 
    ![](assets/ap_est.png)

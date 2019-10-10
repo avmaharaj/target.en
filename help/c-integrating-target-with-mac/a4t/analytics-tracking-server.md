@@ -21,7 +21,7 @@ The debugger should be viewed on a page where the activity will be delivered to 
 
 1. From the page on which you are creating your activity, open the Adobe Experience Cloud Debugger.
 
-   If you have not installed the debugger, follow the [Adobe Debugger installation instructions](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger_install.html).
+   If you have not installed the debugger, see [Install Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/install-debugger.html).
 
    ![](assets/Screen_DebuggerTrackServ.png)
 

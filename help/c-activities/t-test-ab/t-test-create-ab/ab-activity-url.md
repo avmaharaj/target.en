@@ -19,11 +19,13 @@ When prompted during activity creation, specify the activity URL. Type the compl
 >
 >[!DNL Target] does not differentiate between URL protocols ( [!DNL https] and [!DNL http]). As a result, [!DNL `http://www.adobe.com`] and [!DNL `https://www.adobe.com`] both match.
 
-By default, the [!UICONTROL Visual Experience Composer] opens the page that is specified in your Account Preferences. You can specify a different page during activity creation.
+## Specify a different URL
+
+By default, the [!UICONTROL Visual Experience Composer] opens the page that is specified in your [Target Account Preferences](/help/administrating-target/r-target-account-preferences/target-account-preferences.md). You can specify a different page during activity creation.
 
 To display a different page after the [!UICONTROL Visual Experience Composer] opens, click the **[!UICONTROL Configure]** gear icon, then select **[!UICONTROL Page Delivery]**. Enter the URL in the Activity URL field.
 
-![](assets/url-config.png)
+![Page Delivery dialog box](/help/c-activities/t-test-ab/t-test-create-ab/assets/url-config-new.png)
 
 Click **[!UICONTROL Add Template Rule]** to add more pages or sections to the activity.
 

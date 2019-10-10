@@ -1,22 +1,22 @@
 ---
-description: Use the Visual Experience Composer to create the offers you want to include in your test.
-seo-description: Use the Visual Experience Composer to create the offers you want to include in your test.
-seo-title: Create combinations
+description: Use the Visual Experience Composer (VEC) in Adobe Target to create the offers you want to include in your Multivariate Test (MVT).
+seo-description: Use the Visual Experience Composer (VEC) in Adobe Target to create the offers you want to include in your Multivariate Test (MVT).
+seo-title: Create combinations in Multivariate Tests (MVT) using Adobe Target
 title: Create combinations
 uuid: 2ee47bf5-f8b3-41e2-b9a5-0ff4ab175373
 ---
 
 # Create combinations{#create-combinations}
 
-Use the Visual Experience Composer to create the offers you want to include in your test.
+Use the Visual Experience Composer (VEC) in Adobe Target to create the offers you want to include in your Multivariate Test (MVT).
+
+For more information about using the VEC to create and edit offers, see [Visual Experience Composer options](/help/c-experiences/c-visual-experience-composer/viztarget-options.md).
 
 >[!NOTE]
 >
 >You can click **[!UICONTROL Expand Selection]** when selecting objects on the page to select the parent element in addition to the originally selected element. When you select any parent element, all children of that element are automatically selected. You can expand the selection multiple times.
-
-The Visual Experience Composer makes it possible to edit offers, offer names, and location names. An overlay appears to show you where you have made changes.
-
-![](assets/overlay.png)
+>
+>You can also use the [DOM path](/help/c-experiences/c-visual-experience-composer/viztarget-options.md#dom-path) to navigate elements.
 
 ## Image Offers {#section_A48333211DB149ED926AE467D0032914}
 
@@ -24,11 +24,11 @@ Test multiple image offers within a location to determine which image is most su
 
 1. Click an image on your page, and then select **[!UICONTROL Change Image]**.
 
-   ![](assets/changeimage.png)
+   ![Change Image option](/help/c-activities/c-multivariate-testing/t-create-multivariate-test/assets/changeimage.png)
 
 1. Select all images you want to include in the test, then click **[!UICONTROL Save]**.
 
-   ![](assets/addimage.png)
+   ![Select Content dialog box used to add images](/help/c-activities/c-multivariate-testing/t-create-multivariate-test/assets/addimage.png)
 
 Each image becomes a separate experience in that location.
 
@@ -38,15 +38,11 @@ Test multiple Text/HTML offers within a location to determine which offer is mos
 
 1. Click an Text/HTML offer on your page, then click **[!UICONTROL Change Text/HTML]**.
 
-   ![](assets/changehtml.png)
+   ![Change Text/HTML](/help/c-activities/c-multivariate-testing/t-create-multivariate-test/assets/changehtml.png)
 
 1. Click **[!UICONTROL Add Text/HTML Offer]**, name the offer, then type or paste the code for the Text/HTML offer.
 
-   ![](assets/editoffers.png)
-
-   >[!NOTE]
-   >
-   >Internet Explorer 10 does not support HTML5 input placeholders. As a result, if you use IE10, the "Add content" placeholder text remains in the Text field when you enter content.
+   ![Edit offers](/help/c-activities/c-multivariate-testing/t-create-multivariate-test/assets/editoffers.png)
 
    Repeat for any additional Text/HTML offers you want to include. 
 

@@ -18,7 +18,7 @@ The cookie behavior depends on whether it is a first-party cookie, a third-party
 >
 >This topic contains information about `mboxSession` and `mboxPC`. Our implementation best practices recommends that you do not link or store any sensitive information with the cookie data: `mboxSession` or `mboxPC`.
 
-See also [Delete the Target Cookie](https://marketing.adobe.com/resources/help/en_US/target/target/t_cookie_deleting.html).
+See also [Delete the Target cookie](/help/c-implementing-target/c-considerations-before-you-implement-target/c-privacy/cookie-deleting.md).
 
 ## When to Use First- or Third-Party Cookies {#section_F71B29420C004A7FA3B1921E619B326E}
 

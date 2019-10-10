@@ -1,27 +1,25 @@
 ---
-description: Target users based on their geographical location, including their country, state/province, city, zip/postal code, DMA, or mobile carrier.
+description: Use audiences to target users based on their geographical location, including their country, state/province, city, zip/postal code, DMA, or mobile carrier.
 keywords: targeting;a4t;geo;geotargeting;geotargeting accuracy;country;state;city;zip code;dma;mobile carrier;city codes;region codes;country codes;metro codes;profile scripts;geotargeting profile scripts;geotargeting mobile
-seo-description: Target users based on their geographical location, including their country, state/province, city, zip/postal code, DMA, or mobile carrier.
+seo-description: Use Adobe Target audiences to target users based on their geographical location, including their country, state/province, city, zip/postal code, DMA, or mobile carrier.
 seo-title: Geo
 solution: Target,Analytics
-title: Geo
+title: Geo targeting in Adobe Target
 topic: Reports and analytics
 uuid: d30cda0e-016e-4391-95b7-ff3b55e06bf0
 ---
 
 # Geo{#geo}
 
-Target users based on their geographical location, including their country, state/province, city, zip/postal code, DMA, or mobile carrier.
+Use audiences to target users based on their geographical location, including their country, state/province, city, zip/postal code, DMA, or mobile carrier.
 
-Geo location parameters allow you to target activities and experiences based on your visitors' geography. You can include or exclude visitors based on their country, state/province, city, zip/postal code, DMA, or mobile carrier. This data is sent with each mbox request and is based on the visitor's IP address. Select these parameters just like any targeting values.
+Geo location parameters allow you to target activities and experiences based on your visitors' geography. You can include or exclude visitors based on their country, state/province, city, zip/postal code, latitude, longitude, DMA, or mobile carrier. This data is sent with each Target request and is based on the visitor's IP address. Select these parameters just like any targeting values.
 
 ## Create an Audience with Geo Targeting {#section_49CBFFAAC8694C4AAD3DE4B2DB7B05DE}
 
 1. In the [!DNL Target] interface, click **[!UICONTROL Audiences]** > **[!UICONTROL Create Audience]**. 
 1. Name the audience. 
 1. Click **[!UICONTROL Add Rule]** > **[!UICONTROL Geo]**.
-
-   ![](assets/target_geo.png)
 
 1. Click **[!UICONTROL Select]**, then select one of the following options:
 
@@ -36,14 +34,19 @@ Geo location parameters allow you to target activities and experiences based on 
 
    A visitor's IP address is passed with an mbox request, once per visit (session), to resolve geo targeting parameters for that visitor.
 
-   For Mobile Carrier, [!DNL Target] uses the IP address registration data (who owns the block of IP addresses) to determine the appropriate mobile carrier using [Mobile Country Codes (MCC) and Mobile Network Codes MNC)](https://www.mcc-mnc.com). 
+   For Mobile Carrier, [!DNL Target] uses the IP address registration data (who owns the block of IP addresses) to determine the appropriate mobile carrier using [Mobile Country Codes (MCC) and Mobile Network Codes MNC)](https://www.mcc-mnc.com).
 
+1. Specify an operator and the the appropriate value.
 1. (Optional) Click **[!UICONTROL Add Rule]** and set up additional rules for the audience. 
 1. Click **[!UICONTROL Save]**.
 
+The following illustration shows an audience that targets users accessing the activity from a latitude greater than 44 degrees and a longitude less than 22 degrees.
+
+![](assets/target_geo.png)
+
 ## Accuracy {#section_D63D5FFCB49C42F9933AFD0BD7C79DF1}
 
-The accuracy of geo targeting depends on several factors. WiFi connections are more accurate than cellular networks. When the visitor is using a cellular data connection, the accuracy of the geo-lookup can be affected by location, the provider's data relationship with deviceatlas, and other factors. Cell tower-based network connections might be less accurate than wired or WiFi connections. Also, a visitor's IP address might be mapped to his or her ISP location, which might not be the same as the visitor's actual location. Some mobile geo-location issues can be solved using the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API).
+The accuracy of geo targeting depends on several factors. WiFi connections are more accurate than cellular networks. When the visitor is using a cellular data connection, the accuracy of the geo-lookup can be affected by location, the provider's data relationship with [DeviceAtlas](https://deviceatlas.com/device-data/user-agent-tester), and other factors. Cell tower-based network connections might be less accurate than wired or WiFi connections. Also, a visitor's IP address might be mapped to his or her ISP location, which might not be the same as the visitor's actual location. Some mobile geo-location issues can be solved using the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API).
 
 The following table shows the accuracy of IP-based geographical information from [DigitalEnvoy](https://www.digitalelement.com/solutions/) for wired or WiFi Internet connections. DigitalEnvoy provides the most accurate data in the industry. Global accuracy is more than 99.9 percent at the country level and is up to 97 percent accurate at a city level. Accuracy information does not apply to cell tower-based networks.
 
@@ -124,7 +127,7 @@ Due to the way AOL proxies its traffic, we can only target them at a country lev
 * DMA/ITV (UK) - US, UK 
 * Mobile carrier - global
 
-**How can I test my campaigns as if I'm a user coming from a different location?**
+**How can I test my activities as if I'm a user coming from a different location?**
 
 You can override your IP address with an IP address from a different location and use the `mboxOverride.browserIp url` parameter. So if your company is in the UK, but your global campaign targets visitors in Aukland, New Zealand, use this style of URL assuming that `60.234.0.39` is an IP address in Auckland:
 

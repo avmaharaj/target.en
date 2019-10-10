@@ -1,6 +1,6 @@
 ---
 description: Information about the mboxDefine() and mboxUpdate() functions for at.js. 
-keywords: adobe.target.notification;element;selector;notification;extension
+keywords: mboxDefine;mboxdefine;mbox define;mboxUpdate;mboxupdate;mbox update;at.js;functions;function
 seo-description: Information about the mboxDefine() and mboxUpdate() functions for the Adobe Target at.js JavaScript library.
 seo-title: Information about the mboxDefine() and mboxUpdate() functions for the Adobe Target at.js JavaScript library.
 solution: Target

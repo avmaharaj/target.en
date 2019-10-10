@@ -41,7 +41,7 @@ In Analytics, use the Target Activities report to view the results of your Targe
 
 >[!NOTE]
 >
->Target lift and confidence details are also available in Analytics. For more information, see [Target Lift and Confidence Report Type](https://marketing.adobe.com/resources/help/en_US/reference/report_target_lift_confidence.html) in the Adobe Analytics product documentation.
+>Target lift and confidence details are also available in Analytics. For more information, see [Target Lift and Confidence](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/report-target-lift-confidence.html) in the *Analytics Components Guide*.
 
 >[!IMPORTANT]
 >

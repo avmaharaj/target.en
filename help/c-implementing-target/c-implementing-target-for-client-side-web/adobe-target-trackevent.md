@@ -1,6 +1,6 @@
 ---
 description: Information about the adobe.target.trackEvent(options) function for at.js. 
-keywords: adobe.target.notification;element;selector;notification;extension
+keywords: adobe.target.trackEvent;trackEvent;trackevent;track event;at.js;functions;function;preventDefault;preventdefault;prevent default
 seo-description: Information about the adobe.target.trackEvent(options) function for the Adobe Target at.js JavaScript library.
 seo-title: Information about the adobe.target.trackEvent(options) function for the Adobe Target at.js JavaScript library.
 solution: Target

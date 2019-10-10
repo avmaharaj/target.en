@@ -48,9 +48,10 @@ Information about accessing [!DNL Adobe Target] from the [!DNL Adobe Experience 
 
 1. Select your first (primary) language, then select a second language, if desired.
 
-   The [!DNL Target] UI is available in the following languages.
+   The [!DNL Target] UI is available in the following languages:
 
    * English
+   * Spanish
    * French
    * German
    * Japanese
@@ -63,6 +64,31 @@ Information about accessing [!DNL Adobe Target] from the [!DNL Adobe Experience 
 1. Click **[!UICONTROL Save]**.
 
 1. Log out of the [!DNL Adobe Experience Cloud] or [!DNL Target], then log in again for your changes to take effect.
+
+## Change the language for the Target product documentation {#doc-lang}
+
+Your operating system or browser settings should detect your preferred language and display the documentation in that language (if available). Target documentation is automatically translated and will be in sync with the English version within hours of changes made to English documentation.
+
+You can quickly change the language to the original English version by clicking the link in the page header.
+
+![Change to original language](/help/c-intro/assets/mt-original.png)
+
+You can also quickly change the language to any supported language by clicking the Language Switcher icon in the top right of the page header ( ![language switcher](/help/c-intro/assets/icon-language-switcher.png) ).
+
+![language switcher](/help/c-intro/assets/language-switcher.png)
+
+The [!DNL Target] documentation is available in the following languages:
+
+* English
+* Spanish
+* French
+* German
+* Japanese
+* Italian
+* Brazilian Portuguese
+* Chinese Simplified
+* Chinese Traditional
+* Korean 
 
 ## Training video: Adobe Target in the Experience Cloud (4:59)
 

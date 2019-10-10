@@ -15,7 +15,7 @@ badge: premium
 
 Use the open-source Velocity design language to customize recommendation designs.
 
-## Velocity Overview {#section_C431ACA940BC4210954C7AEFF6D03EA5}
+## Velocity overview {#section_C431ACA940BC4210954C7AEFF6D03EA5}
 
 Information about Velocity can be found at [https://velocity.apache.org](https://velocity.apache.org).
 
@@ -153,7 +153,7 @@ sku: $entity3.prodId<br/> Price: $$entity3.value
 
 You can also use `algorithm.name` and `algorithm.dayCount` as variables in designs, so one design can be used to test multiple criteria, and the criteria name can be dynamically displayed in the design. This shows the visitor that he or she is looking at "top sellers" or "people who viewed this bought that." You can even use these variables to display the `dayCount` (number of days of data used in the criteria, like "top sellers over the last 2 days," etc.
 
-## Scenario: Display Key Item with Recommended Products {#section_7F8D8C0CCCB0403FB9904B32D9E5EDDE}
+## Scenario: Display key item with recommended products {#section_7F8D8C0CCCB0403FB9904B32D9E5EDDE}
 
 You can modify your design to show your key item alongside other recommended products. For example, you might want to show the current item for reference next to the recommendations.
 
@@ -176,7 +176,7 @@ The result is a design like the following, where one column shows the key item.
 
 When you are creating your [!DNL Recommendations] activity, if the key item is taken from the visitor's profile, such as "last purchased item," [!DNL Target] displays a random product in the [!UICONTROL Visual Experience Composer] (VEC). This is because a profile is not available while you design the activity. When visitors view the page, they will see the expected key item.
 
-## Scenario: Replace the Decimal Point with the Comma Delimiter in a Sales Price {#section_01F8C993C79F42978ED00E39956FA8CA}
+## Scenario: Replace the decimal point with the comma delimiter in a sales price {#section_01F8C993C79F42978ED00E39956FA8CA}
 
 You can modify your design to replace the decimal point delimiter used in the United States with the comma delimiter used in Europe and other countries.
 
@@ -202,3 +202,39 @@ The following code is a complete conditional example of a sale price:
                                     </span>
 ```
 
+## Scenario: Create a 4x2 default Recommendations design with null-checking logic {#default}
+
+Using a Velocity script to control for dynamic sizing of the entity display, the following template accommodates a 1-to-many result to avoid creating empty HTML elements when there aren't enough matching entities returned from [!DNL Recommendations]. This script is best for scenarios when back-up recommendations wouldn't make sense and [!UICONTROL Partial Template Rendering] is enabled.
+
+The following HTML snippet replaces the existing HTML portion in the 4x2 default design (the CSS is not included here, for the sake of brevity):
+
+* If a fifth entity exists, the script inserts a closing div and opens a new row with `<div class="at-table-row">`.
+* With 4x2, the maximum results shown will be eight, but this could be customized for smaller or larger lists by modifying `$count <=8`.
+* Be aware that the logic won't balance the entities on multiple rows. For example, if there are five or six entities to display, it won't dynamically become three on top and two on the bottom (or three on top and three on the bottom). The top row will display four items before starting a second row.
+
+```
+<div class="at-table">
+  <div class="at-table-row">
+    #set($count=1) 
+    #foreach($e in $entities)  
+        #if($e.id != "" && $count < $entities.size() && $count <=8) 
+            #if($count==5) 
+                </div>
+                <div class="at-table-row">
+            #end
+            <div class="at-table-column">
+                <a href="$e.pageUrl"><img src="$e.thumbnailUrl" class="at-thumbnail" />
+                    <br/>
+                    <h3>$e.name</h3>
+                    <br/>
+                    <p class="at-light">$e.message</p>
+                    <br/>
+                    <p class="at-light">$$e.value</p>
+                </a>
+            </div>
+            #set($count = $count + 1) 
+        #end 
+    #end
+    </div>
+  </div>
+  ```

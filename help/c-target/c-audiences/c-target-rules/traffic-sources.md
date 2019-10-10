@@ -1,8 +1,8 @@
 ---
-description: Target visitors based on the search engine or landing page that refers them to your site.
+description: Create audiences to target visitors based on the search engine or landing page that refers them to your site.
 keywords: Targeting;traffic sources;target traffic sources;target search engine;search engine;landing page;target landing page;referring landing page
-seo-description: Target visitors based on the search engine or landing page that refers them to your site.
-seo-title: Traffic Sources
+seo-description: Create audiences in Adobe Target to target visitors based on the search engine or landing page that refers them to your site.
+seo-title: Target Traffic Sources in Adobe Target
 solution: Target
 title: Traffic Sources
 uuid: 725cb4f4-6530-403a-a9c8-305219765615
@@ -10,9 +10,9 @@ uuid: 725cb4f4-6530-403a-a9c8-305219765615
 
 # Traffic Sources{#traffic-sources}
 
-Target visitors based on the search engine or landing page that refers them to your site.
+Create audiences to target visitors based on the search engine or landing page that refers them to your site.
 
-For example, you can target based on the visitor's browser, search engine, or the referring landing page. The referring landing page is the page you clicked from to reach the current site this session. (For example, if you click an ad on Google and it leads you to the [!DNL adobe.com] home page, the referring landing page is [!DNL google.com].)
+For example, you can target based on the visitor's browser, search engine, or the referring landing page. The referring landing page is the page the visitor clicked from to reach the current site this session. (For example, if the visitor clicked an ad on Google and it leads him or her to the `adobe.com` home page, the referring landing page is `google.com`.)
 
 You can combine multiple traffic sources to create a complex targeting rule.
 
@@ -31,6 +31,8 @@ You can combine multiple traffic sources to create a complex targeting rule.
     * Referring Landing Page: URL 
     * Referring Landing Page: Domain 
     * Referring Landing Page: Query
+
+   Depending on your selection, you might need to provide additional information (evaluator and/or values).
 
 1. (Optional) Click **[!UICONTROL Add Rule]** and set up additional rules for the audience. 
 1. Click **[!UICONTROL Save]**.

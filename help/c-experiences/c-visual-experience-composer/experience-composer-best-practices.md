@@ -79,17 +79,6 @@ OR
 
 Block-level elements should not be used inside inline elements like anchor, span, and so on. Doing so causes inline elements to lose their height and width, so the overlay tool in Visual Experience Composer might not work as expected.
 
-**When updating offers for classic mboxes, make sure that mbox is created as described at [Create a Single Mbox](https://marketing.adobe.com/resources/help/en_US/tnt/help/t_Creating_a_Single_Mbox.html) in the Target Classic help.**
-
-If you are considering placing an element or group of elements in an mbox, wrap them in a new div with `class mboxDefault`:
-
-```
-<div class="mboxDefault">
-    //Content goes here 
-</div> 
-<script> mboxCreate('mboxName'); </script>`
-```
-
 **Don't use the base tag in your website to resolve URLs and links.**
 
 The Visual Experience Composer manipulates the website behind the scenes, using a proxy server that updated the links. If you add a base tag, the URLs used by the proxy server are resolved again by the browser and appear broken.

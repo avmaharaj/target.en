@@ -1,8 +1,8 @@
 ---
 description: Adobe Target is the Adobe Experience Cloud solution that provides everything you need to tailor and personalize your customers' experience to maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
-keywords: Target Standard;Recommendations;Target Premium;Automated Personalization;auto-target;auto target;permissions
+keywords: Target Standard;Recommendations;Target Premium;Automated Personalization;auto-target;auto target;permissions;what is adobe target;
 seo-description: Adobe Target is the Adobe Experience Cloud solution that provides everything you need to tailor and personalize your customers' experience to maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
-seo-title: Introduction to Target
+seo-title: Introduction to Adobe Target
 solution: Target
 title: Introduction to Target
 topic: Advanced
@@ -13,7 +13,7 @@ uuid: 70ccfbe9-c240-4380-9f43-522af51c1d5f
 
 Adobe Target is the Adobe Experience Cloud solution that provides everything you need to tailor and personalize your customers' experience to maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 
-The following videos provide a basic understanding of how Target, along with other Adobe Experience Cloud solutions, can help your organization's achieve its goals:
+The following videos provide a basic understanding of how Target, along with other Adobe Experience Cloud solutions, can help your organization achieve its goals:
 
 >[!VIDEO](https://www.youtube.com/watch?v=O7fFTcV7toI)
 

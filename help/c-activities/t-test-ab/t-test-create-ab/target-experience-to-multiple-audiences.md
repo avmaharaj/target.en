@@ -9,7 +9,7 @@ topic: Standard
 uuid: c6571632-942d-48c7-99ec-5c17f9ff983d
 ---
 
-# Multiple experience versions in an A/B Test{#multiple-experience-versions-in-an-a-b-test}
+# Multiple experience audiences in an A/B Test{#multiple-experience-versions-in-an-a-b-test}
 
 You can target versions of the same experience to different audiences in A/B activities. You can set up multiple audiences for an experience in the Visual Experience Composer or in the Form-Based Experience Composer.
 
@@ -33,7 +33,7 @@ In this case, what you need are geo-specific versions of the experience, so you 
    
 1. Select the experience, then click **[!UICONTROL Configure]** > **[!UICONTROL Audiences]** > **[!UICONTROL Multiple Audiences]**.
 
-   ![](assets/multiple-audiences.png)
+   ![Multiple Audiences option](/help/c-activities/t-test-ab/t-test-create-ab/assets/multiple-audiences-new.png)
 
 1. Click **[!UICONTROL Add Audience]**, then select the first audience you want to target. Repeat for each audience.
 

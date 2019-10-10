@@ -38,21 +38,20 @@ In addition to the general reporting information in this topic and its subtopics
 
    For example, you could select [!UICONTROL A/B Test] and [!UICONTROL Experience Targeting] from the [!UICONTROL Type] drop-down list and [!UICONTROL Live] from the [!UICONTROL Status] drop-down list to display only A/B tests and Experience Targeting activities that are in an active state.
 
-   The following illustration shows the [!UICONTROL Type] drop-down list with two types selected:
+   The following illustration shows the [!UICONTROL Type] drop-down list with two types selected: A/B Test and Experience Targeting. Note that the three types of A/B Tests (Manual, [Auto-Allocate](/help/c-activities/automated-traffic-allocation/automated-traffic-allocation.md), and [Auto-Target](/help/c-activities/auto-target-to-optimize.md)) are selected by default. You can deselect one or more types as needed.
 
-   ![](assets/report_filters.png)
+   ![Filter reports by type](/help/c-reports/assets/report_filters-new.png)
 
 1. Click the **[!UICONTROL Reports]** tab.
 
    Each report includes a legend to help you understand the report.
 
-   ![](assets/report_menu_bar.png)
+   ![Report legend](/help/c-reports/assets/report_menu_bar-new.png)
 
    The legend displays the following information:
 
     * The activity status, including the date range when the activity ran.
-    * The projected winning experience. 
-    * The activity's source, such as [!DNL Adobe Target] or [!DNL Adobe Target Classic].
+    * The projected winning experience (if available). 
 
    >[!NOTE]
    >
